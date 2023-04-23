@@ -73,6 +73,7 @@
     width: 300px;
     height: 350px;
     border-radius: 50px;
+    background-size: cover;
 
 
 
@@ -83,6 +84,8 @@
     width: 300px;
     height: 350px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .caixa_3 {
@@ -90,6 +93,8 @@
     width: 300px;
     height: 350px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 
@@ -119,6 +124,8 @@
     width: 300px;
     height: 350px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .importancia2 {
@@ -126,6 +133,8 @@
     width: 300px;
     height: 350px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .importancia3 {
@@ -133,6 +142,7 @@
     width: 300px;
     height: 350px;
     border-radius: 50px;
+    background-size: cover;
 }
 
 .importancia_textos {
@@ -152,6 +162,7 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
 }
 
 .texto3 {
@@ -165,6 +176,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil2 {
@@ -172,6 +185,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil3 {
@@ -179,6 +194,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil4 {
@@ -186,6 +203,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil5 {
@@ -193,6 +212,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil6 {
@@ -200,6 +221,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil7 {
@@ -207,6 +230,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil8 {
@@ -214,6 +239,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil9 {
@@ -221,6 +248,8 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
+
 }
 
 .facil10 {
@@ -228,6 +257,7 @@
     width: 300px;
     height: 200px;
     border-radius: 50px;
+    background-size: cover;
 }
 
 .tutorial {
@@ -245,7 +275,7 @@
 .video_adubo {
     display: flex;
     justify-content: center;
-
+    background-size: cover;
 }
 
 .plantas_comida_imagem {
@@ -257,30 +287,34 @@
 .videos_adubo {
     display: flex;
     justify-content: center;
-
+    background-size: cover;
 }
 
 .adubo_1 {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+    background-size: cover;
 
 }
 
 .gengibre_frase {
     display: flex;
     justify-content: center;
-
 }
 
 .div_gengibre-tutorial {
     display: flex;
     justify-content: space-evenly;
+    background-size: cover;
+
 }
 
 .tutorial_boldo {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 }
 
 .boldo_frase {
@@ -298,11 +332,15 @@
 .tutorial_babosa {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 }
 
 .tutorial_erva_doce {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 }
 
 .erva_frase {
@@ -314,6 +352,8 @@
 .tutorial_camomila {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 }
 
 .camomila_frase {
@@ -325,6 +365,8 @@
 .tutorial_alecrim {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 }
 
 .alecrim_frase {
@@ -336,6 +378,8 @@
 .tutorial_agriao {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 }
 
 .agriao_frase {
@@ -347,6 +391,8 @@
 .tutorial_coentro {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 }
 
 .coentro_frase {
@@ -358,6 +404,8 @@
 .tutorial_alho {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 }
 
 .alho_frase {
@@ -370,6 +418,8 @@
 .tutorial_guaco {
     display: flex;
     justify-content: center;
+    background-size: cover;
+
 
 }
 
@@ -392,6 +442,7 @@
     height: 90px;
     border-style: groove;
     border-color: rgb(0, 0, 0);
+
 }
 
 .roda1 {
@@ -444,7 +495,9 @@
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGhs1Ufvje8UGoZQjqMkyveOCg1WKAMaxjScvZDARXlsV6RCkcgFJrR2I9GIy8Tbte_g&usqp=CAU");
     display: flexbox;
 
+
 }
+
 
 .Apresentação {
     display: flex;
@@ -461,33 +514,54 @@
 
 .casa_1 {
     background-image: url("casa1.jpg");
-    width: 300px;
+    width: 250px;
     height: 350px;
+    background-size: cover;
     border-radius: 20px;
 }
 
 .casa_2 {
     background-image: url("casa2.jpg");
-    width: 300px;
+    width: 250px;
     height: 350px;
+    background-size: cover;
     border-radius: 20px;
 }
 
 .casa_3 {
-    background-image: url("casa3.jpg");
-    width: 300px;
+    background-image: url("mamao.jpg");
+    width: 239px;
     height: 350px;
-    border-radius: 50px;
+    background-size: cover;
     justify-content: end;
-}
-
-.matheus_foto {
-    background-image: url("matheus1.jpg");
-    width: 400px;
-    height: 500px;
     border-radius: 20px;
-
 }
+
+.casa_4 {
+    background-image: url("boldocasa.jpg");
+    width: 239px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.casa_5 {
+    background-image: url("banana.jpg");
+    width: 239px;
+    height: 350px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.casa_6 {
+    background-image: url("abacatecasa.jpg");
+    width: 239px;
+    height: 350px;
+    background-size: cover;
+    justify-content: end;
+    border-radius: 20px;
+}
+
 
 .foto1 {
     display: flex;
@@ -499,27 +573,28 @@
     background-image: url("matheus11.jpg");
     width: 300px;
     height: 500px;
-    border-radius: 20px;
-
+    background-size: cover;
 }
 
 .video1 {
     display: flex;
     justify-content: center;
-
+    background-size: cover;
 }
 
 .video_1 {
     display: flex;
-    background-color: aqua;
     width: 250px;
     height: 500px;
+    background-size: cover;
 }
-.redes{
+
+.redes {
     justify-content: center;
-    
+
 }
-.redes1{
+
+.redes1 {
     justify-content: center;
-    
+
 }
