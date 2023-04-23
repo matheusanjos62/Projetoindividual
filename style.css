@@ -401,7 +401,8 @@ justify-content: space-evenly;
     }
     .body_quem_sou{
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGhs1Ufvje8UGoZQjqMkyveOCg1WKAMaxjScvZDARXlsV6RCkcgFJrR2I9GIy8Tbte_g&usqp=CAU");
-
+    display: flexbox;
+    
     }
     .Apresentação{
         display: flex;
@@ -434,7 +435,13 @@ justify-content: space-evenly;
         border-radius: 50px;
     }
 
-    
+    .matheus_foto{
+        background-image: url("matheus1.jpg");
+        width: 400px;
+        height: 500px;
+        border-radius: 50px;
+        justify-content: center;
+    }
     
     
    
