@@ -588,6 +588,17 @@
     height: 500px;
     background-size: cover;
 }
+.video_2 {
+    display: flex;
+    width: 250px;
+    height: 500px;
+    background-size: cover;
+    justify-content: center;
+}
+.video2{
+    display: flex;
+    justify-content: center;
+}
 
 .redes {
     justify-content: center;
