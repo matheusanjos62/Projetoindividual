@@ -420,29 +420,54 @@ justify-content: space-evenly;
         background-image: url("casa1.jpg");
         width: 300px;
         height: 350px;
-        border-radius: 50px;
+        border-radius: 20px;
     }
     .casa_2 {
         background-image: url("casa2.jpg");
         width: 300px;
         height: 350px;
-        border-radius: 50px;
+        border-radius: 20px;
     }
     .casa_3 {
         background-image: url("casa3.jpg");
         width: 300px;
         height: 350px;
         border-radius: 50px;
+        justify-content: end;
     }
 
     .matheus_foto{
         background-image: url("matheus1.jpg");
         width: 400px;
         height: 500px;
-        border-radius: 50px;
-        justify-content: center;
+        border-radius: 20px;
+        
+    }
+    .foto1{
+        display: flex;
+justify-content: center;
+    }
+    .imagem_foto1{
+        display: flex;
+        background-image: url("matheus11.jpg");
+        width: 300px;
+        height: 500px;
+        border-radius: 20px;
+
     }
     
-    
-   
+    .video1{
+        display: flex;
+justify-content: center;
+
+    }
+    .video_1{
+        display: flex;
+        background-color: aqua;
+        width: 250px;
+        height: 500px;
+        
+        
+
+    }
     
