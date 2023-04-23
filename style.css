@@ -1,0 +1,441 @@
+.menu {
+    justify-content: space-between;
+    display: flex;
+    background-image: url("fundo.jpg");
+    list-style: none;
+    padding: 20px;
+    height: 70px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
+
+.item1 {
+    display: flex;
+    list-style: none;
+    font-style: italic;
+
+}
+
+.item2 {
+    display: flex;
+    list-style: none;
+    font-style: italic;
+}
+
+.item3 {
+    display: flex;
+    list-style: none;
+    font-style: italic;
+}
+
+.item4 {
+    display: flex;
+    list-style: none;
+    font-style: italic;
+}
+
+
+
+
+.body {
+    display: flexbox;
+    background-image: url("fundo.jpg");
+
+}
+
+.apresentação {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+.Bem_vindo {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+.exemplos_plantas {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+
+.bloco1 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.caixa_1 {
+    background-image: url("hortela-4-1.webp");
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+
+
+
+}
+
+.caixa_2 {
+    background-image: url("malvadoreino.jpg");
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.caixa_3 {
+    background-image: url("capim-limao.jpeg");
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+
+.caixa_texto1 {
+
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.caixa_texto2 {
+
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.caixa_texto3 {
+    
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.importancia1 {
+    background-image: url("istockphoto-1282490768-612x612.jpg");
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.importancia2 {
+    background-image: url("tomando-chá-de-manhã.jpg");
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.importancia3 {
+    background-image: url("espirro-menina-e1555528412244.jpg");
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+.importancia_textos{
+    display:flex;
+    justify-content: space-around;
+    
+    
+}
+.texto1{
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.texto2{
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.texto3{
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil1{
+    background-image: url("gengibre.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil2{
+    background-image: url("boldo.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil3{
+    background-image: url("babosa.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil4{
+    background-image: url("erva-doce.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil5{
+    background-image: url("camomila006.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil6{
+    background-image: url("alecrim.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil7{
+    background-image: url("horta-como-plantar-agriao-nasturtium-officinale-cpt.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil8{
+    background-image: url("cp_.webp");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil9{
+    background-image: url("alho.webp");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.facil10{
+    background-image: url("Guaco.jpg");
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+.tutorial{
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+.apresentação_tutorial{
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+.video_adubo{
+    display: flex;
+    justify-content: center;
+    
+}
+.plantas_comida_imagem{
+    display: flex;
+    justify-content: center;
+    
+}
+.videos_adubo{
+display: flex;
+justify-content: center;
+
+}
+.adubo_1{
+    display: flex;
+justify-content: center;
+justify-content: space-evenly;
+
+}
+.gengibre_frase{
+    display: flex;
+    justify-content: center;
+   
+}
+.div_gengibre-tutorial{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tutorial_boldo{
+    display: flex;
+    justify-content: center;
+}
+.boldo_frase{
+    display: flex;
+    justify-content: center;
+    
+}
+.babosa_frase{
+    display: flex;
+    justify-content: center;
+    
+}
+.tutorial_babosa{
+    display: flex;
+    justify-content: center;
+}
+.tutorial_erva_doce{
+    display: flex;
+    justify-content: center;
+}
+.erva_frase{
+    display: flex;
+    justify-content: center;
+  
+}
+.tutorial_camomila{
+    display: flex;
+    justify-content: center;
+}
+.camomila_frase{
+    display: flex;
+    justify-content: center;
+   
+}
+.tutorial_alecrim{
+    display: flex;
+    justify-content: center;
+}
+.alecrim_frase{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.tutorial_agriao{
+    display: flex;
+    justify-content: center;
+}
+.agriao_frase{
+    display: flex;
+    justify-content: center;
+  
+}
+.tutorial_coentro{
+    display: flex;
+    justify-content: center;
+}
+.coentro_frase{
+    display: flex;
+    justify-content: center;
+    
+}
+.tutorial_alho{
+    display: flex;
+    justify-content: center;
+}
+.alho_frase{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.tutorial_guaco{
+    display: flex;
+    justify-content: center;
+    
+}
+.guaco_frase{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+.rodape {
+    justify-content: space-around;
+    display: flex;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGhs1Ufvje8UGoZQjqMkyveOCg1WKAMaxjScvZDARXlsV6RCkcgFJrR2I9GIy8Tbte_g&usqp=CAU");
+    list-style: none;
+    padding: 50px;
+    height: 90px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
+
+.roda1 {
+    display: flex;
+    list-style: none;
+    font-style: normal;
+
+}
+
+.roda2 {
+    display: flex;
+    list-style: none;
+    font-style: normal;
+}
+
+.roda3 {
+    display: flex;
+    list-style: none;
+    font-style: normal;
+}
+
+.roda4 {
+    display: flex;
+    list-style: none;
+    font-style: normal;
+}
+
+
+
+
+
+.quem_sou{
+    display: flex;
+    justify-content: center;
+    font-style: italic;}
+
+    .quem_sou_nav {
+        justify-content: space-around;
+        display: flex;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGhs1Ufvje8UGoZQjqMkyveOCg1WKAMaxjScvZDARXlsV6RCkcgFJrR2I9GIy8Tbte_g&usqp=CAU");
+        list-style: none;
+        padding: 20px;
+        height: 70px;
+        border-style: groove;
+        border-color: rgb(0, 0, 0);
+    }
+    .body_quem_sou{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGhs1Ufvje8UGoZQjqMkyveOCg1WKAMaxjScvZDARXlsV6RCkcgFJrR2I9GIy8Tbte_g&usqp=CAU");
+
+    }
+    .Apresentação{
+        display: flex;
+    justify-content: center;
+    font-style: normal;
+    }
+.casa{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+    .casa_1 {
+        background-image: url("casa1.jpg");
+        width: 300px;
+        height: 350px;
+        border-radius: 50px;
+    }
+    .casa_2 {
+        background-image: url("casa2.jpg");
+        width: 300px;
+        height: 350px;
+        border-radius: 50px;
+    }
+    .casa_3 {
+        background-image: url("casa3.jpg");
+        width: 300px;
+        height: 350px;
+        border-radius: 50px;
+    }
+
+    
+    
+    
+   
+    
