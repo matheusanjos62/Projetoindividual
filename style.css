@@ -301,20 +301,43 @@
 .gengibre_frase {
     display: flex;
     justify-content: center;
+
+}
+.texto_gengibre{
+    display: flex;
+    justify-content: center;
+
 }
 
 .div_gengibre-tutorial {
     display: flex;
-    justify-content: space-evenly;
-    background-size: cover;
+    justify-content: center;
+}
 
+.texto_gengibre {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    width: 50%;
+
+
+}
+
+.passo_gengibre {
+    display: flex;
+    justify-content: center;
 }
 
 .tutorial_boldo {
     display: flex;
     justify-content: center;
-    background-size: cover;
+    align-items: center;
 
+}
+
+.texto_boldo {
+    display: flex;
+    justify-content: center;
 }
 
 .boldo_frase {
@@ -588,6 +611,7 @@
     height: 500px;
     background-size: cover;
 }
+
 .video_2 {
     display: flex;
     width: 250px;
@@ -595,7 +619,8 @@
     background-size: cover;
     justify-content: center;
 }
-.video2{
+
+.video2 {
     display: flex;
     justify-content: center;
 }
