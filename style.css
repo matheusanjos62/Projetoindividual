@@ -2,36 +2,45 @@
     justify-content: space-between;
     display: flex;
     background-image: url("fundo.jpg");
-    list-style: none;
     padding: 20px;
     height: 70px;
     border-style: groove;
-    border-color: rgb(0, 0, 0);
+    border-color: rgb(11, 61, 0);
 }
 
-.item1 {
+
+
+
+
+
+.item1 :hover{
     display: flex;
     list-style: none;
     font-style: italic;
+    text-transform: lowercase;
 
 }
 
-.item2 {
+
+.item2 :hover{
     display: flex;
     list-style: none;
     font-style: italic;
+    text-transform: lowercase;
 }
 
-.item3 {
+.item3 :hover{
     display: flex;
-    list-style: none;
+    list-style:circle;
     font-style: italic;
+    text-transform: lowercase;
 }
 
-.item4 {
+.item4 :hover{
     display: flex;
     list-style: none;
     font-style: italic;
+    text-transform: lowercase;
 }
 
 
@@ -40,6 +49,8 @@
 .body {
     display: flexbox;
     background-image: url("fundo.jpg");
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -54,6 +65,9 @@
     justify-content: center;
     font-style: normal;
 }
+.Bem_vindo :hover{
+text-transform:uppercase;
+}
 
 .exemplos_plantas {
     display: flex;
@@ -61,115 +75,261 @@
     font-style: normal;
 }
 
+.container1{
+display: flex;
+justify-content: center;
+}
+
+
 
 .bloco1 {
-    display: flex;
-    justify-content: space-around;
-
+display: flexbox;
+    width: 300px;
+    height: 500px;
+    display: flexbox;
+    margin: 25px;  
 }
+
 
 .caixa_1 {
-    background-image: url("hortela-4-1.webp");
     width: 300px;
-    height: 350px;
-    border-radius: 50px;
+    height: 200px;
+    background-image: url(hortela-4-1.webp);
     background-size: cover;
-
-
-
+    border-radius: 10%;
 }
 
+
+
+
+
+.bloco2 {
+    display: flexbox;
+    width: 300px;
+    height: 500px;
+    display: flexbox;
+    margin: 25px;
+    background-image: f;
+    
+    }
 .caixa_2 {
-    background-image: url("malvadoreino.jpg");
     width: 300px;
-    height: 350px;
-    border-radius: 50px;
+    height: 200px;
+    background-image: url(malvadoreino.jpg);
     background-size: cover;
+    border-radius: 10%;
+
+
 
 }
 
+
+.bloco3 {
+    display: flexbox;
+    width: 300px;
+    height: 500px;
+    display: flexbox;
+    margin: 25px;
+    background-image: f;
+    
+    }
 .caixa_3 {
-    background-image: url("capim-limao.jpeg");
     width: 300px;
-    height: 350px;
-    border-radius: 50px;
+    height: 200px;
+    background-image: url(capim-limao.jpeg);
     background-size: cover;
+    border-radius: 10%;
+
+
 
 }
 
 
-.caixa_texto1 {
 
-    width: 300px;
-    height: 350px;
-    border-radius: 50px;
-}
+.container2{
+    display: flex;
+    justify-content: center;
+margin: 20px;
+    }
 
-.caixa_texto2 {
 
-    width: 300px;
-    height: 350px;
-    border-radius: 50px;
-}
 
-.caixa_texto3 {
-
-    width: 300px;
-    height: 350px;
-    border-radius: 50px;
-}
-
-.importancia1 {
+.caixa_texto1{
     background-image: url("istockphoto-1282490768-612x612.jpg");
     width: 300px;
     height: 350px;
     border-radius: 50px;
-    background-size: cover;
-
+    display: flexbox;
+    margin: 25px;
 }
 
-.importancia2 {
+
+
+
+.caixa_texto2{
     background-image: url("tomando-chá-de-manhã.jpg");
     width: 300px;
     height: 350px;
     border-radius: 50px;
-    background-size: cover;
-
+    display: flexbox;
+    margin: 25px;
 }
 
-.importancia3 {
+
+.caixa_texto3{
     background-image: url("espirro-menina-e1555528412244.jpg");
     width: 300px;
     height: 350px;
     border-radius: 50px;
     background-size: cover;
+    display: flexbox;
+    margin: 25px;
 }
 
-.importancia_textos {
+.containerfacil{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
 
+
+.blocofacil1{
+    background-image: url(gengibre.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
 
 }
 
-.texto1 {
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
+
+.caixa_facil1{
+    
+    width: 450px;
+    border-radius: 10%;
+    
 }
 
-.texto2 {
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
+
+.texto_facil1{
+display: flex;
+margin-top: 55%;
+}
+
+
+
+.blocofacil2{
+    background-image: url(boldo.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
     background-size: cover;
 }
 
-.texto3 {
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
+
+.caixa_facil2{
+    
+    width: 450px;
+    border-radius: 10%;
 }
+
+
+.texto_facil2{
+display: flex;
+margin-top: 55%;
+}
+
+
+.blocofacil3{
+    background-image: url(babosa.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+}
+
+
+.caixa_facil3{
+    
+    width: 450px;
+    border-radius: 10%;
+}
+
+
+.texto_facil3{
+display: flex;
+margin-top: 55%;
+}
+
+
+.blocofacil4{
+    background-image: url(erva-doce.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+}
+
+
+.caixa_facil4{
+    
+    width: 450px;
+    border-radius: 10%;
+}
+
+
+.texto_facil4{
+display: flex;
+margin-top: 55%;
+}
+
+.blocofacil5{
+    background-image: url(camomila006.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+    
+}
+
+.caixa_facil5{
+    width: 450px;
+    border-radius: 10%;
+    
+}
+
+
+.texto_facil5{
+    display: flex;
+    margin-top: 55%;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .facil1 {
     background-image: url("gengibre.jpg");
@@ -303,7 +463,8 @@
     justify-content: center;
 
 }
-.texto_gengibre{
+
+.texto_gengibre {
     display: flex;
     justify-content: center;
 
