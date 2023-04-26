@@ -8,8 +8,7 @@
     background-image: url("fundo.jpg");
     padding: 20px;
     height: 70px;
-    border-style: groove;
-    border-color: rgb(11, 61, 0);
+    
 }
 
 
@@ -18,31 +17,25 @@
 
 
 .item1 :hover {
-    display: flex;
-    list-style: none;
-    font-style: italic;
     text-transform: lowercase;
-
+    font-style: italic;
 }
 
 
 .item2 :hover {
-    display: flex;
-    list-style: none;
+    
     font-style: italic;
     text-transform: lowercase;
 }
 
 .item3 :hover {
-    display: flex;
-    list-style: circle;
+    
     font-style: italic;
     text-transform: lowercase;
 }
 
 .item4 :hover {
-    display: flex;
-    list-style: none;
+   
     font-style: italic;
     text-transform: lowercase;
 }
@@ -74,6 +67,11 @@
     justify-content: center;
     font-style: normal;
     margin-top: 5%;
+}
+
+.texto_importancia{
+    display: flex;
+    justify-content: center;
 }
 
 .Bem_vindo :hover {
