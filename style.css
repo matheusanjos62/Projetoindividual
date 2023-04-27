@@ -1,67 +1,78 @@
+/*tudo padronizado em uma font*/
 * {
     text-decoration: none;
+
 }
 
+/*menu da nav bar*/
 .menu {
     justify-content: space-between;
     display: flex;
-    background-image: url("fundo.jpg");
+    
     padding: 20px;
     height: 70px;
-    
+
 }
 
-
-
-
-
-
+/*itens da nav bar*/
+/*cultivo para viver*/
 .item1 :hover {
     text-transform: lowercase;
     font-style: italic;
 }
 
-
+/*tutorial*/
 .item2 :hover {
-    
+
     font-style: italic;
     text-transform: lowercase;
 }
 
+/*tempo*/
 .item3 :hover {
-    
+
     font-style: italic;
     text-transform: lowercase;
 }
 
+/*cadastro*/
 .item4 :hover {
-   
+
     font-style: italic;
     text-transform: lowercase;
 }
 
+/*quem sou*/
+.item5 :hover {
+    font-style: italic;
+    text-transform: lowercase;
+}
 
-
-
+/*Corpo do site*/
 .body {
     display: flexbox;
-    background-image: url("fundo.jpg");
+    background-image: url("pexels-koolshooters-6627072.jpg");
     margin: 0;
     padding: 0;
+    background-size:cover;
 
 }
 
-.apresentação {
-    display: flex;
-    justify-content: center;
-    font-style: normal;
-}
-
+/*tbem vindo home*/
 .Bem_vindo {
     display: flex;
     justify-content: center;
     font-style: normal;
 }
+
+/*texto apresentação home*/
+.apresentação {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+/*texto importancia do cultivo*/
 .Bem_vindo2 {
     display: flex;
     justify-content: center;
@@ -69,27 +80,27 @@
     margin-top: 5%;
 }
 
-.texto_importancia{
-    display: flex;
-    justify-content: center;
-}
 
+/*textos titulos crecentes animações */
 .Bem_vindo :hover {
     text-transform: uppercase;
 }
 
+/*cards de plantas em exemplo serao 3 no inicio da pagina(hortela-malva-capim)  */
 .exemplos_plantas {
     display: flex;
     justify-content: center;
     font-style: normal;
 }
 
+/*bloco plantas 3 exemplos*/
 .container1 {
     display: flex;
     justify-content: center;
 }
 
 
+/*card1  */
 
 .bloco1 {
     display: flexbox;
@@ -99,17 +110,20 @@
     margin: 25px;
 }
 
+/*card1  */
 .bloco1:hover {
     width: 310px;
     height: 110px;
     transition: 0.6s;
 }
 
+/*card1  */
 .bloco1:hover .caixa_1 {
     width: 310px;
     height: 300px;
 }
 
+/*card1  */
 .caixa_1 {
     width: 300px;
     height: 200px;
@@ -119,9 +133,7 @@
 }
 
 
-
-
-
+/*card2  */
 .bloco2 {
     display: flexbox;
     width: 300px;
@@ -132,6 +144,8 @@
 
 }
 
+/*card2  */
+
 .caixa_2 {
     width: 300px;
     height: 200px;
@@ -140,17 +154,22 @@
     border-radius: 10%;
 }
 
+/*card2  */
+
 .bloco2:hover {
     width: 310px;
     height: 510px;
     transition: 0.6s;
 }
 
+/*card2  */
+
 .bloco2:hover .caixa_2 {
     width: 310px;
     height: 300px;
 }
 
+/*card3  */
 
 .bloco3 {
     display: flexbox;
@@ -162,6 +181,8 @@
 
 }
 
+/*card3  */
+
 .caixa_3 {
     width: 300px;
     height: 200px;
@@ -170,17 +191,35 @@
     border-radius: 10%;
 }
 
+/*card3  */
+
 .bloco3:hover {
     width: 310px;
     height: 510px;
     transition: 0.6s;
 }
 
+/*card3  */
+
 .bloco3:hover .caixa_3 {
     width: 310px;
     height: 300px;
 }
 
+/*----------------------------------imagens pessoas doentes e melhorando -------------------------------------------------------------------*/
+/*texto importancia*/
+.texto_importancia {
+    display: flex;
+    justify-content: center;
+}
+
+/*texto importancia do cultivo animação*/
+.Bem_vindo2 :hover {
+    text-transform: uppercase;
+
+}
+
+/*bloco cards pessoas doentes*/
 
 .container2 {
     display: flex;
@@ -189,7 +228,7 @@
 }
 
 
-
+/* card pessoas doentes1*/
 .caixa_texto1 {
     background-image: url("istockphoto-1282490768-612x612.jpg");
     width: 300px;
@@ -201,7 +240,7 @@
 
 
 
-
+/* card pessoas doentes2*/
 .caixa_texto2 {
     background-image: url("tomando-chá-de-manhã.jpg");
     width: 300px;
@@ -211,7 +250,7 @@
     margin: 25px;
 }
 
-
+/* card pessoas doentes3*/
 .caixa_texto3 {
     background-image: url("espirro-menina-e1555528412244.jpg");
     width: 300px;
@@ -222,37 +261,43 @@
     margin: 25px;
 }
 
+/*----------------------------------plantas faceis de ter em casa -------------------------------------------------------------------*/
+
+/* bloco plantas faceis de ter em casa*/
 .containerfacil {
     display: flex;
     justify-content: space-evenly;
+
 }
 
-
+/* card gengibre*/
 .blocofacil1 {
     background-image: url(gengibre.jpg);
     width: 200px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
-
+}
+.blocofacil1:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
 }
 
-
+/* card gengibre*/
 .caixa_facil1 {
-
     width: 450px;
     border-radius: 10%;
-
 }
 
-
+/* card gengibre*/
 .texto_facil1 {
     display: flex;
     margin-top: 55%;
 }
 
 
-
+/* card boldo*/
 .blocofacil2 {
     background-image: url(boldo.jpg);
     width: 200px;
@@ -260,21 +305,26 @@
     border-radius: 10%;
     background-size: cover;
 }
+.blocofacil2:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
 
-
+/* card boldo*/
 .caixa_facil2 {
 
     width: 450px;
     border-radius: 10%;
 }
 
-
+/* card boldo*/
 .texto_facil2 {
     display: flex;
     margin-top: 55%;
 }
 
-
+/* card babosa*/
 .blocofacil3 {
     background-image: url(babosa.jpg);
     width: 200px;
@@ -282,21 +332,26 @@
     border-radius: 10%;
     background-size: cover;
 }
+.blocofacil3:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
 
-
+/* card babosa*/
 .caixa_facil3 {
 
     width: 450px;
     border-radius: 10%;
 }
 
-
+/* card babosa*/
 .texto_facil3 {
     display: flex;
     margin-top: 55%;
 }
 
-
+/* card ervadoce*/
 .blocofacil4 {
     background-image: url(erva-doce.jpg);
     width: 200px;
@@ -304,20 +359,25 @@
     border-radius: 10%;
     background-size: cover;
 }
+.blocofacil4:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
 
-
+/* card ervadoce*/
 .caixa_facil4 {
-
     width: 450px;
     border-radius: 10%;
 }
 
-
+/* card ervadoce*/
 .texto_facil4 {
     display: flex;
     margin-top: 55%;
 }
 
+/* card camomila*/
 .blocofacil5 {
     background-image: url(camomila006.jpg);
     width: 200px;
@@ -326,15 +386,111 @@
     background-size: cover;
 
 }
+.blocofacil5:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
 
+/* card camomila*/
 .caixa_facil5 {
     width: 450px;
     border-radius: 10%;
 
 }
 
-
+/* card camomila*/
 .texto_facil5 {
+    display: flex;
+    margin-top: 55%;
+
+}
+
+/* ---------------------------------------------segunda camada de facil--------------------------------------------------------------*/
+/* segunda camada de facil*/
+.containerfacil2 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* card camomila*/
+.blocofacil6 {
+    background-image: url(alecrim.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+
+}
+.blocofacil6:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card camomila*/
+.caixa_facil6 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card camomila*/
+.texto_facil6 {
+    display: flex;
+    margin-top: 55%;
+
+}
+
+.blocofacil7 {
+    background-image: url(alho.webp);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+
+}
+.blocofacil7:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card camomila*/
+.caixa_facil7 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card camomila*/
+.texto_facil7 {
+    display: flex;
+    margin-top: 55%;
+
+}
+
+.blocofacil8 {
+    background-image: url(Guaco.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+
+}
+.blocofacil8:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card camomila*/
+.caixa_facil8 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card camomila*/
+.texto_facil8 {
     display: flex;
     margin-top: 55%;
 
@@ -342,120 +498,104 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.facil1 {
-    background-image: url("gengibre.jpg");
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
+.blocofacil9 {
+    background-image: url(coentro-5.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
     background-size: cover;
 
 }
-
-.facil2 {
-    background-image: url("boldo.jpg");
+.blocofacil9:hover {
     width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    background-size: cover;
+    height: 250px;
+    transition: 0.6s;
+}
+
+
+/* card camomila*/
+.caixa_facil9 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card camomila*/
+.texto_facil9 {
+    display: flex;
+    margin-top: 55%;
 
 }
 
-.facil3 {
-    background-image: url("babosa.jpg");
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
+.blocofacil10 {
+    background-image: url(horta-como-plantar-agriao-nasturtium-officinale-cpt.jpg);
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
     background-size: cover;
+
 
 }
 
-.facil4 {
-    background-image: url("erva-doce.jpg");
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    background-size: cover;
+/* card camomila*/
+.caixa_facil10 {
+    width: 450px;
+    border-radius: 10%;
 
 }
 
-.facil5 {
-    background-image: url("camomila006.jpg");
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    background-size: cover;
+/* card camomila*/
+.texto_facil10 {
+    display: flex;
+    margin-top: 55%;
+
 
 }
-
-.facil6 {
-    background-image: url("alecrim.jpg");
+.blocofacil10:hover {
     width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    background-size: cover;
-
+    height: 250px;
+    transition: 0.6s;
+    
 }
 
-.facil7 {
-    background-image: url("horta-como-plantar-agriao-nasturtium-officinale-cpt.jpg");
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    background-size: cover;
+/*------------------------------------------------rodapé --------------------------------------------------------*/
 
+.rodape1{
+    margin-top: 20%;
+    display: flex;
+    
+    
+}
+#rodape1{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.facil8 {
-    background-image: url("cp_.webp");
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    background-size: cover;
 
-}
 
-.facil9 {
-    background-image: url("alho.webp");
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    background-size: cover;
 
-}
 
-.facil10 {
-    background-image: url("Guaco.jpg");
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    background-size: cover;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------rodapé --------------------------------------------------------*/
 .tutorial {
     display: flex;
     justify-content: center;
