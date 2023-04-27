@@ -8,9 +8,10 @@
 .menu {
     justify-content: space-between;
     display: flex;
-    
     padding: 20px;
     height: 70px;
+    
+    
 
 }
 
@@ -562,40 +563,69 @@
 .rodape1{
     margin-top: 20%;
     display: flex;
-    
-    
+    background-image: url(pexels-nikolina-12583002.jpg);
+    background-size: cover;
+    border-radius: 2%;
+    border-color: rgb(0, 0, 0);
+    border-style:ridge;
 }
 #rodape1{
     display: flex;
     justify-content: space-evenly;
 }
+.item1roda :hover{
+    text-transform: lowercase;
+    font-style: italic;
+}
 
+.item2roda :hover{
+    text-transform: lowercase;
+    font-style: italic;
+}
 
+.item3roda :hover{
+    text-transform: lowercase;
+    font-style: italic;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.item4roda :hover{
+    text-transform: lowercase;
+    font-style: italic;
+}
+.item5roda :hover{
+    text-transform: lowercase;
+    font-style: italic;
+}
 /*------------------------------------------------rodapé --------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------PAGINA TUTORIAL --------------------------------------------------------*/
+.bodytutorial{
+    background-image: url(pexels-cottonbro-studio-4505167.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flexbox;
+    
+}
+
+
+
 .tutorial {
     display: flex;
     justify-content: center;
