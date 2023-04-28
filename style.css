@@ -1,7 +1,8 @@
 /*tudo padronizado em uma font*/
 * {
     text-decoration: none;
-
+    margin: 0;
+    padding: 0;
 }
 
 /*menu da nav bar*/
@@ -623,8 +624,27 @@
     display: flexbox;
     
 }
+.gif1{
+justify-content: center;
+display: flex;
+}
 
-
+.aboborabloco{
+background-image: url(pexels-mathias-reding-10057784.jpg);
+background-size: cover;
+}
+.feijaobloco{
+background-color: black;
+background-size: cover;
+}
+.tutorial_feijao{
+    display: flex;
+    justify-content: center;
+}
+.div_feijao-tutorial{
+    display: flex;
+    justify-content: center;
+}
 
 .tutorial {
     display: flex;
