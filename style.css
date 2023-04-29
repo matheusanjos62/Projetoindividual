@@ -53,10 +53,11 @@
 /*Corpo do site*/
 .body {
     display: flexbox;
-    background-image: url("pexels-koolshooters-6627072.jpg");
+    background-image: url("pexels-pineapple-supply-co-192312.jpg");
     margin: 0;
     padding: 0;
-    background-size:cover;
+    background-size:contain;
+   
 
 }
 
@@ -232,31 +233,25 @@
 
 /* card pessoas doentes1*/
 .caixa_texto1 {
-    background-image: url("istockphoto-1282490768-612x612.jpg");
-    width: 300px;
-    height: 350px;
+    background-image: url("importancia1.png");
+    width: 600px;
+    height: 550px;
     border-radius: 50px;
     display: flexbox;
     margin: 25px;
 }
+
 
 
 
 /* card pessoas doentes2*/
-.caixa_texto2 {
-    background-image: url("tomando-chá-de-manhã.jpg");
-    width: 300px;
-    height: 350px;
-    border-radius: 50px;
-    display: flexbox;
-    margin: 25px;
-}
+
 
 /* card pessoas doentes3*/
 .caixa_texto3 {
-    background-image: url("espirro-menina-e1555528412244.jpg");
-    width: 300px;
-    height: 350px;
+    background-image: url("importancia2.png");
+    width: 600px;
+    height: 550px;
     border-radius: 50px;
     background-size: cover;
     display: flexbox;
@@ -274,8 +269,8 @@
 
 /* card gengibre*/
 .blocofacil1 {
-    background-image: url(gengibre.jpg);
-    width: 200px;
+    background-image: url(casa1.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -301,8 +296,8 @@
 
 /* card boldo*/
 .blocofacil2 {
-    background-image: url(boldo.jpg);
-    width: 200px;
+    background-image: url(casa2.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -328,8 +323,8 @@
 
 /* card babosa*/
 .blocofacil3 {
-    background-image: url(babosa.jpg);
-    width: 200px;
+    background-image: url(casa3.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -355,8 +350,8 @@
 
 /* card ervadoce*/
 .blocofacil4 {
-    background-image: url(erva-doce.jpg);
-    width: 200px;
+    background-image: url(mamao.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -381,8 +376,8 @@
 
 /* card camomila*/
 .blocofacil5 {
-    background-image: url(camomila006.jpg);
-    width: 200px;
+    background-image: url(boldocasa.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -418,8 +413,8 @@
 
 /* card camomila*/
 .blocofacil6 {
-    background-image: url(alecrim.jpg);
-    width: 200px;
+    background-image: url(banana.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -445,11 +440,11 @@
 }
 
 .blocofacil7 {
-    background-image: url(alho.webp);
-    width: 200px;
+    background-image: url(chuchu.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
-    background-size: cover;
+    background-size: 100%;
 
 }
 .blocofacil7:hover {
@@ -472,8 +467,8 @@
 }
 
 .blocofacil8 {
-    background-image: url(Guaco.jpg);
-    width: 200px;
+    background-image: url(milho.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -501,8 +496,8 @@
 
 
 .blocofacil9 {
-    background-image: url(coentro-5.jpg);
-    width: 200px;
+    background-image: url(fava.jpg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -529,8 +524,8 @@
 }
 
 .blocofacil10 {
-    background-image: url(horta-como-plantar-agriao-nasturtium-officinale-cpt.jpg);
-    width: 200px;
+    background-image: url(capim-limao.jpeg);
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -564,8 +559,8 @@
 .rodape1{
     margin-top: 20%;
     display: flex;
-    background-image: url(pexels-nikolina-12583002.jpg);
-    background-size: cover;
+    background-image: url(pexels-pineapple-supply-co-192312.jpg);
+    background-size: contain;
     border-radius: 2%;
     border-color: rgb(0, 0, 0);
     border-style:ridge;
@@ -602,49 +597,111 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------------PAGINA TUTORIAL --------------------------------------------------------*/
 .bodytutorial{
-    background-image: url(pexels-cottonbro-studio-4505167.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(pexels-pineapple-supply-co-192318.jpg);
+    background-size:contain;
     display: flexbox;
     
 }
 .gif1{
 justify-content: center;
 display: flex;
+
+
 }
 
 .aboborabloco{
 background-image: url(pexels-mathias-reding-10057784.jpg);
-background-size: cover;
+background-size: contain;
 }
+.tutorial_abobora{
+    display: flex;
+    justify-content: center;
+}
+.div_abobora-tutorial{
+    display: flex;
+    justify-content: center;
+}
+.texto_abobora{
+    display: flex;
+    justify-content: center;
+}
+
+
 .feijaobloco{
-background-color: black;
-background-size: cover;
-}
-.tutorial_feijao{
-    display: flex;
-    justify-content: center;
-}
-.div_feijao-tutorial{
-    display: flex;
-    justify-content: center;
-}
+    background-image: url(pexels-karolina-grabowska-4963963.jpg);
+    background-size: cover;
+    
+    
+    }
+    .tutorial_feijao{
+        display: flex;
+        justify-content: center;
+    }
+    .div_feijao-tutorial{
+        display: flex;
+        justify-content: center;
+    }
+    .passo_feijao{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+
+    .pimentaobloco{
+        background-image: url(pexels-jonathan-borba-15876326.jpg);
+        background-size: cover;
+        
+        
+        }
+        .tutorial_pimentao{
+            display: flex;
+            justify-content: center;
+        }
+        .div_pimentao-tutorial{
+            display: flex;
+            justify-content: center;
+        }
+        .passo_pimentao{
+            display: flex;
+            justify-content: center;
+            
+        }
+   
+
+        .mamaobloco{
+            background-image: url(pexels-jess-loiterton-4327695.jpg);
+            background-size: contain;
+            
+            
+            }
+            .tutorial_mamao{
+                display: flex;
+                justify-content: center;
+            }
+            .div_mamao-tutorial{
+                display: flex;
+                justify-content: center;
+            }
+            .passo_mamao{
+                display: flex;
+                justify-content: center;
+                
+            }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .tutorial {
     display: flex;
@@ -667,53 +724,15 @@ background-size: cover;
 .plantas_comida_imagem {
     display: flex;
     justify-content: center;
-
+    
 }
 
-.videos_adubo {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-}
-
-.adubo_1 {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    background-size: cover;
-
-}
-
-.gengibre_frase {
-    display: flex;
-    justify-content: center;
-
-}
-
-.texto_gengibre {
-    display: flex;
-    justify-content: center;
-
-}
-
-.div_gengibre-tutorial {
-    display: flex;
-    justify-content: center;
-}
-
-.texto_gengibre {
-    display: flex;
-    justify-content: center;
-    background-color: aqua;
-    width: 50%;
 
 
-}
 
-.passo_gengibre {
-    display: flex;
-    justify-content: center;
-}
+
+
+
 
 .tutorial_boldo {
     display: flex;
