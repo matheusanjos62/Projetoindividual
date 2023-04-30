@@ -11,8 +11,8 @@
     display: flex;
     padding: 20px;
     height: 70px;
-    
-    
+
+
 
 }
 
@@ -56,8 +56,8 @@
     background-image: url("pexels-pineapple-supply-co-192312.jpg");
     margin: 0;
     padding: 0;
-    background-size:contain;
-   
+    background-size: contain;
+
 
 }
 
@@ -275,6 +275,7 @@
     border-radius: 10%;
     background-size: cover;
 }
+
 .blocofacil1:hover {
     width: 300px;
     height: 250px;
@@ -302,6 +303,7 @@
     border-radius: 10%;
     background-size: cover;
 }
+
 .blocofacil2:hover {
     width: 300px;
     height: 250px;
@@ -329,6 +331,7 @@
     border-radius: 10%;
     background-size: cover;
 }
+
 .blocofacil3:hover {
     width: 300px;
     height: 250px;
@@ -356,6 +359,7 @@
     border-radius: 10%;
     background-size: cover;
 }
+
 .blocofacil4:hover {
     width: 300px;
     height: 250px;
@@ -383,6 +387,7 @@
     background-size: cover;
 
 }
+
 .blocofacil5:hover {
     width: 300px;
     height: 250px;
@@ -420,6 +425,7 @@
     background-size: cover;
 
 }
+
 .blocofacil6:hover {
     width: 300px;
     height: 250px;
@@ -447,6 +453,7 @@
     background-size: 100%;
 
 }
+
 .blocofacil7:hover {
     width: 300px;
     height: 250px;
@@ -474,6 +481,7 @@
     background-size: cover;
 
 }
+
 .blocofacil8:hover {
     width: 300px;
     height: 250px;
@@ -503,6 +511,7 @@
     background-size: cover;
 
 }
+
 .blocofacil9:hover {
     width: 300px;
     height: 250px;
@@ -547,321 +556,366 @@
 
 
 }
+
 .blocofacil10:hover {
     width: 300px;
     height: 250px;
     transition: 0.6s;
-    
+
 }
 
 /*------------------------------------------------rodapé --------------------------------------------------------*/
 
-.rodape1{
+.rodape1 {
     margin-top: 20%;
     display: flex;
     background-image: url(pexels-pineapple-supply-co-192312.jpg);
     background-size: contain;
     border-radius: 2%;
     border-color: rgb(0, 0, 0);
-    border-style:ridge;
+    border-style: ridge;
 }
-#rodape1{
+
+#rodape1 {
     display: flex;
     justify-content: space-evenly;
 }
-.item1roda :hover{
+
+.item1roda :hover {
     text-transform: lowercase;
     font-style: italic;
 }
 
-.item2roda :hover{
+.item2roda :hover {
     text-transform: lowercase;
     font-style: italic;
 }
 
-.item3roda :hover{
+.item3roda :hover {
     text-transform: lowercase;
     font-style: italic;
 }
 
-.item4roda :hover{
+.item4roda :hover {
     text-transform: lowercase;
     font-style: italic;
 }
-.item5roda :hover{
+
+.item5roda :hover {
     text-transform: lowercase;
     font-style: italic;
 }
+
 /*------------------------------------------------rodapé --------------------------------------------------------*/
 
 
 
 
 /*------------------------------------------------PAGINA TUTORIAL --------------------------------------------------------*/
-.bodytutorial{
+.bodytutorial {
     background-image: url(pexels-pineapple-supply-co-192318.jpg);
-    background-size:contain;
+    background-size: contain;
     display: flexbox;
-    
+
 }
-.gif1{
-justify-content: center;
-display: flex;
+
+.gif1 {
+    justify-content: center;
+    display: flex;
 
 
 }
+
 /*------------------------------------------------abobora --------------------------------------------------------*/
 
-.aboborabloco{
-background-image: url(pexels-mathias-reding-10057784.jpg);
-background-size: contain;
+.aboborabloco {
+    background-image: url(pexels-mathias-reding-10057784.jpg);
+    background-size: contain;
 }
-.tutorial_abobora{
+
+.tutorial_abobora {
     display: flex;
     justify-content: center;
 }
-.div_abobora-tutorial{
+
+.div_abobora-tutorial {
     display: flex;
     justify-content: center;
 }
-.texto_abobora{
+
+.texto_abobora {
     display: flex;
     justify-content: center;
 }
+
 /*------------------------------------------------feijao --------------------------------------------------------*/
 
 
-.feijaobloco{
+.feijaobloco {
     background-image: url(pexels-karolina-grabowska-4963963.jpg);
     background-size: cover;
-    
-    
-    }
-    .tutorial_feijao{
-        display: flex;
-        justify-content: center;
-    }
-    .div_feijao-tutorial{
-        display: flex;
-        justify-content: center;
-    }
-    .passo_feijao{
-        display: flex;
-        justify-content: center;
-        
-    }
+
+
+}
+
+.tutorial_feijao {
+    display: flex;
+    justify-content: center;
+}
+
+.div_feijao-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_feijao {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*------------------------------------------------pimentao --------------------------------------------------------*/
 
 
-    .pimentaobloco{
-        background-image: url(pexels-jonathan-borba-15876326.jpg);
-        background-size: cover;
-        
-        
-        }
-        .tutorial_pimentao{
-            display: flex;
-            justify-content: center;
-        }
-        .div_pimentao-tutorial{
-            display: flex;
-            justify-content: center;
-        }
-        .passo_pimentao{
-            display: flex;
-            justify-content: center;
-            
-        }
-   
+.pimentaobloco {
+    background-image: url(pexels-jonathan-borba-15876326.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_pimentao {
+    display: flex;
+    justify-content: center;
+}
+
+.div_pimentao-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_pimentao {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*------------------------------------------------mamao --------------------------------------------------------*/
 
-        .mamaobloco{
-            background-image: url(pexels-jess-loiterton-4327695.jpg);
-            background-size: contain;
-            
-            
-            }
-            .tutorial_mamao{
-                display: flex;
-                justify-content: center;
-            }
-            .div_mamao-tutorial{
-                display: flex;
-                justify-content: center;
-            }
-            .passo_mamao{
-                display: flex;
-                justify-content: center;
-                
-            }
+.mamaobloco {
+    background-image: url(pexels-jess-loiterton-4327695.jpg);
+    background-size: contain;
+
+
+}
+
+.tutorial_mamao {
+    display: flex;
+    justify-content: center;
+}
+
+.div_mamao-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_mamao {
+    display: flex;
+    justify-content: center;
+
+}
 
 /*------------------------------------------------boldo --------------------------------------------------------*/
 
-            .boldobloco{
-                background-image: url(boldoa.jpg);
-                background-size: cover;
-                
-                
-                }
-                .tutorial_boldo{
-                    display: flex;
-                    justify-content: center;
-                }
-                .div_boldo-tutorial{
-                    display: flex;
-                    justify-content: center;
-                }
-                .passo_boldo{
-                    display: flex;
-                    justify-content: center;
-                    
-                }
+.boldobloco {
+    background-image: url(boldoa.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_boldo {
+    display: flex;
+    justify-content: center;
+}
+
+.div_boldo-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_boldo {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*------------------------------------------------banana --------------------------------------------------------*/
 
 
-                .bananabloco{
-                    background-image: url(pexels-eva-bronzini-6148784.jpg);
-                    background-size: cover;
-                    
-                    
-                    }
-                    .tutorial_banana{
-                        display: flex;
-                        justify-content: center;
-                    }
-                    .div_banana-tutorial{
-                        display: flex;
-                        justify-content: center;
-                    }
-                    .passo_banana{
-                        display: flex;
-                        justify-content: center;
-                        
-                    }
+.bananabloco {
+    background-image: url(pexels-eva-bronzini-6148784.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_banana {
+    display: flex;
+    justify-content: center;
+}
+
+.div_banana-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_banana {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*------------------------------------------------chuchu --------------------------------------------------------*/
 
 
 
-                    .chuchubloco{
-                        background-image: url(chuchu.jpeg);
-                        background-size: cover;
-                        
-                        
-                        }
-                        .tutorial_chuchu{
-                            display: flex;
-                            justify-content: center;
-                        }
-                        .div_chuchu-tutorial{
-                            display: flex;
-                            justify-content: center;
-                        }
-                        .passo_chuchu{
-                            display: flex;
-                            justify-content: center;
-                            
-                        }
+.chuchubloco {
+    background-image: url(chuchu.jpeg);
+    background-size: cover;
+
+
+}
+
+.tutorial_chuchu {
+    display: flex;
+    justify-content: center;
+}
+
+.div_chuchu-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_chuchu {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*------------------------------------------------milho --------------------------------------------------------*/
 
 
-                        .milhobloco{
-                            background-image: url(pexels-marta-dzedyshko-3302501.jpg);
-                            background-size: contain;
-                            
-                            
-                            }
-                            .tutorial_milho{
-                                display: flex;
-                                justify-content: center;
-                            }
-                            .div_milho-tutorial{
-                                display: flex;
-                                justify-content: center;
-                            }
-                            .passo_milho{
-                                display: flex;
-                                justify-content: center;
-                                
-                            }
+.milhobloco {
+    background-image: url(pexels-marta-dzedyshko-3302501.jpg);
+    background-size: contain;
+
+
+}
+
+.tutorial_milho {
+    display: flex;
+    justify-content: center;
+}
+
+.div_milho-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_milho {
+    display: flex;
+    justify-content: center;
+
+}
 
 /*------------------------------------------------fava --------------------------------------------------------*/
 
-                            .favabloco{
-                                background-image: url(pexels-eiliv-aceron-6895914.jpg);
-                                background-size: cover;
-                                
-                                
-                                }
-                                .tutorial_fava{
-                                    display: flex;
-                                    justify-content: center;
-                                }
-                                .div_fava-tutorial{
-                                    display: flex;
-                                    justify-content: center;
-                                }
-                                .passo_fava{
-                                    display: flex;
-                                    justify-content: center;
-                                    
-                                }
+.favabloco {
+    background-image: url(pexels-eiliv-aceron-6895914.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_fava {
+    display: flex;
+    justify-content: center;
+}
+
+.div_fava-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_fava {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*------------------------------------------------capim --------------------------------------------------------*/
 
-                                .capimbloco{
-                                    background-image: url(Capim-limao-alivio-de-sintomas-de-gripes-e-problemas-estomacais.jpg);
-                                    background-size: cover;
-                                    
-                                    
-                                    }
-                                    .tutorial_capim{
-                                        display: flex;
-                                        justify-content: center;
-                                    }
-                                    .div_capim-tutorial{
-                                        display: flex;
-                                        justify-content: center;
-                                    }
-                                    .passo_capim{
-                                        display: flex;
-                                        justify-content: center;
-                                        
-                                    }
+.capimbloco {
+    background-image: url(Capim-limao-alivio-de-sintomas-de-gripes-e-problemas-estomacais.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_capim {
+    display: flex;
+    justify-content: center;
+}
+
+.div_capim-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_capim {
+    display: flex;
+    justify-content: center;
+
+}
 
 /*------------------------------------------------rodape tutorial --------------------------------------------------------*/
 
-                                    .rodape3{
-                                        
-                                        display: flex;
-                                        background-image: url(pexels-pineapple-supply-co-192312.jpg);
-                                        background-size: contain;
-                                        border-radius: 2%;
-                                        border-color: rgb(0, 0, 0);
-                                        border-style:ridge;
-                                        justify-content: space-evenly;                                    }
-                                    
-                                    .item1roda :hover{
-                                        text-transform: lowercase;
-                                        font-style: italic;
-                                    }
-                                    
-                                    .item2roda :hover{
-                                        text-transform: lowercase;
-                                        font-style: italic;
-                                    }
-                                    
-                                    .item3roda :hover{
-                                        text-transform: lowercase;
-                                        font-style: italic;
-                                    }
-                                    
-                                    .item4roda :hover{
-                                        text-transform: lowercase;
-                                        font-style: italic;
-                                    }
-                                    .item5roda :hover{
-                                        text-transform: lowercase;
-                                        font-style: italic;
-                                    }
+.rodape3 {
+
+    display: flex;
+    background-image: url(pexels-pineapple-supply-co-192312.jpg);
+    background-size: contain;
+    border-radius: 2%;
+    border-color: rgb(0, 0, 0);
+    border-style: ridge;
+    justify-content: space-evenly;
+}
+
+.item1roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item2roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item3roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item4roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item5roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
 
 
 
@@ -881,22 +935,11 @@ background-size: contain;
 .plantas_comida_imagem {
     display: flex;
     justify-content: center;
-    
+
 }
 
 
-/*------------------------------------------------rodape tutorial --------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
+/*------------------------------------------------rodape home --------------------------------------------------------*/
 
 
 .rodape {
@@ -937,6 +980,7 @@ background-size: contain;
 }
 
 
+/*------------------------------------------------quem sou --------------------------------------------------------*/
 
 
 
@@ -949,17 +993,17 @@ background-size: contain;
 .quem_sou_nav {
     justify-content: space-around;
     display: flex;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGhs1Ufvje8UGoZQjqMkyveOCg1WKAMaxjScvZDARXlsV6RCkcgFJrR2I9GIy8Tbte_g&usqp=CAU");
     list-style: none;
     padding: 20px;
-    height: 70px;
+    height: 60px;
     border-style: groove;
     border-color: rgb(0, 0, 0);
 }
 
 .body_quem_sou {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGhs1Ufvje8UGoZQjqMkyveOCg1WKAMaxjScvZDARXlsV6RCkcgFJrR2I9GIy8Tbte_g&usqp=CAU");
+    background-image: url("pexels-pineapple-supply-co-192312.jpg");
     display: flexbox;
+    background-size: contain;
 
 
 }
@@ -971,33 +1015,41 @@ background-size: contain;
     font-style: normal;
 }
 
+
+.foto1 {
+    display: flex;
+    justify-content: center;
+
+
+}
+
 .casa {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 
 
 .casa_1 {
     background-image: url("casa1.jpg");
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
     border-radius: 20px;
 }
 
 .casa_2 {
     background-image: url("casa2.jpg");
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
     border-radius: 20px;
 }
 
 .casa_3 {
     background-image: url("mamao.jpg");
-    width: 239px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
     justify-content: end;
     border-radius: 20px;
@@ -1005,41 +1057,39 @@ background-size: contain;
 
 .casa_4 {
     background-image: url("boldocasa.jpg");
-    width: 239px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
     border-radius: 20px;
 }
 
 .casa_5 {
     background-image: url("banana.jpg");
-    width: 239px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
     border-radius: 20px;
 }
 
 .casa_6 {
     background-image: url("abacatecasa.jpg");
-    width: 239px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
     justify-content: end;
     border-radius: 20px;
 }
 
 
-.foto1 {
-    display: flex;
-    justify-content: center;
-}
+
 
 .imagem_foto1 {
     display: flex;
     background-image: url("matheus11.jpg");
-    width: 300px;
-    height: 500px;
+    width: 500px;
+    height: 700px;
     background-size: cover;
+    border-radius: 20%;
 }
 
 .video1 {
@@ -1050,9 +1100,10 @@ background-size: contain;
 
 .video_1 {
     display: flex;
-    width: 250px;
-    height: 500px;
-    background-size: cover;
+    width: 550px;
+    height: 800px;
+    justify-content: center;
+
 }
 
 .video_2 {
@@ -1067,6 +1118,49 @@ background-size: contain;
     display: flex;
     justify-content: center;
 }
+
+
+
+.imagenssertao {
+    display: flex;
+
+    justify-content: center;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    right: 80px;
+}
+
+.imagenssertao2 {
+    display: flex;
+
+    justify-content: center;
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    right: 80px;
+}
+
+.imagenssertao3 {
+    display: flex;
+
+    justify-content: center;
+}
+
+.img3 {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    right: 100px;
+}
+
+
 
 .redes {
     justify-content: center;
