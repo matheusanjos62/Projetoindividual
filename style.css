@@ -610,6 +610,7 @@ display: flex;
 
 
 }
+/*------------------------------------------------abobora --------------------------------------------------------*/
 
 .aboborabloco{
 background-image: url(pexels-mathias-reding-10057784.jpg);
@@ -627,6 +628,7 @@ background-size: contain;
     display: flex;
     justify-content: center;
 }
+/*------------------------------------------------feijao --------------------------------------------------------*/
 
 
 .feijaobloco{
@@ -648,6 +650,7 @@ background-size: contain;
         justify-content: center;
         
     }
+/*------------------------------------------------pimentao --------------------------------------------------------*/
 
 
     .pimentaobloco{
@@ -670,6 +673,7 @@ background-size: contain;
             
         }
    
+/*------------------------------------------------mamao --------------------------------------------------------*/
 
         .mamaobloco{
             background-image: url(pexels-jess-loiterton-4327695.jpg);
@@ -691,14 +695,173 @@ background-size: contain;
                 
             }
 
+/*------------------------------------------------boldo --------------------------------------------------------*/
+
+            .boldobloco{
+                background-image: url(boldoa.jpg);
+                background-size: cover;
+                
+                
+                }
+                .tutorial_boldo{
+                    display: flex;
+                    justify-content: center;
+                }
+                .div_boldo-tutorial{
+                    display: flex;
+                    justify-content: center;
+                }
+                .passo_boldo{
+                    display: flex;
+                    justify-content: center;
+                    
+                }
+/*------------------------------------------------banana --------------------------------------------------------*/
+
+
+                .bananabloco{
+                    background-image: url(pexels-eva-bronzini-6148784.jpg);
+                    background-size: cover;
+                    
+                    
+                    }
+                    .tutorial_banana{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .div_banana-tutorial{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .passo_banana{
+                        display: flex;
+                        justify-content: center;
+                        
+                    }
+/*------------------------------------------------chuchu --------------------------------------------------------*/
 
 
 
+                    .chuchubloco{
+                        background-image: url(chuchu.jpeg);
+                        background-size: cover;
+                        
+                        
+                        }
+                        .tutorial_chuchu{
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .div_chuchu-tutorial{
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .passo_chuchu{
+                            display: flex;
+                            justify-content: center;
+                            
+                        }
+/*------------------------------------------------milho --------------------------------------------------------*/
 
 
+                        .milhobloco{
+                            background-image: url(pexels-marta-dzedyshko-3302501.jpg);
+                            background-size: contain;
+                            
+                            
+                            }
+                            .tutorial_milho{
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .div_milho-tutorial{
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .passo_milho{
+                                display: flex;
+                                justify-content: center;
+                                
+                            }
 
+/*------------------------------------------------fava --------------------------------------------------------*/
 
+                            .favabloco{
+                                background-image: url(pexels-eiliv-aceron-6895914.jpg);
+                                background-size: cover;
+                                
+                                
+                                }
+                                .tutorial_fava{
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                .div_fava-tutorial{
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                .passo_fava{
+                                    display: flex;
+                                    justify-content: center;
+                                    
+                                }
+/*------------------------------------------------capim --------------------------------------------------------*/
 
+                                .capimbloco{
+                                    background-image: url(Capim-limao-alivio-de-sintomas-de-gripes-e-problemas-estomacais.jpg);
+                                    background-size: cover;
+                                    
+                                    
+                                    }
+                                    .tutorial_capim{
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    .div_capim-tutorial{
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    .passo_capim{
+                                        display: flex;
+                                        justify-content: center;
+                                        
+                                    }
+
+/*------------------------------------------------rodape tutorial --------------------------------------------------------*/
+
+                                    .rodape3{
+                                        
+                                        display: flex;
+                                        background-image: url(pexels-pineapple-supply-co-192312.jpg);
+                                        background-size: contain;
+                                        border-radius: 2%;
+                                        border-color: rgb(0, 0, 0);
+                                        border-style:ridge;
+                                        justify-content: space-evenly;                                    }
+                                    
+                                    .item1roda :hover{
+                                        text-transform: lowercase;
+                                        font-style: italic;
+                                    }
+                                    
+                                    .item2roda :hover{
+                                        text-transform: lowercase;
+                                        font-style: italic;
+                                    }
+                                    
+                                    .item3roda :hover{
+                                        text-transform: lowercase;
+                                        font-style: italic;
+                                    }
+                                    
+                                    .item4roda :hover{
+                                        text-transform: lowercase;
+                                        font-style: italic;
+                                    }
+                                    .item5roda :hover{
+                                        text-transform: lowercase;
+                                        font-style: italic;
+                                    }
 
 
 
@@ -715,12 +878,6 @@ background-size: contain;
     font-style: normal;
 }
 
-.video_adubo {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-}
-
 .plantas_comida_imagem {
     display: flex;
     justify-content: center;
@@ -728,135 +885,15 @@ background-size: contain;
 }
 
 
+/*------------------------------------------------rodape tutorial --------------------------------------------------------*/
 
 
 
 
 
 
-.tutorial_boldo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.texto_boldo {
-    display: flex;
-    justify-content: center;
-}
-
-.boldo_frase {
-    display: flex;
-    justify-content: center;
-
-}
-
-.babosa_frase {
-    display: flex;
-    justify-content: center;
-
-}
-
-.tutorial_babosa {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-
-}
-
-.tutorial_erva_doce {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-
-}
-
-.erva_frase {
-    display: flex;
-    justify-content: center;
-
-}
-
-.tutorial_camomila {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-
-}
-
-.camomila_frase {
-    display: flex;
-    justify-content: center;
-
-}
-
-.tutorial_alecrim {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-
-}
-
-.alecrim_frase {
-    display: flex;
-    justify-content: center;
-
-}
-
-.tutorial_agriao {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-
-}
-
-.agriao_frase {
-    display: flex;
-    justify-content: center;
-
-}
-
-.tutorial_coentro {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-
-}
-
-.coentro_frase {
-    display: flex;
-    justify-content: center;
-
-}
-
-.tutorial_alho {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-
-}
-
-.alho_frase {
-    display: flex;
-    justify-content: center;
 
 
-}
-
-.tutorial_guaco {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-
-
-}
-
-.guaco_frase {
-    display: flex;
-    justify-content: center;
-
-}
 
 
 
