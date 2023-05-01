@@ -1171,64 +1171,117 @@
     justify-content: center;
 
 }
+
 /*------------------------------------------------login-cadastro --------------------------------------------------------*/
 
-.blocologin{
+.blocologin {
     background-color: rgb(255, 255, 255);
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     background-image: url(pexels-alexander-grey-9841265.jpg);
     background-size: cover;
     position: absolute;
     top: 50%;
     left: 30%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 60px;
     border-radius: 15%;
     color: rgb(17, 255, 0);
     width: 200px;
-    
+
 }
-.input_login{
+
+.input_login {
     border-radius: 10%;
     width: 99%;
     padding: 3px;
 }
-.botao_login{
+
+.botao_login {
     background-color: rgb(17, 255, 0);
     padding: 15px;
     border-radius: 15px;
     width: 100%;
-    
+
 }
 
-.blococadastro{
+.blococadastro {
     background-color: rgb(255, 255, 255);
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     background-image: url(pexels-alexander-grey-9841265.jpg);
     background-size: cover;
     position: absolute;
     top: 50%;
     left: 70%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 60px;
     border-radius: 15%;
     color: rgb(17, 255, 0);
     width: 200px;
-    
+
 }
-.input_cadastro{
+
+.input_cadastro {
     border-radius: 10%;
     width: 99%;
     padding: 3px;
 }
-.botao_cadastro{
+
+.botao_cadastro {
     background-color: rgb(17, 255, 0);
     padding: 15px;
     border-radius: 15px;
     width: 100%;
-    
+
 }
-.bodylogin_cadastro{
+
+.bodylogin_cadastro {
     background-image: url(pexels-cottonbro-studio-9709226.jpg);
     background-size: cover;
 }
+
+/*------------------------------------------------Simulador --------------------------------------------------------*/
+
+.blocosimula1 {
+    background-image: url(pexels-kindel-media-7457523.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 15%;
+    color: rgb(255, 255, 255);
+    width: 300px;
+
+}
+
+
+#clima {
+    width: 100%;
+    padding: 2%;
+}
+
+#rega {
+    width: 100%;
+    padding: 2%;
+}
+
+#espaço {
+    width: 100%;
+    padding: 2%;
+}
+
+#luz_diaria {
+    width: 100%;
+    padding: 2%;
+}
+
+
+
+.bodysimulador{
+    background-image: url(pexels-tijana-drndarski-3252140.jpg);
+    background-size: cover;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
