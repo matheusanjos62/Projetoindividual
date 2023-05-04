@@ -56,7 +56,7 @@
                 <p style="color: rgb(255, 255, 255);">Rega:</p><select name="Rega" id="rega">
                     <option value="Vazio"></option>
                     <option value="1">1</option>
-                    
+
                     <option value="3">3</option>
                 </select><br><br>
 
@@ -83,7 +83,7 @@
 
 
 
-<img src="" alt="">
+        <img src="" alt="">
 
 
 
@@ -102,18 +102,31 @@
         if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="planta-cenario-1-suculenta.jpg">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adapatar com seu cenario sera á Suculenta!<br> Pois ela ira aguentar altas temperaturas,sua rega precisa ser bem espassada, nao nescessita de muito espaço e gosta de luz<br></p></h1></div>`
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera á Suculenta!<br> Pois ela ira aguentar altas temperaturas,sua rega precisa ser bem espassada, nao nescessita de muito espaço e gosta de luz<br></p></h1></div>`
         }
 
         // CACTO
-        else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Muito"){
+        else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="planta-cenario2-cacto.jpg">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adapatar com seu cenario sera o Cacto!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de muito espaço e gosta de luz<br></p></h1></div>`
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o Cacto!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de muito espaço e gosta de luz<br></p></h1></div>`
         }
-    
+        else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="Costela-de-adão-cenario3.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Costela de Adão!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de muito espaço e nao precisa de muita luz do sol<br></p></h1></div>`
+        }
+        else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="Antúrio-cenario4.jpg">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o Antúrio!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de pouco espaço e nao precisa de muita luz do sol<br></p></h1></div>`
+        }
 
-
+        else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="como-cuidar-da-jiboia-verde.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Jiboia!<br> Pois ele ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Muito espaço por suas ramas e pode se adapatar com muita luz <br></p></h1></div>`
+        }
 
 
 
