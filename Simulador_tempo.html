@@ -10,7 +10,7 @@
 </head>
 
 <body class="bodysimulador">
-   
+
     <nav id="menu" class="menu">
 
         <ul class="item1">
@@ -41,67 +41,150 @@
     </nav>
 
 
+    <div class="caixaG">
+
+
+        <div class="blocosimula1">
+            <h2>Simule qual especie de planta se encaixa melhor com seu espaço</h2><br>
+            <div class="Simulador1">
+                <p style="color: rgb(255, 255, 255);">Clima:</p> <select name="Clima" id="clima">
+                    <option value="Vazio"></option>
+                    <option value="Quente">Quente</option>
+                    <option value="Frio">Frio</option>
+                </select><br><br>
+
+                <p style="color: rgb(255, 255, 255);">Rega:</p><select name="Rega" id="rega">
+                    <option value="Vazio"></option>
+                    <option value="1">1</option>
+                    
+                    <option value="3">3</option>
+                </select><br><br>
+
+                <p style="color: rgb(255, 255, 255);">Espaço:</p><select name="Espaço" id="espaço">
+                    <option value="Vazio"></option>
+                    <option value="Pouco">Pouco</option>
+                    <option value="Muito">Muito</option>
+                </select><br><br>
+
+                <p style="color: rgb(255, 255, 255);">Luz Diaria:</p><select name="Luz" id="luz_diaria">
+                    <option value="Vazio"></option>
+                    <option value="Pouco">Pouco</option>
+                    <option value="Muito">Muito</option>
+                </select><br><br>
+
+                <button onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">Veja</button>
+
+                <!-- <div id="div_mensagem"></div> -->
+
+            </div>
+        </div>
+        <div id="div_mensagem"></div>
 
 
 
-    <div class="blocosimula1">
-        <h2>Simule qual especie de planta se encaixa melhor com seu espaço</h2><br>
-        <div class="Simulador1">
-            <p style="color: rgb(255, 255, 255);">Clima:</p> <select name="Clima" id="clima">
-                <option value="Vazio"></option>
-                <option value="Ensolarado">Quente</option>
-                <option value="Frio">Frio</option>
-                <option value="Equilibrado">Equilibrado</option>
-            </select><br><br>
 
-            <p style="color: rgb(255, 255, 255);">Rega:</p><select name="Rega" id="rega">
-                <option value="Vazio"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select><br><br>
-
-            <p style="color: rgb(255, 255, 255);">Espaço:</p><select name="Espaço" id="espaço">
-                <option value="Vazio"></option>
-                <option value="Pouco">Pouco</option>
-                <option value="Pouco">Muito</option>
-            </select><br><br>
-
-            <p style="color: rgb(255, 255, 255);">Luz Diaria:</p><select name="Luz" id="luz_diaria">
-                <option value="Vazio"></option>
-                <option value="pLuz">Pouco</option>
-                <option value="Mluz">Muito</option>
-            </select><br><br></div>
-        <button  onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">Veja</button>
-
-            <div id="div_mensagem"></div>
-
-    </div>
-    </div>
-
-
+<img src="" alt="">
 
 
 
 </body>
+
 </html>
 <script>
 
-function veja(){
-var clima=document.querySelector(`#clima`)
-var rega=document.querySelector(`#rega`)
-var espaço=document.querySelector(`#espaço`)
-var luz_diaria=document.querySelector(`#luz_diaria`)
+    function veja() {
+        var clima1 = clima.value;
+        var rega2 = rega.value;
+        var espaço3 = espaço.value;
+        var luz_diaria4 = luz_diaria.value;
 
-    if(rega="1"){
-        div_mensagem.innerHTML="Voce rega sua planta 1 vez na semana"
+        // SUCULENTA
+        if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="planta-cenario-1-suculenta.jpg">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adapatar com seu cenario sera á Suculenta!<br> Pois ela ira aguentar altas temperaturas,sua rega precisa ser bem espassada, nao nescessita de muito espaço e gosta de luz<br></p></h1></div>`
+        }
+
+        // CACTO
+        else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Muito"){
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="planta-cenario2-cacto.jpg">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adapatar com seu cenario sera o Cacto!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de muito espaço e gosta de luz<br></p></h1></div>`
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-
-}
-
-
-
-
 
 
 
