@@ -11,7 +11,8 @@
     display: flex;
     padding: 20px;
     height: 70px;
-
+    list-style: none;
+    list-style: none;
 
 
 }
@@ -574,6 +575,7 @@
     border-radius: 2%;
     border-color: rgb(0, 0, 0);
     border-style: ridge;
+    list-style: none;
 }
 
 #rodape1 {
@@ -890,6 +892,7 @@
     border-color: rgb(0, 0, 0);
     border-style: ridge;
     justify-content: space-evenly;
+    list-style: none;
 }
 
 .item1roda :hover {
@@ -951,6 +954,7 @@
     height: 90px;
     border-style: groove;
     border-color: rgb(0, 0, 0);
+    list-style: none;
 
 }
 
@@ -998,6 +1002,7 @@
     height: 60px;
     border-style: groove;
     border-color: rgb(0, 0, 0);
+    list-style: none;
 }
 
 .body_quem_sou {
@@ -1249,7 +1254,7 @@
     background-size: cover;
     padding: 60px;
     border-radius: 15%;
-    color: rgb(255, 255, 255);
+    color: lawngreen;
     width: 300px;
 
 }
@@ -1258,23 +1263,29 @@
 #clima  {
     width: 100%;
     padding: 2%;
-    
+    background-color:lawngreen;
 
 }
 
 #rega {
     width: 100%;
     padding: 2%;
+    background-color:lawngreen;
+
 }
 
 #espaço {
     width: 100%;
     padding: 2%;
+    background-color:lawngreen;
+
 }
 
 #luz_diaria {
     width: 100%;
     padding: 2%;
+    background-color:lawngreen;
+
 }
 
 

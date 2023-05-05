@@ -47,32 +47,34 @@
         <div class="blocosimula1">
             <h2>Simule qual especie de planta se encaixa melhor com seu espaço</h2><br>
             <div class="Simulador1">
-                <p style="color: rgb(255, 255, 255);">Clima:</p> <select name="Clima" id="clima">
-                    <option value="Vazio"></option>
+                <p style="color: lawngreen;"></p>
+                 <select name="Clima" id="clima">
+                    <option value="Vazio">Qual o clima de sua região?</option>
                     <option value="Quente">Quente</option>
                     <option value="Frio">Frio</option>
                 </select><br><br>
 
-                <p style="color: rgb(255, 255, 255);">Rega:</p><select name="Rega" id="rega">
-                    <option value="Vazio"></option>
+                
+                <select name="Rega" id="rega">
+                    <option value="Vazio">Qual sua disponibillidade de regar</option>
                     <option value="1">1</option>
 
                     <option value="3">3</option>
                 </select><br><br>
 
-                <p style="color: rgb(255, 255, 255);">Espaço:</p><select name="Espaço" id="espaço">
-                    <option value="Vazio"></option>
+                <select name="Espaço" id="espaço">
+                    <option value="Vazio">Qual seu espaço de plantio?</option>
                     <option value="Pouco">Pouco</option>
                     <option value="Muito">Muito</option>
                 </select><br><br>
 
-                <p style="color: rgb(255, 255, 255);">Luz Diaria:</p><select name="Luz" id="luz_diaria">
-                    <option value="Vazio"></option>
+                <select name="Luz" id="luz_diaria">
+                    <option value="Vazio">Quanto de luz sua planta irá pegar?</option>
                     <option value="Pouco">Pouco</option>
                     <option value="Muito">Muito</option>
                 </select><br><br>
 
-                <button onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">Veja</button>
+                <button onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">QUAL PLANTA COMBINA COM VOCÊ</button>
 
                 <!-- <div id="div_mensagem"></div> -->
 
@@ -102,7 +104,7 @@
         if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="planta-cenario-1-suculenta.jpg">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera á Suculenta!<br> Pois ela ira aguentar altas temperaturas,sua rega precisa ser bem espassada, nao nescessita de muito espaço e gosta de luz<br></p></h1></div>`
+            </div> <h1><p><div class="texto1" style="color: lawngreen; background-color: black;">A planta que irá se adaptar com seu cenario sera á Suculenta!<br> Pois ela ira aguentar altas temperaturas,sua rega precisa ser bem espassada, nao nescessita de muito espaço e gosta de luz<br></p></h1></div>`
         }
 
         // CACTO
@@ -111,39 +113,106 @@
             <div class="imagemjs"><img src="planta-cenario2-cacto.jpg">
             </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o Cacto!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de muito espaço e gosta de luz<br></p></h1></div>`
         }
+                // COSTELA DE ADAO
+
         else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="Costela-de-adão-cenario3.webp">
             </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Costela de Adão!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de muito espaço e nao precisa de muita luz do sol<br></p></h1></div>`
         }
+                // ANTURIO
+
         else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="Antúrio-cenario4.jpg">
             </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o Antúrio!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de pouco espaço e nao precisa de muita luz do sol<br></p></h1></div>`
         }
+        // JIBOIA
 
         else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="como-cuidar-da-jiboia-verde.webp">
             </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Jiboia!<br> Pois ele ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Muito espaço por suas ramas e pode se adapatar com muita luz <br></p></h1></div>`
         }
+                // Zamioculca
 
+        else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="zamioculca-zamiifolia_2nd.jpg">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Zamioculca!<br> Pois ela ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Muito espaço por suas ramas e pode se adapatar com pouca luz solar<br></p></h1></div>`
+        }
+                // ASPARGO
 
+        else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="aspargo-pluma-4-carol-costa.jpg">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Aspargo-pluma!<br> Pois ela ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Pouco espaço e pode se adapatar com muita luz solar <br></p></h1></div>`
+        }
+        // Aglaonema
 
+        else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="66c1ec8c-00fd-4e1f-962b-d47084ae0c40.png">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Aglaonema!<br> Pois ela ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Pouco espaço e pode se adapatar com Pouca luz solar <br></p></h1></div>`
+        }
+                // Cróton
 
+        else if (clima1 == "Frio" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="muda_de_croton_arbusto_colorido_308_1_20190611093729.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Cróton<br> Pois ela ira aguentar sobras,sua rega nao nescessitará de excesso, nescessita de Muito espaço e pode se adapatar com Muita luz solar tambem<br></p></h1></div>`
+        }
+        // Palmeira Areca
 
+        else if (clima1 == "Frio" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="areca-bambu-em-vaso.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Palmeira Areca <br> Pois ela ira ficar mais vistosa  em sobras,sua rega nao nescessitará de excesso, nescessita de Muito espaço e pode se adapatar com Pouca luz solar <br></p></h1></div>`
+        }
+        // Pau dágua
 
+        else if (clima1 == "Frio" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="dracena_pau_d_agua_pt24_361_1_20200909135439.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o Pau dágua <br> Pois ele fica bem com sombra e frio,sua rega nao nescessitará de excesso, nescessita de Pouco espaço e pode se adapatar com Muita luz solar <br></p></h1></div>`
+        }
+        // Orquídeas
 
+        else if (clima1 == "Frio" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="photo_5e98a23588816.jpeg.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera as Orquídeas<br> Pois elas ficam bem com sombra,sua rega nao nescessitará de excesso, nescessita de Pouco espaço e pode se adapatar com Pouca luz solar <br></p></h1></div>`
+        }
 
+        // lirios
 
+        else if (clima1 == "Frio" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="lirio_da_paz_florido_513_1_ac34e8b10b129e739c5a51f639005922.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera os lirios<br> Pois elas ficam bem com sombra,sua rega deverá ser de 3 a 4 vezes por semana, nescessita de Muito espaço e pode se adapatar com Muita luz solar <br></p></h1></div>`
+        }
+        // Bromelia
 
+        else if (clima1 == "Frio" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="bromelia-2-819x1024.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Bromelia<br> Pois elas ficam bem com sombra,sua rega deverá ser de 3 a 4 vezes por semana, nescessita de Muito espaço e pode se adapatar com Muita luz solar <br></p></h1></div>`
+        }
 
+        // bambu da sorte
 
+        else if (clima1 == "Frio" && rega2 == "3" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="Bambu-da-sorte-Odin-Cachepo-Pequeno-Preto_1200x1200.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o bambu da sorte<br> Pois ele ficam bem com sombra,sua rega deverá ser alta ou cultivar dentro de agua, nescessita de Pouco espaço e pode se adapatar com Muita luz solar <br></p></h1></div>`
+        }
+                // Peperômia
 
-
-
-
-
+        else if (clima1 == "Frio" && rega2 == "3" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
+            div_mensagem.innerHTML = `<div class="caixamedia">
+            <div class="imagemjs"><img src="decoracao-com-peperomia-melancia-pinterest-1.webp">
+            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Peperômia<br> Pois ela ficam bem com sombra,sua rega pode ser alta, nescessita de Pouco espaço e pode se adapatar com Pouca luz solar <br></p></h1></div>`
+        }
 
 
 
