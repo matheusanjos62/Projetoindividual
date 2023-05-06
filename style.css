@@ -212,7 +212,7 @@
     height: 300px;
 }
 
-/*----------------------------------imagens pessoas doentes e melhorando -------------------------------------------------------------------*/
+/*----------------------------------importancia-------------------------------------------------------------------*/
 /*texto importancia*/
 .texto_importancia {
     display: flex;
@@ -617,7 +617,7 @@
 
 /*------------------------------------------------PAGINA TUTORIAL --------------------------------------------------------*/
 .bodytutorial {
-    background-image: url(pexels-pineapple-supply-co-192318.jpg);
+    background-image: url(pexels-pineapple-supply-co-192312.jpg);
     background-size: contain;
     display: flexbox;
 
