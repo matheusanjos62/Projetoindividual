@@ -40,7 +40,6 @@
         </ul>
     </nav>
 
-
     <div class="caixaG">
 
 
@@ -48,33 +47,33 @@
             <h2>Simule qual especie de planta se encaixa melhor com seu espaço</h2><br>
             <div class="Simulador1">
                 <p style="color: lawngreen;"></p>
-                 <select name="Clima" id="clima">
+                <select name="Clima" id="clima">
                     <option value="Vazio">Qual o clima de sua região?</option>
-                    <option value="Quente">Quente</option>
-                    <option value="Frio">Frio</option>
+                    <option value="Quente">Sempre quente</option>
+                    <option value="Frio">Maior parte dos dias frio</option>
                 </select><br><br>
 
-                
+
                 <select name="Rega" id="rega">
                     <option value="Vazio">Qual sua disponibillidade de regar</option>
-                    <option value="1">1</option>
-
-                    <option value="3">3</option>
+                    <option value="1">Tenho pouco tempo para dar atenção</option>
+                    <option value="3">Tenho muito tempo para me dedicar</option>
                 </select><br><br>
 
                 <select name="Espaço" id="espaço">
                     <option value="Vazio">Qual seu espaço de plantio?</option>
-                    <option value="Pouco">Pouco</option>
-                    <option value="Muito">Muito</option>
+                    <option value="Pouco">Pouco espaço em casa</option>
+                    <option value="Muito">Muito espaço em casa</option>
                 </select><br><br>
 
                 <select name="Luz" id="luz_diaria">
                     <option value="Vazio">Quanto de luz sua planta irá pegar?</option>
-                    <option value="Pouco">Pouco</option>
-                    <option value="Muito">Muito</option>
+                    <option value="Pouco">Onde moro nao tenho abundancia de luz</option>
+                    <option value="Muito">Luz nao será problema!</option>
                 </select><br><br>
 
-                <button onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">QUAL PLANTA COMBINA COM VOCÊ</button>
+                <button onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">QUAL PLANTA COMBINA
+                    COM VOCÊ</button>
 
                 <!-- <div id="div_mensagem"></div> -->
 
@@ -85,7 +84,7 @@
 
 
 
-        <img src="" alt="">
+       
 
 
 
@@ -104,84 +103,210 @@
         if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="planta-cenario-1-suculenta.jpg">
-            </div> <h1><p><div class="texto1" style="color: lawngreen; background-color: black;">A planta que irá se adaptar com seu cenario sera á Suculenta!<br> Pois ela ira aguentar altas temperaturas,sua rega precisa ser bem espassada, nao nescessita de muito espaço e gosta de luz<br></p></h1></div>`
+            </div> <h3><p><div class="texto1" style="color: white;">A planta que irá se adaptar com seu cenario sera á Suculenta!<br><br> Plantar uma suculenta é relativamente simples e pode ser feito em alguns passos simples. Aqui está um guia resumido:<br>
+            1.	Escolha um vaso: <br>
+            2.	Prepare o solo:<br> 
+            3.	Plante a suculenta: Remova a suculenta cuidadosamente do vaso atual, retire qualquer solo antigo das raízes e coloque-a no novo vaso. Certifique-se de que a suculenta esteja nivelada e adicione mais solo em torno das raízes, pressionando suavemente para garantir que fique firme.<br>
+            4.	Regue a suculenta: Regue levemente a suculenta para umedecer o solo. Evite encharcar o solo e deixe-o secar completamente antes de regar novamente.<br>
+            5.	Cuide da suculenta: Coloque a suculenta em um local com boa luminosidade, mas evite a luz solar direta. Regue regularmente, mas permita que o solo seque completamente entre as regas. Fertilize a suculenta uma vez por mês durante a primavera e o verão.
+            <br></p></h3></div>`
         }
 
         // CACTO
         else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="planta-cenario2-cacto.jpg">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o Cacto!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de muito espaço e gosta de luz<br></p></h1></div>`
+            </div> <h3><p><div class="texto1" style="color: white; ">A planta que irá se adaptar com seu cenario sera o Cacto!<br> 1.Escolha o vaso certo.<br>
+2.	Adicione solo apropriado: Adicione um solo bem drenado e arenoso para o vaso. Uma mistura comum é composta de 50% de areia grossa e 50% de terra adubada.<br>
+3.	Plante o cacto<br>
+4.	Regue moderadamente: Regue o cacto moderadamente, garantindo que a água alcance as raízes. Espere que o solo seque completamente antes de regar novamente. Cactos são conhecidos por sobreviver com pouca água, portanto, é melhor errar do lado da sub-rega.<br>
+5.	Coloque o cacto em um local adequado: Coloque o vaso em um local ensolarado, onde o cacto possa receber luz solar direta. Certifique-se de que o cacto não esteja em um local com correntes de ar frias ou ventos fortes.
+<br></p></h3></div>`
         }
-                // COSTELA DE ADAO
+        // COSTELA DE ADAO
 
         else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="Costela-de-adão-cenario3.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Costela de Adão!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de muito espaço e nao precisa de muita luz do sol<br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera a Costela de Adão!<br> 1-Escolha um local: Escolha um local com luz indireta e espaço suficiente para a planta crescer.<br>
+
+2-Prepare o solo: Adicione solo rico em nutrientes, como composto orgânico, à área de plantio.<br>
+
+3-Plante a muda: Plante a muda em um buraco ligeiramente maior do que a raiz. Cubra as raízes com solo e compacte levemente.<br>
+
+4-Regue: Regue a planta generosamente após o plantio e, em seguida, regue regularmente, mantendo o solo úmido, mas não encharcado.<br>
+
+5-Cuide da planta: Mantenha a planta longe de correntes de ar e monitore as folhas para garantir que não haja insetos ou doenças. Alimente a planta com um fertilizante de liberação lenta a cada 2 a 3 meses.
+
+Lembre-se de que a costela de Adão é uma planta de crescimento rápido e pode se espalhar bastante. Certifique-se de podar regularmente para manter a planta com o tamanho desejado.<br></p></h3></div>`
         }
-                // ANTURIO
+        // ANTURIO
 
         else if (clima1 == "Quente" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="Antúrio-cenario4.jpg">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o Antúrio!<br> Pois ele ira aguentar altas temperaturas,sua rega é pouco requisitada, nescessita de pouco espaço e nao precisa de muita luz do sol<br></p></h1></div>`
+            </div> <h3><p><div class="texto1" style="color: white;">A planta que irá se adaptar com seu cenario sera o Antúrio!<br> 1- Escolha um vaso: Escolha um vaso com um bom sistema de drenagem e tamanho apropriado para a planta.<br>
+
+2-Prepare o solo: Adicione solo rico em nutrientes, como composto orgânico, e perlita à área de plantio para aumentar a drenagem.<br>
+
+3-Plante a muda: Coloque a muda no vaso e cubra suas raízes com solo, certificando-se de que o nível do solo esteja no mesmo nível da base da planta.<br>
+
+4-Regue: Regue a planta generosamente após o plantio e mantenha o solo úmido, mas não encharcado.<br>
+
+5-Cuide da planta: Mantenha a planta em um local com luz indireta e temperatura amena. Alimente a planta com um fertilizante líquido balanceado a cada 2 a 3 meses. Podar folhas e flores murchas para incentivar o crescimento de novas folhas e flores.<br>
+
+Lembre-se de que o antúrio é uma planta tropical que prefere temperaturas entre 20°C e 30°C e alta umidade relativa do ar. Com os cuidados adequados, a planta deve florescer e crescer saudável.
+
+
+
+
+<br></p></h3></div>`
         }
         // JIBOIA
 
         else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="como-cuidar-da-jiboia-verde.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Jiboia!<br> Pois ele ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Muito espaço por suas ramas e pode se adapatar com muita luz <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera a Jiboia!<br> 1-Escolha um vaso: Escolha um vaso com um bom sistema de drenagem e tamanho apropriado para a planta.<br>
+
+2-Prepare o solo: Adicione um solo bem drenado, como uma mistura de turfa e perlita, à área de plantio.<br>
+
+3-Plante a muda: Coloque a muda no vaso e cubra suas raízes com solo, certificando-se de que o nível do solo esteja no mesmo nível da base da planta.<br>
+
+4-Regue: Regue a planta generosamente após o plantio e deixe o solo secar antes de regar novamente. A jiboia prefere solo levemente seco, portanto, evite regar em excesso.<br>
+
+5-Cuide da planta: Mantenha a planta em um local com luz indireta e temperatura amena. Evite exposição direta ao sol e monitore a planta quanto a sinais de insetos ou doenças. Adube com um fertilizante de liberação lenta a cada 2 a 3 meses.<br>
+
+Lembre-se de que a jiboia é uma planta resistente e tolerante a diferentes condições. Com os cuidados adequados, a planta deve crescer saudável e se tornar uma bela trepadeira.<br></p></h3></div>`
         }
-                // Zamioculca
+        // Zamioculca
 
         else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="zamioculca-zamiifolia_2nd.jpg">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Zamioculca!<br> Pois ela ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Muito espaço por suas ramas e pode se adapatar com pouca luz solar<br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white; ">A planta que irá se adaptar com seu cenario sera a Zamioculca!<br> 1-Escolha um vaso: Escolha um vaso com um bom sistema de drenagem e tamanho apropriado para a planta.<br>
+
+2-Prepare o solo: Adicione um solo bem drenado, como uma mistura de turfa e perlita, à área de plantio.<br>
+
+3-Plante a muda: Coloque a muda no vaso e cubra suas raízes com solo, certificando-se de que o nível do solo esteja no mesmo nível da base da planta.<br>
+
+4-Regue: Regue a planta generosamente após o plantio e deixe o solo secar antes de regar novamente. A zamioculca prefere solo ligeiramente seco, portanto, evite regar em excesso.<br>
+
+5-Cuide da planta: Mantenha a planta em um local com luz indireta a moderada e temperatura amena. A zamioculca é uma planta resistente e não precisa de muita manutenção. Adube com um fertilizante líquido balanceado a cada 2 a 3 meses.<br>
+
+Lembre-se de que a zamioculca é uma planta tóxica para animais de estimação e crianças, portanto, mantenha-a fora de alcance. Além disso, a planta pode ser suscetível a infestações de ácaros, portanto, monitore a planta quanto a sinais de insetos e trate conforme necessário.<br>
+
+<br></p></h3></div>`
         }
-                // ASPARGO
+        // ASPARGO
 
         else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="aspargo-pluma-4-carol-costa.jpg">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Aspargo-pluma!<br> Pois ela ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Pouco espaço e pode se adapatar com muita luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera a Aspargo-pluma!<br> 1-Escolha um local adequado: O aspargo pluma precisa de um solo bem drenado e um local com boa exposição solar. Escolha um local que tenha pelo menos 6 horas de luz solar direta por dia.<br>
+
+2-Prepare o solo: O solo deve ser rico em matéria orgânica, solto e com um pH entre 6,5 e 7,5. Adicione composto orgânico, turfa ou estrume ao solo e misture bem.<br>
+
+3-Plante as mudas: Faça buracos de cerca de 15 cm de profundidade e 30 cm de distância entre eles. Coloque as mudas de aspargo pluma nos buracos com as raízes para baixo e cubra com terra.<br>
+
+4-Regue regularmente: O aspargo pluma precisa de água regularmente para se desenvolver. Regue o solo regularmente para mantê-lo úmido, mas não encharcado.<br>
+
+5-Cuide das plantas: O aspargo pluma precisa ser bem cuidado para crescer saudável e forte. Adube as plantas regularmente com fertilizantes ricos em nitrogênio e retire as plantas daninhas que possam competir por nutrientes e água.<br>
+
+6-Lembre-se de que o aspargo pluma é uma planta perene que leva cerca de três anos para começar a produzir colheitas significativas. Se você seguir esses passos simples, terá boas chances de cultivar um belo canteiro de aspargo pluma em seu jardim.<br>
+ <br></p></h3></div>`
         }
         // Aglaonema
 
         else if (clima1 == "Quente" && rega2 == "3" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="66c1ec8c-00fd-4e1f-962b-d47084ae0c40.png">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Aglaonema!<br> Pois ela ira aguentar altas temperaturas,sua rega deverá ser alta, nescessita de Pouco espaço e pode se adapatar com Pouca luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera o Aglaonema!<br> 1-Escolha um vaso adequado: O Aglaonema pode ser cultivado tanto em vasos quanto em solo, mas é importante escolher um vaso com bom sistema de drenagem. Um vaso de tamanho médio é suficiente para um Aglaonema jovem.<br>
+
+2-Prepare o solo: O solo para Aglaonema deve ser rico em nutrientes e bem drenado. Misture terra, areia e húmus em partes iguais para criar um solo leve e solto.<br>
+
+3-Plante a muda: Coloque a muda de Aglaonema no centro do vaso, pressionando suavemente a terra ao redor das raízes. Certifique-se de que o nível do solo fique abaixo do topo do vaso.<br>
+
+4-Regue regularmente: O Aglaonema prefere umidade constante, portanto, regue regularmente para manter o solo úmido. Evite encharcar o solo para evitar o apodrecimento das raízes.<br>
+
+5-Cuide da planta: O Aglaonema é uma planta de baixa manutenção, mas precisa de cuidados regulares para crescer saudável. Adube a planta a cada 2-3 meses com um fertilizante líquido balanceado e remova as folhas mortas ou amareladas para incentivar o crescimento saudável.<br>
+
+Seguindo esses 5 passos simples, você pode plantar e cuidar de uma bela planta de Aglaonema em seu jardim ou casa. Lembre-se de que o Aglaonema prefere áreas com pouca luz e pode ser danificado pelo frio, portanto, evite colocá-lo em áreas com correntes de ar ou em temperaturas abaixo de 10°C.<br>
+
+ <br></p></h3></div>`
         }
-                // Cróton
+        // Cróton
 
         else if (clima1 == "Frio" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="muda_de_croton_arbusto_colorido_308_1_20190611093729.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Cróton<br> Pois ela ira aguentar sobras,sua rega nao nescessitará de excesso, nescessita de Muito espaço e pode se adapatar com Muita luz solar tambem<br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera o Cróton<br> 1-Escolha um local adequado: O Cróton precisa de bastante luz solar direta para crescer saudável. Escolha um local que receba pelo menos 4-6 horas de luz solar direta por dia.<br>
+
+2-Prepare o solo: O solo para Cróton deve ser bem drenado e rico em nutrientes. Adicione composto orgânico ao solo e misture bem.<br>
+
+3-Plante a muda: Faça um buraco no solo que seja duas vezes maior que o tamanho da muda de Cróton. Coloque a muda no buraco e preencha com terra, pressionando suavemente ao redor das raízes.<br>
+
+4-Regue regularmente: O Cróton precisa de rega regular para manter o solo úmido. Regue a planta cerca de duas vezes por semana, evitando encharcar o solo.<br>
+
+5-Cuide da planta: O Cróton precisa de cuidados regulares para crescer saudável e forte. Adube a planta a cada 2-3 meses com um fertilizante líquido balanceado e retire as folhas mortas ou amareladas para incentivar o crescimento saudável. Se você mora em um clima frio, é importante trazer a planta para dentro de casa durante os meses de inverno, pois o Cróton não tolera temperaturas abaixo de 10°C.<br>
+<br></p></h3></div>`
         }
+
         // Palmeira Areca
 
         else if (clima1 == "Frio" && rega2 == "1" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="areca-bambu-em-vaso.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Palmeira Areca <br> Pois ela ira ficar mais vistosa  em sobras,sua rega nao nescessitará de excesso, nescessita de Muito espaço e pode se adapatar com Pouca luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera a Palmeira Areca <br> 1-Escolha um local adequado: A Palmeira Areca precisa de luz solar indireta ou sombra parcial para crescer bem. Escolha um local com boa iluminação, mas sem exposição direta ao sol.<br>
+
+2-Prepare o solo: O solo para Palmeira Areca deve ser bem drenado e rico em nutrientes. Misture composto orgânico ou húmus de minhoca na terra existente e certifique-se de que o solo esteja solto.<br>
+
+3-Plante a muda: Faça um buraco no solo que seja duas vezes maior que o tamanho da muda de Palmeira Areca. Coloque a muda no buraco e preencha com terra, pressionando suavemente ao redor das raízes.<br>
+
+4-Regue regularmente: A Palmeira Areca precisa de rega regular para manter o solo úmido. Regue a planta cerca de duas vezes por semana, evitando encharcar o solo.<br>
+
+5-Cuide da planta: A Palmeira Areca precisa de cuidados regulares para crescer saudável e bonita. Adube a planta a cada 2-3 meses com um fertilizante líquido balanceado e retire as folhas mortas ou amareladas para incentivar o crescimento saudável. Além disso, é importante manter a planta livre de pragas e doenças e protegê-la de ventos fortes.<br>
+
+Com esses 5 passos simples, você pode plantar e cuidar de uma linda Palmeira Areca em seu jardim ou dentro de casa. Lembre-se de que essa palmeira pode crescer bastante e precisará de espaço suficiente para se desenvolver completamente.<br>
+
+ <br></p></h3></div>`
         }
         // Pau dágua
 
         else if (clima1 == "Frio" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="dracena_pau_d_agua_pt24_361_1_20200909135439.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o Pau dágua <br> Pois ele fica bem com sombra e frio,sua rega nao nescessitará de excesso, nescessita de Pouco espaço e pode se adapatar com Muita luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera o Pau dágua <br>1- Escolha um local adequado: O Pau d'água prefere luz solar indireta ou sombra parcial. Escolha um local com boa iluminação, mas sem exposição direta ao sol forte.<br>
+
+2-Prepare o solo: O solo para Pau d'água deve ser bem drenado e rico em nutrientes. Adicione composto orgânico ou húmus de minhoca ao solo e misture bem.<br>
+
+3-Plante a muda: Faça um buraco no solo que seja duas vezes maior que o tamanho da muda de Pau d'água. Coloque a muda no buraco e preencha com terra, pressionando suavemente ao redor das raízes.<br>
+
+4-Regue regularmente: O Pau d'água precisa de rega regular para manter o solo úmido, mas evite encharcá-lo. Regue a planta cerca de duas vezes por semana ou conforme necessário, dependendo da umidade do solo.<br>
+
+5-Cuide da planta: O Pau d'água precisa de cuidados regulares para crescer saudável e forte. Adube a planta a cada 2-3 meses com um fertilizante líquido balanceado e retire as folhas mortas ou amareladas para incentivar o crescimento saudável. Além disso, é importante manter a planta livre de pragas e doenças.<br>
+
+Com esses 5 passos simples, você pode plantar e cuidar de um belo Pau d'água em seu jardim ou dentro de casa. Lembre-se de que o Pau d'água é uma planta tóxica para animais de estimação e crianças se ingerida, portanto, mantenha-a fora do alcance deles.<br>
+<br></p></h3></div>`
         }
+
         // Orquídeas
 
         else if (clima1 == "Frio" && rega2 == "1" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="photo_5e98a23588816.jpeg.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera as Orquídeas<br> Pois elas ficam bem com sombra,sua rega nao nescessitará de excesso, nescessita de Pouco espaço e pode se adapatar com Pouca luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera as Orquídeas<br> 1-Escolha um vaso adequado: Escolha um vaso com boa drenagem e que seja adequado ao tamanho da orquídea. A orquídea precisa de espaço suficiente para crescer e se espalhar.<br>
+
+2-Prepare o substrato: O substrato para orquídeas deve ser leve e bem drenado. Uma mistura de casca de pinus, esfagno e carvão vegetal é uma boa opção. Certifique-se de que o substrato esteja úmido antes de plantar a orquídea.<br>
+
+3-Retire a orquídea do vaso antigo: Se a orquídea estiver em um vaso antigo, retire-a com cuidado, retirando as raízes mortas e danificadas.<br>
+
+4-Plante a orquídea: Coloque a orquídea no vaso novo e preencha com substrato, pressionando levemente ao redor da planta. Certifique-se de que a orquídea esteja na mesma profundidade que estava no vaso anterior.<br>
+
+5-Cuide da orquídea: A orquídea precisa de cuidados regulares para crescer saudável e bonita. Regue a planta quando o substrato estiver seco e adube a cada 2-3 meses com um fertilizante específico para orquídeas. Além disso, é importante manter a planta livre de pragas e doenças e protegê-la de ventos fortes.<br>
+
+Com esses 5 passos simples, você pode plantar e cuidar de uma linda orquídea em sua casa ou jardim. Lembre-se de que as orquídeas precisam de um ambiente com boa umidade e iluminação indireta, evitando a exposição direta ao sol.<br>
+ <br><br></p></h3></div>`
         }
 
         // lirios
@@ -189,14 +314,36 @@
         else if (clima1 == "Frio" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="lirio_da_paz_florido_513_1_ac34e8b10b129e739c5a51f639005922.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera os lirios<br> Pois elas ficam bem com sombra,sua rega deverá ser de 3 a 4 vezes por semana, nescessita de Muito espaço e pode se adapatar com Muita luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera os lirios<br> 1-Escolha um local adequado: Os lírios preferem sol pleno ou meia sombra. Escolha um local com boa iluminação e que tenha solo bem drenado.<br>
+
+2-Prepare o solo: O solo para lírios deve ser rico em nutrientes e bem drenado. Adicione composto orgânico ao solo e misture bem.<br>
+
+3-Plante os bulbos: Cave buracos no solo que sejam duas vezes maiores que os bulbos de lírio. Coloque os bulbos no buraco com a ponta voltada para cima e cubra com terra, pressionando suavemente ao redor.<br>
+
+4-Regue regularmente: Os lírios precisam de rega regular para manter o solo úmido, mas evite encharcá-los. Regue a planta cerca de duas vezes por semana ou conforme necessário, dependendo da umidade do solo.<br>
+
+5-Cuide da planta: Os lírios precisam de cuidados regulares para crescer saudáveis e fortes. Adube a planta a cada 2-3 meses com um fertilizante líquido balanceado e retire as folhas mortas ou amareladas para incentivar o crescimento saudável. Além disso, é importante manter a planta livre de pragas e doenças.<br>
+
+Com esses 5 passos simples, você pode plantar e cuidar de lindos lírios em seu jardim ou dentro de casa. Lembre-se de que alguns tipos de lírios são tóxicos para animais de estimação, portanto, mantenha-os fora do alcance deles.<br>
+ <br></p></h3></div>`
         }
         // Bromelia
 
         else if (clima1 == "Frio" && rega2 == "3" && espaço3 == "Muito" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="bromelia-2-819x1024.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Bromelia<br> Pois elas ficam bem com sombra,sua rega deverá ser de 3 a 4 vezes por semana, nescessita de Muito espaço e pode se adapatar com Muita luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white; ">A planta que irá se adaptar com seu cenario sera a Bromelia<br> 1-Escolha uma bromélia saudável: Escolha uma bromélia com folhas verdes e saudáveis. Evite plantas com folhas murchas ou amareladas.<br>
+
+2-Escolha um vaso adequado: Escolha um vaso com boa drenagem e que seja adequado ao tamanho da bromélia. As bromélias não precisam de vasos muito grandes, pois elas têm um sistema radicular pequeno.<br>
+
+3-Prepare o substrato: O substrato para bromélias deve ser uma mistura de musgo sphagnum, casca de pinus e pedrinhas para garantir boa drenagem. Certifique-se de que o substrato esteja úmido antes de plantar a bromélia.<br>
+
+4-Plante a bromélia: Coloque a bromélia no vaso novo e preencha com substrato, pressionando levemente ao redor da planta. Certifique-se de que a planta esteja na mesma profundidade que estava no vaso anterior.<br>
+
+5-Cuide da bromélia: As bromélias precisam de cuidados regulares para crescer saudáveis e bonitas. Regue a planta quando o substrato estiver seco e evite encharcá-la. Adube a cada 2-3 meses com um fertilizante líquido balanceado e mantenha a planta livre de pragas e doenças. Além disso, é importante manter a planta em um local com boa iluminação, mas sem exposição direta ao sol.<br>
+
+Com esses 5 passos simples, você pode plantar e cuidar de uma linda bromélia em sua casa ou jardim. Lembre-se de que as bromélias são plantas epífitas, o que significa que elas crescem naturalmente em árvores ou outras plantas, portanto, elas não precisam ser plantadas diretamente no solo.<br>
+ <br></p></h3></div>`
         }
 
         // bambu da sorte
@@ -204,14 +351,36 @@
         else if (clima1 == "Frio" && rega2 == "3" && espaço3 == "Pouco" && luz_diaria4 == "Muito") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="Bambu-da-sorte-Odin-Cachepo-Pequeno-Preto_1200x1200.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera o bambu da sorte<br> Pois ele ficam bem com sombra,sua rega deverá ser alta ou cultivar dentro de agua, nescessita de Pouco espaço e pode se adapatar com Muita luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera o bambu da sorte<br> 1-Escolha um recipiente: O bambu da sorte pode ser plantado em qualquer recipiente de vidro, cerâmica ou plástico transparente que seja alto o suficiente para acomodar as hastes de bambu.<br>
+
+2-Coloque pedrinhas no fundo: Coloque uma camada de pedrinhas ou cascalho no fundo do recipiente para ajudar na drenagem.<br>
+
+3-Adicione água: Adicione água suficiente para cobrir as pedrinhas ou cascalho, mas não deixe a água subir acima dele.<br>
+
+4-Coloque o bambu no recipiente: Coloque as hastes de bambu no recipiente, certificando-se de que as pontas inferiores das hastes estejam dentro da água.<br>
+
+5-Cuidados: O bambu da sorte precisa de água limpa e fresca regularmente. Troque a água a cada duas semanas para evitar o acúmulo de bactérias e limo. Além disso, é importante manter o bambu em um local com boa iluminação, mas sem exposição direta ao sol.<br>
+
+Com esses 5 passos simples, você pode plantar e cuidar do seu bambu da sorte. Lembre-se de que o bambu da sorte é uma planta de interior e não deve ser exposto a temperaturas extremas ou luz solar direta. Além disso, é importante evitar o uso de água com cloro ou água dura, que podem danificar a planta.<br>
+ <br></p></h3></div>`
         }
-                // Peperômia
+        // Peperômia
 
         else if (clima1 == "Frio" && rega2 == "3" && espaço3 == "Pouco" && luz_diaria4 == "Pouco") {
             div_mensagem.innerHTML = `<div class="caixamedia">
             <div class="imagemjs"><img src="decoracao-com-peperomia-melancia-pinterest-1.webp">
-            </div> <h1><p><div class="texto1" style="color: rgb(0, 0, 0); background-color: rgb(254, 254, 254);">A planta que irá se adaptar com seu cenario sera a Peperômia<br> Pois ela ficam bem com sombra,sua rega pode ser alta, nescessita de Pouco espaço e pode se adapatar com Pouca luz solar <br></p></h1></div>`
+            </div> <h3><p><div class="texto1"  style="color: white;">A planta que irá se adaptar com seu cenario sera a Peperômia<br>1- Escolha um vaso: Escolha um vaso com boa drenagem e que seja adequado ao tamanho da Peperômia. Certifique-se de que o vaso tenha furos na base para que a água possa drenar adequadamente.<br>
+
+2-Prepare o substrato: O substrato para Peperômia deve ser uma mistura de terra, areia e matéria orgânica, como casca de pinus ou fibra de coco. Certifique-se de que o substrato esteja úmido antes de plantar a Peperômia.<br>
+
+3-Plante a Peperômia: Coloque a Peperômia no vaso novo e preencha com substrato, pressionando levemente ao redor da planta. Certifique-se de que a planta esteja na mesma profundidade que estava no vaso anterior.<br>
+
+4-Cuide da Peperômia: As Peperômias precisam de cuidados regulares para crescer saudáveis e bonitas. Regue a planta quando o substrato estiver seco e evite encharcá-la. Adube a cada 2-3 meses com um fertilizante líquido balanceado e mantenha a planta livre de pragas e doenças. Além disso, é importante manter a planta em um local com boa iluminação, mas sem exposição direta ao sol.<br>
+
+5-Propague a Peperômia: A Peperômia pode ser propagada facilmente através de estacas. Para isso, corte uma parte da planta, retire as folhas da base e coloque a estaca em um copo com água até que as raízes se formem. Em seguida, plante a estaca em um vaso com substrato fresco e continue cuidando da planta como de costume.<br>
+
+Com esses 5 passos simples, você pode plantar e cuidar de uma linda Peperômia em sua casa ou jardim. Lembre-se de que as Peperômias são plantas fáceis de cuidar e podem ser cultivadas em diferentes condições de luz e umidade, mas é importante evitar exposição direta ao sol e encharcamento do substrato.<br>
+ <br></p></h3></div>`
         }
 
 

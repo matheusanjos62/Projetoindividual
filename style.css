@@ -11,8 +11,8 @@
     display: flex;
     padding: 20px;
     height: 70px;
-    list-style: none;
-    list-style: none;
+    
+    
 
 
 }
@@ -22,6 +22,8 @@
 .item1 :hover {
     text-transform: lowercase;
     font-style: italic;
+    
+    
 }
 
 /*tutorial*/
@@ -1291,7 +1293,7 @@
 
 
 .bodysimulador {
-    background-image: url(pexels-tijana-drndarski-3252140.jpg);
+    background-image: url(pexels-ihsan-adityawarman-2045613.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -1312,12 +1314,11 @@ justify-content: space-around;
 }
 .caixamedia{
     width: 900px;
-    height:600px;
+    height:800px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 
 
@@ -1333,7 +1334,14 @@ justify-content: space-around;
  
 }
 .texto1{
-    width: 700PX;
-    height: 200PX;
+    margin-top: 2%;
+    width: 900PX;
+    height: 400PX;
     border-radius: 5%;
+}
+.simule_texto{
+    width: 900px;
+    height: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
