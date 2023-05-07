@@ -1252,7 +1252,6 @@
     background-size: cover;
 }
 
-/*------------------------------------------------Simulador --------------------------------------------------------*/
 
 .blocosimula1 {
     background-image: url(pexels-kindel-media-7457523.jpg);
@@ -1295,6 +1294,7 @@
 
 }
 
+/*------------------------------------------------Simulador --------------------------------------------------------*/
 
 
 .bodysimulador {
@@ -1349,4 +1349,10 @@ justify-content: space-around;
     height: 200px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
+}
+/*------------------------------------------------curiosidades --------------------------------------------------------*/
+.body_curiosidade{
+    background-image: url(pexels-dids-4091235.jpg);
+    background-size: cover;
+    display: flexbox;
 }

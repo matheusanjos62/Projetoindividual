@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    </script>
+</head>
+
+<body class="body_curiosidade">
+    <nav id="menu" class="menu">
+
+        <ul class="item1">
+            <li>
+                <h1><a href="projeto_cultivo.html" style="color:rgb(255, 255, 255)">🌻Cultivo para vida</a></h1>
+            </li>
+        </ul>
+        <ul class="item2">
+            <li>
+                <h1><a href="login_cadastro.html" style="color:rgb(255, 255, 255)">🌻Tutorial</a></h1>
+            </li>
+        </ul>
+        <ul class="item3">
+            <li>
+                <h1><a href="login_cadastro.html" style="color:rgb(255, 255, 255)">🌻Simulador de especie</a></h1>
+            </li>
+        </ul>
+        <ul class="item4">
+            <li>
+                <h1><a href="login_cadastro.html" style="color:rgb(255, 255, 255)">🌻Cadastro/Login</a></h1>
+            </li>
+        </ul>
+        <ul class="item4">
+            <li>
+                <h1><a href="quem_sou.html" style="color:rgb(255, 255, 255)">🌻Quem sou</a></h1>
+            </li>
+        </ul>
+    </nav>
+
+    <!----inicio da pagina textos apresentação-->
+    <h1 style="color: rgb(255, 255, 255);"> Já sabe sua planta? <br>O que acha de saber algumas curiosidades sobre ela?</h1><br>
+    <h3 style="color: rgb(255, 255, 255);">informe a planta: <input type="text" name="" id="input_planta">
+    <button onclick="mostrar()">Saiba mais sobre essa planta</button><br>
+    <div id="div_mensagem"></div>
+    
+</body>
+<!----inicio da pagina textos apresentação-->
+</html>
+<script>
+    var lista = ["cacto", "costela de adao", "suculenta", "anturio", "jiboia", "zamioculca", "aspargo", "aglaonema", "croton", "palmeira areca", "pau dagua", "orquidea", "lirio da paz", "bromelia", "bambu da sorte", "peperonia"];
+
+    function mostrar() {
+        var planta = input_planta.value;
+        if (lista.indexOf(planta) > -1) {
+            div_mensagem.innerHTML = ` <h3 style="color:white;">voce quer saber sobre ${planta} entao vamos te contar algumas curiosidades sobre!</h3> <br><br> `
+        }
+        else { div_mensagem.innerHTML = `a planta: ${planta} nao existe na lista de curiosidades <br> ` }
+
+        if (planta == "cacto") {
+            div_mensagem.innerHTML += `8 curiosidades sobre os ${planta} que você precisa conhecer<br><br>
+
+
+            1-Todo cacto é uma suculenta, mas nem toda suculenta é um cacto.
+            Os cactos são suculentas,<br> pois têm 92% do seu interior constituído por água, o que diferencia são as folhas, que para os cactos são os espinhos.<br><br>
+
+            2-Várias espécies de cactos são comestíveis
+            Eles são uma boa fonte de proteínas e podem ser usados em várias receitas.<br> No Brasil, já existem vários produtos feitos a partir da planta, como geleias, doces e até cerveja.<br> Mas cuidado, é preciso estar atento e ter o devido conhecimento, pois algumas espécies podem ser venenosas.<br><br>
+
+
+
+            3-A menor espécie de cacto é a Blossfeldia liliputiana
+            Essa espécie possui apenas 0,5 centímetros e é originária dos Andes Bolivianos.<br> Já algumas espécies ultrapassam os 20 metros de altura, como é o caso do Carnegiea gigantea, encontrado no México e nos Estados Unidos.<br><br>
+
+
+            4-Nas Ilhas Canárias, existe um jardim botânico feito somente de cactos<br>
+            No total, existem cerca de 7 mil cactos, de diversas espécies. O local é aberto à visitação.<br><br>
+
+
+            5-Todos os tipos de cactos dão flores
+            Algumas espécies só florescem depois de alcançarem os 80 anos de idade <br> (elas podem viver por até 200 anos) ou   os dois metros de altura.<br> Depois que as flores aparecem pela primeira vez, elas voltam todos os anos, na mesma época. <br>Outra das curiosidades sobre os cactos: eles se reproduzem tanto por sementes quanto por estacas!<br><br>
+
+
+
+            6-O uso mais comum dos cactos é como planta ornamental
+            Contudo, pode ser usado também na agricultura.<br> Os cactos são plantas muito interessantes no que diz respeito as suas características, como a adaptação a ambientes<br> quentes e/ou áridos, além da capacidade de armazenar água.<br><br>
+
+
+            7-Existe uma lei que proíbe o corte de cactos
+            No Arizona, EUA, quem ousar cortar um cacto está sujeito a uma pena de prisão que pode ir até aos 25 anos.<br> A lei existe porque a planta nativa está em vias de extinção desde 1976.<br><br>
+
+
+            8-O cacto possui diversos significados
+            Uma das curiosidades sobre os cactos é em relação aos seus significados.<br> Há quem diga que são símbolo de força, poder e elegância. De qualquer forma, não dá para negar que eles têm muita exuberância.<br><br>
+            <img src="istockphoto-1333853936-612x612.jpg" alt="" >  <img src="istockphoto-1333853936-612x612.jpg" alt="" >`
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
