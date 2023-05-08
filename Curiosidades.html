@@ -44,24 +44,23 @@
     <!----inicio da pagina textos apresentação-->
     <h1 style="color: rgb(255, 255, 255);"> Já sabe sua planta? <br>O que acha de saber algumas curiosidades sobre ela?</h1><br>
     <h3 style="color: rgb(255, 255, 255);">informe a planta: <input type="text" name="" id="input_planta">
-    <button onclick="mostrar()">Saiba mais sobre essa planta</button><br>
+    <button onclick="mostrar()">Saiba mais sobre essa planta</button><br><br>
     <div id="div_mensagem"></div>
-    
 </body>
 <!----inicio da pagina textos apresentação-->
 </html>
 <script>
-    var lista = ["cacto", "costela de adao", "suculenta", "anturio", "jiboia", "zamioculca", "aspargo", "aglaonema", "croton", "palmeira areca", "pau dagua", "orquidea", "lirio da paz", "bromelia", "bambu da sorte", "peperonia"];
+    var lista = ["cacto", "costela de adao", "suculenta", "anturio", "jiboia", "zamioculca", "aspargo pluma", "aglaonema", "croton", "palmeira areca", "pau dagua", "orquidea", "lirio da paz", "bromelia", "bambu da sorte", "peperomia"];
 
     function mostrar() {
         var planta = input_planta.value;
         if (lista.indexOf(planta) > -1) {
             div_mensagem.innerHTML = ` <h3 style="color:white;">voce quer saber sobre ${planta} entao vamos te contar algumas curiosidades sobre!</h3> <br><br> `
         }
-        else { div_mensagem.innerHTML = `a planta: ${planta} nao existe na lista de curiosidades <br> ` }
+        else { div_mensagem.innerHTML = `a planta ${planta} nao existe na lista de curiosidades - retire a sua planta no simulador de especie de nosso site<br> ` }
 
         if (planta == "cacto") {
-            div_mensagem.innerHTML += `8 curiosidades sobre os ${planta} que você precisa conhecer<br><br>
+            div_mensagem.innerHTML = `8 curiosidades sobre os ${planta} que você precisa conhecer<br><br>
 
 
             1-Todo cacto é uma suculenta, mas nem toda suculenta é um cacto.
@@ -95,14 +94,264 @@
 
             8-O cacto possui diversos significados
             Uma das curiosidades sobre os cactos é em relação aos seus significados.<br> Há quem diga que são símbolo de força, poder e elegância. De qualquer forma, não dá para negar que eles têm muita exuberância.<br><br>
-            <img src="istockphoto-1333853936-612x612.jpg" alt="" >  <img src="istockphoto-1333853936-612x612.jpg" alt="" >`
+            <img src="pexels-anna-khomutova-5783396.jpg" alt="" >  <img src="pexels-lazy-photography-12916278.jpg" alt="" >`
 
 
         }
+        if (planta == "costela de adao") {
+            div_mensagem.innerHTML = `Cinco curiosidades interessantes sobre a planta Costela-de-Adão:<br><br>
+
+1-Nome científico: A Costela-de-Adão é conhecida pelo seu nome científico Monstera deliciosa.<br> É uma planta trepadeira nativa da América Central e do Sul e é comumente cultivada em todo o mundo como planta ornamental.<br><br>
+
+2-Folhas peculiares: A folhagem da Costela-de-Adão é distintiva e facilmente reconhecível.<br> Suas grandes folhas em forma de coração possuem fendas profundas que se assemelham às costelas de um animal, daí o nome popular da planta.<br> As folhas podem crescer até 90 cm de comprimento e 75 cm de largura.<br><br>
+
+3-Símbolo de prosperidade: Na cultura chinesa, a Costela-de-Adão é considerada um símbolo de prosperidade e boa sorte. <br>Acredita-se que colocar a planta em casa ou no escritório ajuda a atrair prosperidade e riqueza.<br><br>
+
+4-Frutas comestíveis: A Costela-de-Adão produz frutas comestíveis que são populares em algumas partes da América Central e do Sul.<br> As frutas têm sabor doce e são consumidas maduras, quando a casca verde se transforma em amarelo e a polpa se solta facilmente. No entanto, a planta pode ser tóxica se não for preparada adequadamente.<br><br>
+
+5-Purificadora de ar: A Costela-de-Adão é conhecida por suas propriedades purificadoras de ar.<br> Ela é capaz de remover poluentes do ar, incluindo benzeno, formaldeído e outros produtos químicos tóxicos,<br> tornando-a uma excelente opção para purificar o ar em ambientes internos.<br><br>
+<img src="pexels-elena-golovchenko-12210125.jpg" alt="" > 
+ <img src="pexels-quý-nguyễn-14827491.jpg" alt="" >`
+
+    }
+     if (planta == "suculenta") {
+            div_mensagem.innerHTML = `Cinco curiosidades interessantes sobre a planta Costela-de-Adão:<br><br>
+
+1-Suculentas podem armazenar água em suas folhas: Suculentas possuem folhas grossas e carnudas que permitem armazenar água em seu interior para sobreviver em lugares secos e com pouca chuva.<br><br>
+
+2-Suculentas podem se reproduzir por folhas: Algumas espécies de suculentas podem se reproduzir por meio de uma folha que se desprende da planta-mãe e forma uma nova planta a partir dela.<br><br>
+
+3-Suculentas podem ter flores de cores brilhantes: Apesar de que as folhas das suculentas são muito chamativas, muitas espécies também produzem flores de cores brilhantes que podem ser muito vistosas.<br><br>
+
+4-Suculentas são resistentes a pragas: Em geral, suculentas são muito resistentes a pragas e doenças que afetam outras plantas. Isso se deve em parte à composição de suas folhas, que não são atrativas para insetos.<br><br>
+
+5-Suculentas podem ser cultivadas em pequenos espaços: Devido ao seu tamanho compacto e capacidade de armazenar água, as suculentas são ideais para serem cultivadas em pequenos espaços, como apartamentos e varandas..<br><br>
+<img src="pexels-scott-webb-1903970.jpg" alt="" > 
+ <img src="pexels-magda-ehlers-14167341.jpg" alt="" >`
 
     }
 
 
+   if (planta == "anturio") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta antúrio::<br><br>
+
+1-O antúrio é uma planta tropical: Originária das florestas tropicais da América Central e do Sul, o antúrio é uma planta que requer um ambiente quente e úmido para crescer adequadamente.<br><br>
+
+2-As flores do antúrio são, na verdade, folhas modificadas: O que geralmente consideramos como as flores da planta são, na verdade, folhas modificadas chamadas espatas. As verdadeiras flores são pequenas e estão agrupadas em uma espiga central.<br><br>
+
+3-O antúrio é considerado uma planta purificadora de ar: Estudos mostram que o antúrio é capaz de purificar o ar ao remover compostos químicos voláteis do ambiente.<br><br>
+
+4-O antúrio pode ser cultivado em vasos ou em jardins: O antúrio pode ser cultivado tanto em vasos como em jardins, desde que esteja em um ambiente protegido da luz solar direta e que o solo seja mantido úmido.<br><br>
+
+5-O antúrio é uma planta tóxica: Todas as partes do antúrio contêm cristais de oxalato de cálcio que podem causar irritação na pele e nas mucosas se ingeridas. Por isso, é importante manter a planta fora do alcance de crianças e animais de estimação.<br><br>
+<img src="pexels-monstera-7690862.jpg" alt="" > 
+ <img src="pexels-teona-swift-6913638.jpg" alt="" >`
+
+    }
+
+
+    if (planta == "jiboia") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta jiboia::<br><br>
+
+1-A jiboia é uma planta trepadeira: A jiboia é uma planta trepadeira que pode crescer em árvores, paredes ou outras superfícies verticais. Ela usa suas raízes aéreas para se agarrar e escalar.<br><br>
+
+2-A jiboia é uma planta de interior popular: A jiboia é uma das plantas de interior mais populares devido à sua facilidade de cultivo, folhagem vistosa e capacidade de purificar o ar.<br><br>
+
+3-A jiboia pode ser uma planta variegada: Algumas variedades de jiboia possuem folhas variegadas com manchas ou listras brancas, amarelas ou prateadas. Essas variedades são muito valorizadas pelos colecionadores de plantas.<br><br>
+
+4-A jiboia é uma planta tóxica para animais de estimação: Todas as partes da jiboia contêm substâncias tóxicas para gatos e cães. Se ingerida, a planta pode causar irritação oral, vômito, diarreia e outras reações negativas.<br><br>
+
+5-A jiboia é uma planta versátil: Além de ser cultivada como planta de interior, a jiboia também pode ser usada em paisagismo externo em regiões tropicais ou subtropicais, onde pode crescer em canteiros ou cobrir muros e cercas.<br><br>
+<img src="jiboia-epipremnum-aureum-1_2nd.jpg" alt="" > 
+ <img src="20221007105928_3395996605_D.jpg" alt="" >`
+
+    }
+
+
+     if (planta == "zamioculca") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta zamioculca::<br><br>
+
+1-A zamioculca é uma planta resistente: A zamioculca é uma planta que pode sobreviver em condições adversas, como pouca luz, baixa umidade e temperaturas extremas. Isso a torna uma planta ideal para iniciantes e para pessoas que não têm muito tempo para cuidar de plantas.<br><br>
+
+2-A zamioculca é uma planta tóxica: Todas as partes da zamioculca contêm substâncias tóxicas para humanos e animais de estimação. Se ingerida, a planta pode causar irritação na boca e na garganta, náusea e vômito..<br><br>
+
+3-A zamioculca é uma planta de folhagem vistosa: A zamioculca é valorizada por suas folhas brilhantes e exóticas, que crescem em hastes longas e podem chegar a 60 centímetros de comprimento. As folhas são verde-escuras e têm uma textura cerosa.<br><br>
+
+4-A zamioculca é uma planta de origem africana: A zamioculca é nativa de áreas tropicais da África, como Tanzânia e Zanzibar. Lá, a planta cresce em florestas tropicais e em áreas com pouca luz.<br><br>
+
+5-A zamioculca é uma planta fácil de propagar: A zamioculca pode ser propagada facilmente a partir de estacas retiradas das hastes da planta-mãe. As estacas devem ser plantadas em solo úmido e mantidas em um local com temperatura e umidade adequadas até que comecem a enraizar.<br><br>
+<img src="pexels-ksenia-chernaya-3952024.jpg" alt="" > 
+ <img src="pexels-lokesh-tiwari-8549167.jpg" alt="" >`
+
+    }
+
+
+    if (planta == "aspargo pluma") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta aspargo pluma::<br><br>
+
+1-O aspargo pluma é uma variedade de aspargo branco: O aspargo pluma é uma variedade de aspargo branco, que é conhecido por ter uma textura mais macia e sabor mais suave do que o aspargo verde.<br><br>
+
+2-O aspargo pluma é mais delicado do que outras variedades: O aspargo pluma é mais delicado e frágil do que outras variedades de aspargo, o que o torna um pouco mais difícil de cultivar e colher.<br><br>
+
+3-O aspargo pluma é uma fonte de nutrientes: Assim como outras variedades de aspargo, o aspargo pluma é uma fonte de nutrientes importantes, incluindo vitaminas A, C, E e K, folato e fibras.<br><br>
+
+4-O aspargo pluma é comumente utilizado em pratos finos: O aspargo pluma é frequentemente utilizado em pratos de alta gastronomia, devido ao seu sabor delicado e textura suave. Ele pode ser cozido, grelhado ou consumido cru em saladas.<br><br>
+
+5-O aspargo pluma é sazonal: O aspargo pluma é uma planta sazonal e geralmente está disponível no mercado durante a primavera e o início do verão. Por causa de sua delicadeza, é importante consumi-lo rapidamente após a compra ou colheita<br><br>
+<img src="aspargo-pluma-asparagus-densiflorus-myersii-a.jpg" alt="" > 
+ <img src="sprengers-asparagus-densiflorus-kunth-jessop-growing-santa-barbara-scaled.jpg" alt="" >`
+
+    }
+
+    if (planta == "aglaonema") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta aglaonema::<br><br>
+
+1-A Aglaonema é originária do Sudeste Asiático: A Aglaonema é uma planta nativa de regiões tropicais do Sudeste Asiático, como Indonésia, Filipinas e Malásia.<br><br>
+
+2- Aglaonema é uma planta popular de interior: A Aglaonema é uma planta de interior popular devido à sua facilidade de cultivo e suas folhas ornamentais. É uma ótima escolha para quem procura uma planta que possa ser cultivada em ambientes com pouca luz.<br><br>
+
+3-A Aglaonema é tóxica para animais de estimação: As folhas da Aglaonema contêm substâncias tóxicas que podem ser perigosas para cães e gatos. Se você tem animais de estimação em casa, é importante mantê-los afastados da planta.<br><br>
+
+4- Aglaonema é uma planta resistente: A Aglaonema é uma planta que pode sobreviver em condições de baixa luminosidade, ar seco e temperaturas moderadas. Ela também é resistente a algumas pragas e doenças comuns em plantas de interior.<br><br>
+
+5- Aglaonema tem variedades com folhas de diferentes cores: A Aglaonema tem uma grande variedade de cultivares, incluindo algumas com folhas verdes, outras com folhas prateadas ou manchadas de branco, rosa ou vermelho. Isso torna a planta uma ótima opção para quem procura adicionar cor e interesse visual a um espaço de interior.<br><br>
+<img src="pexels-cottonbro-studio-9730349.jpg" alt="" > 
+ <img src="pexels-cottonbro-studio-9725293.jpg" alt="" >`
+
+    }
+
+    if (planta == "palmeira areca") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta palmeira areca:<br><br>
+
+1-A palmeira areca é nativa de Madagascar: A palmeira areca é uma planta nativa de Madagascar, mas é amplamente cultivada em todo o mundo como planta ornamental de interior ou exterior.<br><br>
+
+2- A palmeira areca é uma planta de baixa manutenção: A palmeira areca é uma planta de baixa manutenção e fácil de cuidar. Ela prefere luz solar parcial e deve ser regada regularmente, mas não em excesso.<br><br>
+
+3-A palmeira areca é uma planta purificadora de ar: A palmeira areca é uma das plantas mais eficazes na remoção de toxinas do ar, incluindo formaldeído, benzeno e tricloroetileno. Isso a torna uma ótima escolha para ambientes internos.<br><br>
+
+4-A palmeira areca é uma fonte de alimento: As sementes da palmeira areca são comestíveis e são usadas em muitas culturas como fonte de alimento. As folhas da planta também são usadas para fazer vassouras e cestos.<br><br>
+
+5- A palmeira areca é uma planta decorativa: A palmeira areca é valorizada por suas folhas verdes brilhantes e elegante porte. É uma planta popular para decoração de interiores e exteriores, especialmente em climas quentes e úmidos.<br><br>
+<img src="pexels-nataliya-vaitkevich-8927464.jpg" alt="" > 
+ <img src="pexels-karolina-grabowska-4751973.jpg" alt="" >`
+
+    }
+
+
+     if (planta == "pau dagua") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta pau dagua:<br><br>
+
+1-O Pau-d'água é uma planta aquática: Como o nome sugere, o Pau-d'água é uma planta que cresce em água. Ela é encontrada em lagos, rios e pântanos em todo o mundo, desde a América do Sul até a África.<br><br>
+
+2- O Pau-d'água é uma planta medicinal: O Pau-d'água tem sido usado há séculos na medicina tradicional para tratar várias condições, incluindo dor, febre e inflamação. No entanto, o uso da planta deve ser feito com a orientação de um profissional de saúde qualificado.<br><br>
+
+3-O Pau-d'água é uma planta ornamental: O Pau-d'água é valorizado por suas folhas verdes brilhantes e seu porte elegante, e é frequentemente cultivado como planta ornamental em jardins e lagos ornamentais.<br><br>
+
+4-O Pau-d'água é uma planta perene: O Pau-d'água é uma planta perene, o que significa que pode viver por vários anos. Ela pode se espalhar rapidamente em áreas úmidas e pode se tornar invasiva em algumas regiões<br><br>
+
+5- O Pau-d'água é uma planta importante para a vida selvagem: O Pau-d'água é uma fonte importante de alimento e abrigo para muitas espécies de animais, incluindo pássaros, peixes e mamíferos. Ele também desempenha um papel importante na filtragem de água em ecossistemas aquáticos.
+<br><br>
+<img src="dracena-pau-dagua-1-926x926.jpg" alt="" > 
+ <img src="whatsapp_image_2021_07_12_at_13.18.12_1.jpg" alt="" >`
+
+    }
+
+
+    if (planta == "orquidea") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta orquidea:<br><br>
+
+1-As orquídeas são uma das maiores famílias de plantas do mundo: Existem mais de 25.000 espécies diferentes de orquídeas e milhares de híbridos.<br><br>
+
+2- As orquídeas são conhecidas por suas flores exóticas: As flores das orquídeas são frequentemente exóticas e coloridas, variando de branco e rosa a vermelho, roxo e até mesmo verde. Algumas orquídeas têm flores que duram apenas algumas horas, enquanto outras podem durar várias semanas.<br><br>
+
+3-As orquídeas são encontradas em todo o mundo: As orquídeas são encontradas em quase todos os continentes, exceto na Antártica, e crescem em uma variedade de habitats, desde florestas tropicais até desertos.<br><br>
+
+4-As orquídeas são valorizadas por sua beleza e raridade: As orquídeas são frequentemente valorizadas por sua beleza e raridade, e algumas espécies são consideradas ameaçadas de extinção devido à perda de habitat e coleta excessiva<br><br>
+
+5- As orquídeas têm sido usadas na medicina tradicional: As orquídeas têm sido usadas na medicina tradicional em todo o mundo para tratar uma variedade de condições, desde doenças cardíacas até doenças respiratórias. No entanto, é importante notar que muitas espécies de orquídeas estão protegidas por lei e não devem ser coletadas para uso medicinal sem a devida autorização.
+<br><br>
+<img src="pexels-katarzyna-modrzejewska-1542937.jpg" alt="" > 
+ <img src="pexels-skylar-kang-6431888.jpg" alt="" >`
+
+    }
+
+
+    if (planta == "lirio da paz") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta lirio da paz:<br><br>
+
+1-O lírio-da-paz é uma planta popular para interiores: O lírio-da-paz é uma planta popular para interiores, graças à sua aparência exótica e fácil cuidado. Ela é frequentemente encontrada em escritórios e residências em todo o mundo.<br><br>
+
+2- O lírio-da-paz é uma planta purificadora de ar: O lírio-da-paz é conhecido por suas propriedades de purificação de ar. Ela remove substâncias tóxicas do ar, como formaldeído, benzeno e amônia, tornando-a uma excelente escolha para ambientes fechados.<br><br>
+
+3-O lírio-da-paz tem flores brancas elegantes: O lírio-da-paz é conhecido por suas flores brancas elegantes e folhagem verde exuberante. Suas flores podem durar várias semanas e são frequentemente usadas em arranjos florais.<br><br>
+
+4-O lírio-da-paz é uma planta fácil de cuidar: O lírio-da-paz é uma planta fácil de cuidar, pois requer pouca luz e água. Ela pode crescer bem em ambientes com baixa iluminação e não precisa ser regada com frequência.<br><br>
+
+5- O lírio-da-paz é originário das Américas: O lírio-da-paz é originário das florestas tropicais das Américas Central e do Sul. Ele foi trazido para a Europa no final do século XIX e se tornou uma planta popular para interiores em todo o mundo.
+<br><br>
+<img src="pexels-i-gede-anggara-upadana-15050894.jpg" alt="" > 
+ <img src="pexels-cottonbro-studio-9710605.jpg" alt="" >`
+
+    }
+
+
+    if (planta == "bromelia") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta bromelia:<br><br>
+
+1-A bromélia é uma planta tropical: A bromélia é uma planta nativa das regiões tropicais e subtropicais da América do Sul, América Central e Caribe.<br><br>
+
+2- A bromélia cresce em solos pobres: As bromélias crescem em solos pobres, onde outras plantas não conseguem prosperar. Elas são frequentemente encontradas crescendo em árvores ou em áreas rochosas.<br><br>
+
+3-A bromélia tem uma aparência exótica: As bromélias são conhecidas por sua aparência exótica, com folhagens brilhantes e cores vibrantes. Elas podem ter flores em tons de rosa, vermelho, laranja, amarelo, roxo e branco.<br><br>
+
+4-A bromélia é uma planta adaptável: A bromélia é uma planta adaptável e pode crescer em uma variedade de ambientes, desde florestas úmidas até áreas abertas e secas.<br><br>
+
+5- A bromélia é uma planta epífita: Muitas espécies de bromélias são epífitas, o que significa que elas crescem em outras plantas ou objetos, como troncos de árvores ou rochas. Elas obtêm nutrientes e água do ar e da umidade, e não do solo.
+<br><br>
+<img src="pexels-sasha-kim-9412380.jpg" alt="" > 
+ <img src="bromelia-imperial-alcantarea-imperialis_2nd.jpg" alt="" >`
+
+    }
+
+    if (planta == "bambu da sorte") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta bambu da sorte:<br><br>
+
+1-O bambu da sorte não é um verdadeiro bambu: O bambu da sorte, também conhecido como Dracaena sanderiana, não é um verdadeiro bambu, mas sim uma espécie de planta de folhagem perene.<br><br>
+
+2- O bambu da sorte é considerado uma planta da sorte: De acordo com a cultura chinesa, o bambu da sorte é uma planta da sorte que traz prosperidade, felicidade e longevidade.<br><br>
+
+3-O bambu da sorte é fácil de cuidar: O bambu da sorte é uma planta fácil de cuidar, pois requer pouca luz e água. Ele pode crescer em água ou solo e pode ser cultivado em vasos ou em jardins.<br><br>
+
+4-O bambu da sorte pode simbolizar diferentes coisas: Dependendo do número de caules, o bambu da sorte pode simbolizar diferentes coisas. Por exemplo, dois caules significam amor, três caules significam felicidade, cinco caules significam saúde e oito caules significam riqueza.<br><br>
+
+5- O bambu da sorte é usado em decorações de interiores: O bambu da sorte é frequentemente usado em decorações de interiores por causa de sua aparência exótica e suas propriedades de purificação de ar. Ele pode ser usado em vasos de vidro transparente ou em potes de cerâmica coloridos.
+<br><br>
+<img src="61cW0OTuG5L._AC_SX466_.jpg" alt="" > 
+ <img src="049e32bb-207a-40d2.jpg" alt="" >`
+
+    }
+
+    if (planta == "peperomia") {
+            div_mensagem.innerHTML = `Aqui estão cinco curiosidades sobre a planta peperomia:<br><br>
+
+1-Existem muitas espécies de peperômias: Há mais de 1.500 espécies de peperômias, todas com aparências e características diferentes. Algumas são pequenas e delicadas, enquanto outras podem crescer até um metro de altura.<br><br>
+
+2- As folhas da peperômia vêm em uma variedade de formas e cores: As folhas da peperômia vêm em muitas formas diferentes, incluindo coração, lança, redonda e oval. Além disso, a cor das folhas pode variar de verde escuro a rosa, vermelho, amarelo, prata e branco.<br><br>
+
+3-As peperômias são plantas fáceis de cuidar: A maioria das espécies de peperômia é fácil de cuidar e é uma boa opção para iniciantes em jardinagem. Elas preferem luz indireta e solo úmido, mas não encharcado.<br><br>
+
+4-As peperômias são frequentemente usadas em decoração de interiores: Com sua grande variedade de formas e cores de folhas, as peperômias são populares em decoração de interiores. Elas podem ser usadas em vasos, terrários ou como plantas pendentes.<br><br>
+
+5- Algumas espécies de peperômias são comestíveis: Algumas espécies de peperômias, como a Peperomia pellucida, são comestíveis e são usadas na culinária em algumas partes do mundo. As folhas da Peperomia pellucida são usadas em saladas, sopas e pratos cozidos. No entanto, outras espécies de peperônia são tóxicas e não devem ser consumidas.
+<br><br>
+<img src="pexels-ekaterina-bolovtsova-9130870.jpg" alt="" > 
+ <img src="pexels-benhur-emmanuel-11555614.jpg" alt="" >`
+
+    }
+
+
+
+    } 
 
 
 
