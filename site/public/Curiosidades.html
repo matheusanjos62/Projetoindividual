@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Curiosidades</title>
 
     </script>
 </head>
@@ -60,7 +60,7 @@
     var lista = ["cacto", "costela de adao", "suculenta", "anturio", "jiboia", "zamioculca", "aspargo pluma", "aglaonema", "croton", "palmeira areca", "pau dagua", "orquidea", "lirio da paz", "bromelia", "bambu da sorte", "peperomia"];
 
     function mostrar() {
-        var planta = input_planta.value;
+        var planta = input_planta.value.toLowerCase();
         if (lista.indexOf(planta) > -1) {
             div_mensagem.innerHTML = ` <h3 style="color:white;">voce quer saber sobre ${planta} entao vamos te contar algumas curiosidades sobre!</h3> <br><br> `
         }
