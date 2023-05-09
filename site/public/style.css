@@ -630,6 +630,39 @@
 
 }
 
+
+.dropdown{
+    position: relative;
+    display: inline;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 135px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+
+}
+.dropdown-content a:hover{
+    color: #232323;
+    border-bottom: 1px solid #494b4b;
+    cursor: pointer;
+}
+
+.dropdown-content a{
+    color: #000;
+    border-bottom: transparent;
+}
+
+
+
 /*------------------------------------------------abobora --------------------------------------------------------*/
 
 .aboborabloco {
@@ -1198,13 +1231,13 @@
     padding: 60px;
     border-radius: 15%;
     color: rgb(17, 255, 0);
-    width: 200px;
+    width: 250px;
 
 
 }
 
 .input_login {
-    border-radius: 10%;
+   height: 20px;
     width: 99%;
     padding: 3px;
 }
@@ -1229,12 +1262,13 @@
     padding: 60px;
     border-radius: 15%;
     color: rgb(17, 255, 0);
-    width: 200px;
+    width: 300px;
 
 }
 
 .input_cadastro {
-    border-radius: 10%;
+    height: 20px;
+
     width: 99%;
     padding: 3px;
 }
@@ -1355,4 +1389,27 @@ justify-content: space-around;
     background-image: url(pexels-dids-4091235.jpg);
     background-size: cover;
     display: flexbox;
+
+}
+.jasabe{
+    background-color: aqua;
+    width: 500px;
+    height: 100px;
+    justify-content: center;
+    
+}
+.caixajasabeg{
+    background-color: black;
+    justify-content: center;
+    height: 200px;
+}
+.inputplanta{
+    background-color: rgb(87, 165, 42);
+    height: 25px;
+    width: 200px;
+}
+.botaoplanta{
+    background-color: rgb(87, 165, 42);
+    height: 30px;
+    width: 200px;
 }
