@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>Login BANCO</title>
 </head>
 
 <body class="bodylogin_cadastro">
@@ -16,6 +16,24 @@
                 <h1><a href="index.html" style="color:  rgb(0, 0, 0);">Cultivo para vida</a></h1>
             </li>
         </ul>
+        <ul class="item2">
+            <li>
+                <h1><a href="login_cadastro.html" style="color:  rgb(0, 0, 0);">Tutorial</a></h1>
+            </li>
+        </ul>
+        <ul class="item3roda">
+            <li>
+                <h1><a href="login_cadastro.html" style="color:  rgb(0, 0, 0);">simulador de crescimento</a></h1>
+            </li>
+        </ul>
+        
+        <ul class="item3roda">
+            <li>
+                <h1><a href="login_cadastro.html" style="color:  rgb(0, 0, 0);">Curiosidades</a></h1>
+            </li>
+        </ul>
+
+        
         <ul class="item4">
             <li>
                 <h1><a href="login_cadastro.html" style="color: rgb(0, 0, 0);">Cadastro/Login</a></h1>
@@ -29,28 +47,17 @@
     </nav>
     
 
-    <div class="blococadastro">
+    <div class="blocologin">
         <h3 style="color: aliceblue;">Cadastre-se e fique por dentro do mundo do cultivo </h3><br><br>
         <h1>Cadastro</h1><br><br>
-        <input class="input_cadastro" type="text" placeholder="Nome"><br><br>
-        <input class="input_cadastro" type="text" placeholder="Email"><br><br>
+        <input id="input_email" type="text" placeholder="Email"><br><br>
         
-        <input class="input_cadastro" type="password" placeholder="Senha"><br><br>
-      
+        <input id="input_senha" type="password" placeholder="Senha"><br><br>
         
-        <select id="plantabd" class="plantabd">
-            <option value="1">orquidea</option>
-            <option value="2">bambu da sorte</option>
-            <option value="2">cacto</option>
-            <option value="3">costela de adao</option>
-            <option value="4">anturio</option>
-            <option value="5">jiboia</option>
-            <option value="6">zamioculca</option>
-            <option value="7">zamioculca</option>
-            <option value="8">aspargo pluma</option>
+       
 
         </select>
-        <button  onclick="entrar()" class="botao_cadastro" style="color: black;font-weight: bold;">Cadastrar</button>
+        <button  onclick="entrar()" class="botao_cadastro" style="color: black;font-weight: bold;">logar</button>
 
     </div>
     </div>
@@ -64,10 +71,8 @@
 
 
     function entrar() {
-   
-
-        var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
+        var emailVar = input_email.value;
+        var senhaVar = input_senha.value;
 
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
@@ -106,7 +111,7 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = ".tutorial.html";
+                        window.location = "./dashboard/tutorial.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
