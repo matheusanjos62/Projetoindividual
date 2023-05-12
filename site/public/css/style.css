@@ -1,343 +1,1418 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+/*tudo padronizado em uma font*/
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  display: flex;
-}
+/*menu da nav bar*/
+.menu {
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+    height: 70px;
+    
+    
 
-.header {
-  border-bottom: 3px solid #32b9cd;
-}
-
-.header .container {
-  justify-content: space-between;
-}
-
-.header a {
-  text-decoration: none;
-  color: #e3b062;
-}
-
-.agora {
-  font-weight: 800;
-}
-
-.navbar {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  color: #e3b062;
-}
-
-
-.titulo {
-  color: #32b9cd;
-  width: fit-content;
-  font-weight: 500;
-}
-
-
-/* BANNER */
-
-.banner {
-  height: fit-content;
-  padding: 40px 0;
-  color: white;
-  background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
-  background-size: cover;
-}
-
-.banner .container {
-  height: 400px;
-  font-size: 36px;
-  justify-content: center;
-  align-items: center;
-}
-
-.tamanho-conteudo { 
-  height: fit-content !important;
-}
-
-.banner p {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  width: 280px;
-  font-size: 36px;
-}
-
-.banner .container span {
-  font-weight: 800;
-}
-
-/* missao visao valores */
-
-.social {
-  background-color: #e5e5e5;
-  display: flex;
-}
-
-.social .container{
-  justify-content: center;
-}
-
-.box img {
-  width: 170px;
-}
-
-.social .container .boxes {
-  display: flex;
-}
-
-.social p {
-  text-align: center;
-}
-
-.box {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* FOOTER */
-
-.footer {
-  background-color: #32b9cd;
-  height: 150px;
-  color: #fff;
-  display: flex;
-  font-size: 15px;
-}
-
-.footer .container {
-  justify-content: center;
-  text-align: center;
-}
-
-.footer .container .version {
-  font-size: 12px;
-}
-
-
-/* LOGIN */
-
-.banner .container .card {
-  background-color: #e5e5e5;
-  height: fit-content;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  color: palevioletred;
-  align-items: center;
-  border-radius: 4px;
-}
-
-.card {
-  display: flex;
-  justify-content: space-around;
-}
-
-.card h2 {
-  font-size: 30px;
-}
-
-.card h4 {
-  font-size: 16px;
-}
-
-.banner #div_erros_login {
-  margin-top: 15px;
-}
-
-button {
-  cursor: pointer;
-}
-
-/* FORMULARIO */
-
-.alerta_erro{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.card_erro {
-  display: none;
-  background-color: #fff;
-  color: black;
-  width: 230px;
-  position: fixed;
-  border-radius: 4px;
-  border: #e6005a 3px solid;
-  padding: 10px;
-  margin-right: 10%;
-}
-
-.card_erro #mensagem_erro{
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.formulario .tipo_campo {
-  font-size: 20px;
-  font-weight: 600 !important;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  margin-bottom: 10px;
-  border: 2px solid #32b9cd;
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.btn {
-  font-family: "Barlow", sans-serif;
-  border: 0;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 10px 15px;
-  color: white;
-  background-color: #e6005a;
-  width: 120px;
-  align-self: center;
-  margin-top: 5px;
-}
-
-.loading-div {
-  width: 50px;
-  margin: auto;
-  display: none;
-}
-
-.loading-div img {
-  height: 50px;
-  width: 50px;
-}
-
-/* PAGINA DOS GRÁFICOS */
-
-.janela {
-  display: flex;
-  width: 100vw;
-}
-
-.header-left a {
-  text-decoration: none;
-  color: white;
-}
-
-.header-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  height: 100vh;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border-right: 3px solid #32b9cd;
-  background-color: #212124;
-  /* border: 3px solid pink; */
-}
-
-.dash-right {
-  display: flex;
-  width: 80%;
-  height: fit-content;
-  background-color: #161618;
-  position: relative;
-  top: 0;
-  left: 25%;
-}
-
-.header-left h1 {
-  color: #32b9cd;
-}
-
-.hello {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.hello h3 {
-  color: #e3b062;
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.hello h3 span {
-  font-weight: 800;
-}
-
-.btn-nav {
-  width: 40%;
-  color: white;
-  background-color: #e6005a;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-.btn-nav-white {
-  width: 40%;
-  background-color: white;
-  border: 3px solid #e6005a;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-.btn-nav-white h3 {
-  color: #e6005a;
-  padding: 0;
-  margin: 0;
-}
-
-.btn-nav h3,
-.btn-logout h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.btn-logout {
-  margin: 0;
-  padding: 0;
-  width: 20%;
-  background-color: #32b9cd;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px 15px;
-  margin-bottom: 100px;
-  cursor: pointer;
-}
-
-/* pagina extra - simulador */
-.simulador {
-  color: white;
 
 }
 
-.simulador .container {
-  flex-direction: column
+/*itens da nav bar*/
+/*cultivo para viver*/
+.item1 :hover {
+    text-transform: lowercase;
+    font-style: italic;
+    
+    
+}
+
+/*tutorial*/
+.item2 :hover {
+
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/*tempo*/
+.item3 :hover {
+
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/*cadastro*/
+.item4 :hover {
+
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/*quem sou*/
+.item5 :hover {
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/*Corpo do site*/
+.body {
+    display: flexbox;
+    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+
+
+}
+
+/*tbem vindo home*/
+.Bem_vindo {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+/*texto apresentação home*/
+.apresentação {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+/*texto importancia do cultivo*/
+.Bem_vindo2 {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    margin-top: 5%;
+}
+
+
+/*textos titulos crecentes animações */
+.Bem_vindo :hover {
+    text-transform: uppercase;
+}
+
+/*cards de plantas em exemplo serao 3 no inicio da pagina(hortela-malva-capim)  */
+.exemplos_plantas {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+/*bloco plantas 3 exemplos*/
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*card1  */
+
+.bloco1 {
+    display: flexbox;
+    width: 300px;
+    height: 500px;
+    display: flexbox;
+    margin: 25px;
+}
+
+/*card1  */
+.bloco1:hover {
+    width: 310px;
+    height: 110px;
+    transition: 0.6s;
+}
+
+/*card1  */
+.bloco1:hover .caixa_1 {
+    width: 310px;
+    height: 300px;
+}
+
+/*card1  */
+.caixa_1 {
+    width: 300px;
+    height: 200px;
+    background-image: url(../assets/images/hortela-4-1.webp);
+    background-size: cover;
+    border-radius: 10%;
+}
+
+
+/*card2  */
+.bloco2 {
+    display: flexbox;
+    width: 300px;
+    height: 500px;
+    display: flexbox;
+    margin: 25px;
+
+
+}
+
+/*card2  */
+
+.caixa_2 {
+    width: 300px;
+    height: 200px;
+    background-image: url(../assets/images/malvadoreino.jpg);
+    background-size: cover;
+    border-radius: 10%;
+}
+
+/*card2  */
+
+.bloco2:hover {
+    width: 310px;
+    height: 510px;
+    transition: 0.6s;
+}
+
+/*card2  */
+
+.bloco2:hover .caixa_2 {
+    width: 310px;
+    height: 300px;
+}
+
+/*card3  */
+
+.bloco3 {
+    display: flexbox;
+    width: 300px;
+    height: 500px;
+    display: flexbox;
+    margin: 25px;
+
+
+}
+
+/*card3  */
+
+.caixa_3 {
+    width: 300px;
+    height: 200px;
+    background-image: url(../assets/images/capim-limao.jpeg);
+    background-size: cover;
+    border-radius: 10%;
+}
+
+/*card3  */
+
+.bloco3:hover {
+    width: 310px;
+    height: 510px;
+    transition: 0.6s;
+}
+
+/*card3  */
+
+.bloco3:hover .caixa_3 {
+    width: 310px;
+    height: 300px;
+}
+
+/*----------------------------------importancia-------------------------------------------------------------------*/
+/*texto importancia*/
+.texto_importancia {
+    display: flex;
+    justify-content: center;
+}
+
+/*texto importancia do cultivo animação*/
+.Bem_vindo2 :hover {
+    text-transform: uppercase;
+
+}
+
+/*bloco cards pessoas doentes*/
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+/* card pessoas doentes1*/
+.caixa_texto1 {
+    background-image: url(../assets/images/importancia1.png);
+    width: 600px;
+    height: 550px;
+    border-radius: 50px;
+    display: flexbox;
+    margin: 25px;
+}
+
+
+
+
+/* card pessoas doentes2*/
+
+
+/* card pessoas doentes3*/
+.caixa_texto3 {
+    background-image: url(../assets/images/importancia2.png);
+    width: 600px;
+    height: 550px;
+    border-radius: 50px;
+    background-size: cover;
+    display: flexbox;
+    margin: 25px;
+}
+
+/*----------------------------------plantas faceis de ter em casa -------------------------------------------------------------------*/
+
+/* bloco plantas faceis de ter em casa*/
+.containerfacil {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* card gengibre*/
+.blocofacil1 {
+    background-image: url(../assets/images/casa1.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+}
+
+.blocofacil1:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card gengibre*/
+.caixa_facil1 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card gengibre*/
+.texto_facil1 {
+    display: flex;
+    margin-top: 55%;
+}
+
+
+/* card boldo*/
+.blocofacil2 {
+    background-image: url(../assets/images/casa2.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+}
+
+.blocofacil2:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card boldo*/
+.caixa_facil2 {
+
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card boldo*/
+.texto_facil2 {
+    display: flex;
+    margin-top: 55%;
+}
+
+/* card babosa*/
+.blocofacil3 {
+    background-image: url(../assets/images/casa3.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+}
+
+.blocofacil3:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card babosa*/
+.caixa_facil3 {
+
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card babosa*/
+.texto_facil3 {
+    display: flex;
+    margin-top: 55%;
+}
+
+/* card ervadoce*/
+.blocofacil4 {
+    background-image: url(../assets/images/mamao.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+}
+
+.blocofacil4:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card ervadoce*/
+.caixa_facil4 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card ervadoce*/
+.texto_facil4 {
+    display: flex;
+    margin-top: 55%;
+}
+
+/* card camomila*/
+.blocofacil5 {
+    background-image: url(../assets/images/boldocasa.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+
+}
+
+.blocofacil5:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card camomila*/
+.caixa_facil5 {
+    width: 450px;
+    border-radius: 10%;
+
+}
+
+/* card camomila*/
+.texto_facil5 {
+    display: flex;
+    margin-top: 55%;
+
+}
+
+/* ---------------------------------------------segunda camada de facil--------------------------------------------------------------*/
+/* segunda camada de facil*/
+.containerfacil2 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* card camomila*/
+.blocofacil6 {
+    background-image: url(../assets/images/banana.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+
+}
+
+.blocofacil6:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card camomila*/
+.caixa_facil6 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card camomila*/
+.texto_facil6 {
+    display: flex;
+    margin-top: 55%;
+
+}
+
+.blocofacil7 {
+    background-image: url(../assets/images/chuchu.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: 100%;
+
+}
+
+.blocofacil7:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card camomila*/
+.caixa_facil7 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card camomila*/
+.texto_facil7 {
+    display: flex;
+    margin-top: 55%;
+
+}
+
+.blocofacil8 {
+    background-image: url(../assets/images/milho.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+
+}
+
+.blocofacil8:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+/* card camomila*/
+.caixa_facil8 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card camomila*/
+.texto_facil8 {
+    display: flex;
+    margin-top: 55%;
+
+}
+
+
+
+.blocofacil9 {
+    background-image: url(../assets/images/fava.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+
+}
+
+.blocofacil9:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+}
+
+
+/* card camomila*/
+.caixa_facil9 {
+    width: 450px;
+    border-radius: 10%;
+}
+
+/* card camomila*/
+.texto_facil9 {
+    display: flex;
+    margin-top: 55%;
+
+}
+
+.blocofacil10 {
+    background-image: url(../assets/images/capim-limao.jpeg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    background-size: cover;
+
+
+}
+
+/* card camomila*/
+.caixa_facil10 {
+    width: 450px;
+    border-radius: 10%;
+
+}
+
+/* card camomila*/
+.texto_facil10 {
+    display: flex;
+    margin-top: 55%;
+
+
+}
+
+.blocofacil10:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.6s;
+
+}
+
+/*------------------------------------------------rodapé --------------------------------------------------------*/
+
+.rodape1 {
+    margin-top: 20%;
+    display: flex;
+    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    background-size: contain;
+    border-radius: 2%;
+    border-color: rgb(0, 0, 0);
+    border-style: ridge;
+    list-style: none;
+}
+
+#rodape1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item1roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item2roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item3roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item4roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item5roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+/*------------------------------------------------rodapé --------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------PAGINA TUTORIAL --------------------------------------------------------*/
+.bodytutorial {
+    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    background-size: contain;
+    display: flexbox;
+
+}
+
+.gif1 {
+    justify-content: center;
+    display: flex;
+
+
+}
+
+
+.dropdown{
+    font-weight: bolder;
+    position: relative;
+    display: inline;
+    margin-block-end: 5%;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 135px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    font-size: larger;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+
+}
+.dropdown-content a:hover{
+    color: #232323;
+    border-bottom: 1px solid #494b4b;
+    cursor: pointer;
+}
+
+.dropdown-content a{
+    color: #000;
+    border-bottom: transparent;
+}
+
+
+
+/*------------------------------------------------abobora --------------------------------------------------------*/
+
+.aboborabloco {
+    background-image: url(../assets/images/pexels-mathias-reding-10057784.jpg);
+    background-size: contain;
+}
+
+.tutorial_abobora {
+    display: flex;
+    justify-content: center;
+}
+
+.div_abobora-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.texto_abobora {
+    display: flex;
+    justify-content: center;
+}
+
+/*------------------------------------------------feijao --------------------------------------------------------*/
+
+
+.feijaobloco {
+    background-image: url(../assets/images/pexels-karolina-grabowska-4963963.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_feijao {
+    display: flex;
+    justify-content: center;
+}
+
+.div_feijao-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_feijao {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------pimentao --------------------------------------------------------*/
+
+
+.pimentaobloco {
+    background-image: url(../assets/images/pexels-jonathan-borba-15876326.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_pimentao {
+    display: flex;
+    justify-content: center;
+}
+
+.div_pimentao-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_pimentao {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------mamao --------------------------------------------------------*/
+
+.mamaobloco {
+    background-image: url(../assets/images/pexels-jess-loiterton-4327695.jpg);
+    background-size: contain;
+
+
+}
+
+.tutorial_mamao {
+    display: flex;
+    justify-content: center;
+}
+
+.div_mamao-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_mamao {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------boldo --------------------------------------------------------*/
+
+.boldobloco {
+    background-image: url(../assets/images/boldoa.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_boldo {
+    display: flex;
+    justify-content: center;
+}
+
+.div_boldo-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_boldo {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------banana --------------------------------------------------------*/
+
+
+.bananabloco {
+    background-image: url(../assets/images/pexels-eva-bronzini-6148784.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_banana {
+    display: flex;
+    justify-content: center;
+}
+
+.div_banana-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_banana {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------chuchu --------------------------------------------------------*/
+
+
+
+.chuchubloco {
+    background-image: url(../assets/images/chuchu.jpeg);
+    background-size: cover;
+
+
+}
+
+.tutorial_chuchu {
+    display: flex;
+    justify-content: center;
+}
+
+.div_chuchu-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_chuchu {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------milho --------------------------------------------------------*/
+
+
+.milhobloco {
+    background-image: url(../assets/images/pexels-marta-dzedyshko-3302501.jpg);
+    background-size: contain;
+
+
+}
+
+.tutorial_milho {
+    display: flex;
+    justify-content: center;
+}
+
+.div_milho-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_milho {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------fava --------------------------------------------------------*/
+
+.favabloco {
+    background-image: url(../assets/images/pexels-eiliv-aceron-6895914.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_fava {
+    display: flex;
+    justify-content: center;
+}
+
+.div_fava-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_fava {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------capim --------------------------------------------------------*/
+
+.capimbloco {
+    background-image: url(../assets/images/Capim-limao-alivio-de-sintomas-de-gripes-e-problemas-estomacais.jpg);
+    background-size: cover;
+
+
+}
+
+.tutorial_capim {
+    display: flex;
+    justify-content: center;
+}
+
+.div_capim-tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.passo_capim {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------------------------------------------rodape tutorial --------------------------------------------------------*/
+
+.rodape3 {
+
+    display: flex;
+    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    background-size: contain;
+    border-radius: 2%;
+    border-color: rgb(0, 0, 0);
+    border-style: ridge;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.item1roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item2roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item3roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item4roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.item5roda :hover {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+
+
+
+.tutorial {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+.apresentação_tutorial {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+.plantas_comida_imagem {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/*------------------------------------------------rodape home --------------------------------------------------------*/
+
+
+.rodape {
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    padding: 50px;
+    height: 90px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    list-style: none;
+
+}
+
+.roda1 {
+    display: flex;
+    list-style: none;
+    font-style: normal;
+
+}
+
+.roda2 {
+    display: flex;
+    list-style: none;
+    font-style: normal;
+}
+
+.roda3 {
+    display: flex;
+    list-style: none;
+    font-style: normal;
+}
+
+.roda4 {
+    display: flex;
+    list-style: none;
+    font-style: normal;
+}
+
+
+/*------------------------------------------------quem sou --------------------------------------------------------*/
+
+
+
+.quem_sou {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+.quem_sou_nav {
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    height: 60px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    list-style: none;
+}
+
+.body_quem_sou {
+    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    display: flexbox;
+    background-size: contain;
+
+
+}
+
+
+.Apresentação {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+
+.foto1 {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.casa {
+    display: flex;
+    justify-content: center;
+    }
+
+
+
+.casa_1 {
+    background-image: url(../assets/images/casa1.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 5%;
+}
+
+.casa_2 {
+    background-image: url(../assets/images/casa2.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 5%;
+
+}
+
+.casa_3 {
+    background-image: url(../assets/images/mamao.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 5%;
+}
+
+
+.casa_4 {
+    background-image: url(../assets/images/boldocasa.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 5%;
+}
+
+.casa_5 {
+    background-image: url(../assets/images/banana.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 5%;
+}
+
+.casa_6 {
+    background-image: url(../assets/images/abacatecasa.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 5%;
+}
+
+
+
+
+.imagem_foto1 {
+    background-image: url(../assets/images/matheus11.jpg);
+    width: 500px;
+    height: 700px;
+    background-size: cover;
+    border-radius: 20%;
+}
+
+.video1 {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.video_1 {
+    display: flex;
+    width: 550px;
+    height: 800px;
+    justify-content: center;
+
+}
+
+.video_2 {
+    display: flex;
+    width: 250px;
+    height: 500px;
+    background-size: cover;
+    justify-content: center;
+}
+
+.video2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.imagenssertao {
+    display: flex;
+    justify-content: center;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    right: 80px;
+}
+
+.imagenssertao2 {
+    display: flex;
+
+    justify-content: center;
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    right: 80px;
+}
+
+.imagenssertao3 {
+    display: flex;
+
+    justify-content: center;
+}
+
+.img3 {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    right: 100px;
+}
+
+
+
+.redes {
+    justify-content: center;
+
+    
+
+}
+
+.redes1 {
+    justify-content: space-between;
+
+}
+
+/*------------------------------------------------login-cadastro --------------------------------------------------------*/
+
+.blocologin {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../assets/images/pexels-alexander-grey-9841265.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 15%;
+    color: rgb(17, 255, 0);
+    width: 250px;
+
+
+}
+
+.input_login {
+   height: 20px;
+    width: 99%;
+    padding: 3px;
+}
+
+.botao_login {
+    background-color: rgb(17, 255, 0);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+.blococadastro {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../assets/images/pexels-alexander-grey-9841265.jpg);
+    background-size: cover;
+    top: 50%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 15%;
+    color: rgb(17, 255, 0);
+    width: 300px;
+
+}
+
+.input_cadastro {
+    height: 20px;
+
+    width: 99%;
+    padding: 3px;
+}
+
+.botao_cadastro {
+    background-color: rgb(17, 255, 0);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+.bodylogin_cadastro {
+    background-image: url(../assets/images/pexels-cottonbro-studio-9709226.jpg);
+    background-size: cover;
+}
+
+
+.blocosimula1 {
+    background-image: url(../assets/images/pexels-kindel-media-7457523.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    background-size: cover;
+    padding: 60px;
+    border-radius: 15%;
+    color: lawngreen;
+    width: 300px;
+
+}
+
+
+#clima  {
+    width: 100%;
+    padding: 2%;
+    background-color:lawngreen;
+
+}
+
+#rega {
+    width: 100%;
+    padding: 2%;
+    background-color:lawngreen;
+
+}
+
+#espaço {
+    width: 100%;
+    padding: 2%;
+    background-color:lawngreen;
+
+}
+
+#luz_diaria {
+    width: 100%;
+    padding: 2%;
+    background-color:lawngreen;
+
+}
+
+/*------------------------------------------------Simulador --------------------------------------------------------*/
+
+
+.bodysimulador {
+    background-image: url(../assets/images/pexels-ihsan-adityawarman-2045613.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.caixaG {
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+justify-content: space-around;
+
+}
+.caixamedia{
+    width: 900px;
+    height:800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.imagemjs{
+    justify-content: center;
+    width: 800px;
+    height: 350px;
+    border-radius:20% ;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    
+ 
+}
+.texto1{
+    margin-top: 2%;
+    width: 900PX;
+    height: 400PX;
+    border-radius: 5%;
+}
+.simule_texto{
+    width: 900px;
+    height: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+/*------------------------------------------------curiosidades --------------------------------------------------------*/
+.body_curiosidade{
+    background-image: url(../assets/images/pexels-dids-4091235.jpg);
+    background-size: cover;
+    display: flexbox;
+
+}
+.jasabe{
+    background-color: aqua;
+    width: 500px;
+    height: 100px;
+    justify-content: center;
+    
+}
+.caixajasabeg{
+    background-color: black;
+    justify-content: center;
+    height: 200px;
+}
+.inputplanta{
+    background-color: rgb(87, 165, 42);
+    height: 25px;
+    width: 200px;
+}
+.botaoplanta{
+    background-color: rgb(87, 165, 42);
+    height: 30px;
+    width: 200px;
 }
