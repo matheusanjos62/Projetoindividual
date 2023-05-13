@@ -124,6 +124,10 @@
     background-size: contain;
 }
 
+.textomedicinal{
+    margin-top: 5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 /*card1  */
 
@@ -1244,7 +1248,7 @@
 .blocologin {
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../assets/images/pexels-igor-haritanovich-1687341.jpg);
+    background-image: url(../assets/images/pexels-lil-artsy-1624076.jpg);
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -1261,7 +1265,7 @@
 .blocologin2{
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../assets/images/pexels-igor-haritanovich-1687341.jpg);
+    background-image: url(../assets/images/pexels-lil-artsy-1624076.jpg);
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -1276,9 +1280,22 @@
 }
 
 .input_login {
-   height: 20px;
+   height: 50px;
     width: 99%;
-    padding: 3px;
+    padding: 8px;
+    
+}
+#input_email{
+    height: 30px;
+    width: 99%;
+    
+    
+}
+#input_senha{
+    height: 30px;
+    width: 99%;
+    
+    
 }
 
 .botao_login {
@@ -1294,7 +1311,7 @@
 .blococadastro {
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../assets/images/pexels-igor-haritanovich-1687341.jpg);
+    background-image: url(../assets/images/pexels-lil-artsy-1624076.jpg);
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -1304,13 +1321,19 @@
     border-radius: 15%;
     color: rgb(17, 255, 0);
     width: 250px;
-    height: 300px;
+    height: 350px;
+    
 
+}
+#input_nome{
+    height: 30px;
+    width: 99%;
+    
 }
 .blococadastro2{
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../assets/images/pexels-igor-haritanovich-1687341.jpg);
+    background-image: url(../assets/images/pexels-lil-artsy-1624076.jpg);
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -1344,14 +1367,14 @@
 }
 
 .bodylogin_cadastro {
-    background-image: url(../assets/images/pexels-cottonbro-studio-9709226.jpg);
+    background-image: url(../assets/images/373525-blackangel.jpg);
     background-size: cover;
     
 }
 
 
 .blocosimula1 {
-    background-image: url(../assets/images/pexels-kindel-media-7457523.jpg);
+    background-image: url(../assets/images/pexels-jonathan-cooper-9715780.jpg);
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     background-size: cover;
@@ -1451,7 +1474,7 @@ justify-content: space-around;
 }
 /*------------------------------------------------curiosidades --------------------------------------------------------*/
 .body_curiosidade{
-    background-image: url(../assets/images/pexels-dids-4091235.jpg);
+    background-image: url(../assets/images/O.jpeg);
     background-size: cover;
     
 
@@ -1469,13 +1492,15 @@ justify-content: space-around;
     height: 200px;
 }
 .inputplanta{
-    background-color: rgb(87, 165, 42);
+    background-color: rgb(245, 245, 245);
     height: 25px;
     width: 200px;
+   
 }
 .botaoplanta{
-    background-color: rgb(87, 165, 42);
-    height: 30px;
+    background-image: url(../assets/images/373525-blackangel.jpg);
+background-size: contain;
+    height: 50px;
     width: 200px;
 }
 .div_jasabe{
