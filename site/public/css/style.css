@@ -62,7 +62,7 @@
 /*Corpo do site*/
 .body {
     display: flexbox;
-    background-image: url(../assets/images/il_794xN.3312611135_679u.jpg);
+    background-image: url(../assets/images/il_794xN.3610313202_dtiq.jpg);
     margin: 0;
     padding: 0;
     background-size: contain;
@@ -122,6 +122,7 @@
     background-image: url(../assets/images/Twisted.jpeg);
     height: 700px;
     background-size: contain;
+    opacity: 0.80;
 }
 
 .textomedicinal{
@@ -439,6 +440,7 @@
 .containerfacil2 {
     display: flex;
     justify-content: space-evenly;
+    
 
 }
 
