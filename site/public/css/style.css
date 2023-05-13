@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*menu da nav bar*/
@@ -12,11 +13,8 @@
     display: flex;
     padding: 20px;
     height: 70px;
-    border: #000;
-    border-style:ridge;
-    height: 30px;
     text-decoration:none;
-    font-family: 'Poppins',sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #a0a0a0;
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -64,12 +62,20 @@
 /*Corpo do site*/
 .body {
     display: flexbox;
-    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    background-image: url(../assets/images/il_794xN.3312611135_679u.jpg);
     margin: 0;
     padding: 0;
     background-size: contain;
+    
 
 
+}
+
+.containerimagemcomeço{
+    width: 100%;
+    justify-content: center;
+    height: 500px;
+    display: flex;
 }
 
 /*tbem vindo home*/
@@ -106,12 +112,16 @@
     display: flex;
     justify-content: center;
     font-style: normal;
+    
 }
 
 /*bloco plantas 3 exemplos*/
 .container1 {
     display: flex;
     justify-content: center;
+    background-image: url(../assets/images/Twisted.jpeg);
+    height: 700px;
+    background-size: contain;
 }
 
 
@@ -581,7 +591,7 @@
 .rodape1 {
     margin-top: 20%;
     display: flex;
-    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    background-image: url(../assets/images/il_794xN.3312611135_679u.jpg);
     background-size: contain;
     border-radius: 2%;
     border-color: rgb(0, 0, 0);
@@ -626,7 +636,7 @@
 
 /*------------------------------------------------PAGINA TUTORIAL --------------------------------------------------------*/
 .bodytutorial {
-    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    background-image: url(../assets/images/il_794xN.3396479459_b5el.webp);
     background-size: contain;
     display: flexbox;
 
@@ -645,6 +655,8 @@
     position: relative;
     display: inline;
     margin-block-end: 5%;
+   
+
 }
 
 .dropdown-content{
@@ -996,10 +1008,8 @@
     justify-content: space-around;
     display: flex;
     list-style: none;
-    padding: 50px;
-    height: 90px;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
+    
+    
     list-style: none;
 
 }
