@@ -3,25 +3,30 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 /*menu da nav bar*/
 .menu {
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
     padding: 20px;
     height: 70px;
-    
-    
-
+    border: #000;
+    border-style:ridge;
+    height: 30px;
+    text-decoration:none;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
 
 }
-
 /*itens da nav bar*/
 /*cultivo para viver*/
 .item1 :hover {
-    text-transform: lowercase;
-    font-style: italic;
+    text-transform:lowercase;
+    font-style: normal;
     
     
 }
@@ -33,7 +38,7 @@
     text-transform: lowercase;
 }
 
-/*tempo*/
+/*especie*/
 .item3 :hover {
 
     font-style: italic;
@@ -53,6 +58,9 @@
     text-transform: lowercase;
 }
 
+
+
+
 /*Corpo do site*/
 .body {
     display: flexbox;
@@ -69,13 +77,14 @@
     display: flex;
     justify-content: center;
     font-style: normal;
+    
 }
 
 /*texto apresentação home*/
 .apresentação {
     display: flex;
     justify-content: center;
-    font-style: italic;
+    font-style: normal;
 }
 
 /*texto importancia do cultivo*/
@@ -1346,6 +1355,7 @@
 .caixaG {
     display: flex;
     width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1355,8 +1365,9 @@ justify-content: space-around;
 
 }
 .caixamedia{
+    margin-top:2% ;
     width: 900px;
-    height:800px;
+    height:600px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -1391,13 +1402,13 @@ justify-content: space-around;
 .body_curiosidade{
     background-image: url(../assets/images/pexels-dids-4091235.jpg);
     background-size: cover;
-    display: flexbox;
+    
 
 }
 .jasabe{
     background-color: aqua;
     width: 500px;
-    height: 100px;
+    height: 1100px;
     justify-content: center;
     
 }
@@ -1415,4 +1426,7 @@ justify-content: space-around;
     background-color: rgb(87, 165, 42);
     height: 30px;
     width: 200px;
+}
+.div_jasabe{
+    justify-content: center;
 }
