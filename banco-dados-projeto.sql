@@ -1,4 +1,5 @@
 create database projeto;
+
 use projeto;
 
 create table usuario(
@@ -23,13 +24,22 @@ nomePlanta varchar(45)
 SELECT * FROM usuario;
 
 insert into planta values
-(null,'orquidea'),
-(null,'bambu da sorte'),
 (null,'cacto'),
 (null,'costela de adao'),
+(null,'suculenta'),
 (null,'anturio'),
 (null,'jiboia'),
 (null,'zamioculca'),
-(null,'aspargo pluma');
+(null,'aspargo pluma'),
+(null,'aglaonema'),
+(null,'croton'),
+(null,'palmeira areca'),
+(null,'pau dagua'),
+(null,'orquidea'),
+(null,'lirio da paz'),
+(null,'bromelia'),
+(null,'bambu da sorte'),
+(null,'peperomia');
+
 
 
