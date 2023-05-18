@@ -1251,7 +1251,7 @@
 .blocologin {
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../assets/images/pexels-lil-artsy-1624076.jpg);
+    background: rgba(0, 0, 0, .60);
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -1268,8 +1268,9 @@
 .blocologin2{
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../assets/images/pexels-lil-artsy-1624076.jpg);
+    background: rgba(0, 0, 0, .60);
     background-size: cover;
+   
     position: absolute;
     top: 50%;
     left: 70%;
@@ -1314,7 +1315,7 @@
 .blococadastro {
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../assets/images/pexels-lil-artsy-1624076.jpg);
+    background: rgba(0, 0, 0, .60);
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -1336,8 +1337,7 @@
 .blococadastro2{
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../assets/images/pexels-lil-artsy-1624076.jpg);
-    background-size: cover;
+    background: rgba(0, 0, 0, .60);
     position: absolute;
     top: 50%;
     left: 30%;
@@ -1512,4 +1512,25 @@ background-size: contain;
 
 .menugrafico{
     background-color: aqua;
+}
+.bodymenu{
+    background-color: aqua;
+    display: flex;
+}
+.grafico{
+    
+    width: 40vw;
+    
+}
+.bodygrafico{
+    display: flex;
+    background-color: #000;
+}
+.grafico1{
+    background-image: url(../assets/images/il_794xN.3312611135_679u.jpg);
+    background-size: cover;
+}
+.grafico2{
+    background-image: url(../assets/images/il_794xN.3396479459_b5el.webp );
+    background-size: cover;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popularidade das plantas </title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script  src="js/funcoes.js">
     
@@ -14,8 +15,8 @@
 
 </head>
 
-<body  style="display: flex;background-color: honeydew;" onload="obterDadosGrafico()">
-    <nav id="menugrafico" class="menugrafico">
+<body id="bodygrafico" onload="obterDadosGrafico()">
+    <nav id="menu" class="menu">
         <ul class="item2">
             <li>
                 <h1><a href="Cadastrobd.html" style="color:  rgb(0, 0, 0);">Tutorial</a><hr></h1>
@@ -46,13 +47,15 @@
             </li>
         </ul>
     </nav>
-    <div>
-        <canvas id="myChart" style="position: relative; height:40vh; width:40vw"></canvas>></canvas>
+    <div class="grafico">
+    <div class="grafico1" >
+        <canvas id="myChart"></canvas>
     </div>
-    <div>
-        <canvas id="myChart2" style="position: relative; height:40vh; width:40vw"></canvas>
-        <div class="grafico">
-           
+
+
+    <div class="grafico2">
+        <canvas id="myChart2">
+        </canvas>
         </div>
     </div>
 </body>
@@ -274,3 +277,6 @@
 
     }
 </script>
+
+
+<script src="https://desk.zoho.com/portal/api/feedbackwidget/861751000000226183?orgId=811411868&displayType=popout"></script>

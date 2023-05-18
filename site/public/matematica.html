@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Simulador Crescimento</title>
+</head>
+
+<body class="bodysimulador">
+
+    <nav id="menu" class="menu">
+
+        <ul class="item1">
+            <li>
+                <h1><a href="index.html" style="color:rgb(255, 255, 255)">🌻Cultivo para vida</a>
+                    <hr>
+                </h1>
+            </li>
+        </ul>
+        <ul class="item2">
+            <li>
+                <h1><a href="tutorial.html" style="color:rgb(255, 255, 255)">🌻Tutorial</a>
+                    <hr>
+                </h1>
+            </li>
+        </ul>
+        <ul class="item3">
+            <li>
+                <h1><a href="Simulador_tempo.html" style="color:rgb(255, 255, 255)">🌻Simulador de especie</a>
+                    <hr>
+                </h1>
+            </li>
+        </ul>
+        <ul class="item4">
+            <li>
+                <h1><a href="Curiosidades.html" style="color:rgb(255, 255, 255)">🌻Curiosidades</a>
+                    <hr>
+                </h1>
+            </li>
+        </ul>
+        <ul class="item4">
+            <li>
+                <h1><a href="quem_sou.html" style="color:rgb(255, 255, 255)">🌻Quem sou</a>
+                    <hr>
+                </h1>
+            </li>
+            <li>
+                <h1><a href="Grafico.html" style="color:  rgb(0, 0, 0);">GRAFICO</a>
+                    <hr>
+                </h1>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="caixaG">
+
+
+        <div class="blocosimula2">
+            <h2>Simule a vida util de sua planta com as regas </h2><br>
+            <div class="Simulador1">
+                <p style="color: lawngreen;"></p>
+                <input placeholder="Quantidade de Regas por dia" type="text" name="" id="input_dia">
+
+
+                <input placeholder="Quantidade de Regas semana" type="text" name="" id="input_semana">
+
+
+
+                <button onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">Verificar vida
+                    util</button>
+
+                <!-- <div id="div_mensagem"></div> -->
+
+            </div>
+        </div>
+        <div id="div_mensagem"></div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+<script>
+
+   function veja(){
+    var dia = Number(input_dia.value)
+    var semana = Number(input_semana.value)
+    var resultado = dia*semana
+
+    if (resultado >5){
+        div_mensagem.innerHTML=`CRESCER SALDAVEL`
+    }else{
+        div_mensagem.innerHTML=`CRESCER doente`
+
+    }
+
+
+
+   }
+
+
+
+
+</script>

@@ -7,51 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Cadastro</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Sweet alert -->
 </head>
 
 <body class="bodylogin_cadastro">
     <nav id="menu" class="menu">
         <ul class="item2">
             <li>
-                <h1><a href="Cadastrobd.html" style="color:  rgb(0, 0, 0);">Tutorial</a><hr></h1>
+                <h1><a href="Cadastrobd.html" style="color:  rgb(0, 0, 0);">Tutorial</a>
+                    <hr>
+                </h1>
             </li>
         </ul>
         <ul class="item3roda">
             <li>
-                <h1><a href="quem_sou.html" style="color:  rgb(0, 0, 0);">Sobre mim</a><hr></h1>
-            </li>
-        </ul>
-        
-        <ul class="item3roda">
-            <li>
-                <h1><a href="loginbanco.html" style="color:  rgb(0, 0, 0);">Curiosidades</a><hr></h1>
+                <h1><a href="quem_sou.html" style="color:  rgb(0, 0, 0);">Sobre mim</a>
+                    <hr>
+                </h1>
             </li>
         </ul>
 
-        
-        <ul class="item4">
+        <ul class="item3roda">
             <li>
-                <h1><a href="loginbanco.html" style="color: rgb(0, 0, 0);">Login</a><hr></h1>
+                <h1><a href="loginbanco.html" style="color:  rgb(0, 0, 0);">Curiosidades</a>
+                    <hr>
+                </h1>
             </li>
         </ul>
-        
+
+
+        <ul class="item4">
+            <li>
+                <h1><a href="loginbanco.html" style="color: rgb(0, 0, 0);">Login</a>
+                    <hr>
+                </h1>
+            </li>
+        </ul>
+
         <ul class="item5">
             <li>
-                <h1><a href="quem_sou.html" style="color:rgb(0, 0, 0)">Quem sou</a><hr></h1>
+                <h1><a href="quem_sou.html" style="color:rgb(0, 0, 0)">Quem sou</a>
+                    <hr>
+                </h1>
             </li>
         </ul>
     </nav>
-    
+
 
     <div class="blococadastro">
         <h3 style="color: aliceblue;">Cadastre-se e fique por dentro do mundo do cultivo </h3><br><br>
         <h1>Cadastro</h1><br><br>
         <input style="font-size: large;" id="input_nome" type="text" placeholder="Nome"><br><br>
-        <input style="font-size: large;"id="input_email" type="text" placeholder="Email"><br><br>
-        <input style="font-size: large;"id="input_senha" type="password" placeholder="Senha"><br><br>
-        
-        <select style="font-size: large;" id="plantabd" class="plantabd" >
-            
+        <input style="font-size: large;" id="input_email" type="text" placeholder="Email"><br><br>
+        <input style="font-size: large;" id="input_senha" type="password" placeholder="Senha"><br><br>
+
+        <select style="font-size: large;" id="plantabd" class="plantabd">
+
             <option value="1">Cacto</option>
             <option value="2">Costela de adao</option>
             <option value="3">Suculenta</option>
@@ -70,20 +82,108 @@
             <option value="16">Peperomia</option>
 
         </select>
-        <button onclick="cadastrar()" class="botao_cadastro" style="color: black;font-weight: bold;margin-top: 5%;">Cadastrar</button>
+        <button onclick="cadastrar()" class="botao_cadastro"
+            style="color: black;font-weight: bold;margin-top: 5%;">Cadastrar</button>
 
     </div>
     </div>
 
     <div class="blococadastro2">
         <h1 style="color: aliceblue;">Faça o cadastro e começe sua experiencia com nossa funções </h1><br><br>
-        <h1>Tenha acesso ao nosso tutorial<br><br>simule a planta que se encaixa ao seu ambiente<br><br>Saiba curiosidades sobre a sua planta </h1><br><br>
+        <h1>Tenha acesso ao nosso tutorial<br><br>simule a planta que se encaixa ao seu ambiente<br><br>Saiba
+            curiosidades sobre a sua planta </h1><br><br>
 
 </body>
 
 </html>
 
 <script>
+    function cadastrar() {
+        //aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = input_nome.value;
+        var emailVar = input_email.value;
+        var senhaVar = input_senha.value;
+        var planta_favoritaVar = plantabd.value;
+
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || planta_favoritaVar == "") {
+            //cardErro.style.display = "block"
+            swal("Ops", "Preencha todos os campos 😠", "error")
+
+
+            //finalizarAguardar();
+            return false;
+        }
+        else if (nomeVar.length < 2) {
+            swal("Ops", "O nome inserido é muito curto. Por favor, insira um nome com pelo menos 8 caracteres 😠", "warning")
+        }
+        else if ( emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1 || emailVar.length < 5) {
+            swal("Ops", "O e-mail cadastrado é inválido. Por favor, insira um e-mail válido 😠", "warning")
+        }
+        else if (senhaVar.length < 2) {
+            swal("Ops", "A senha inserida é muito curta. Por favor,insira uma senha com pelo menos 8 caracteres 😠", "warning")
+        }
+        else {
+            // Enviando o valor da nova input
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    // crie um atributo que recebe o valor recuperado aqui
+                    // Agora vá para o arquivo routes/usuario.js
+                    nomeServer: nomeVar,
+                    emailServer: emailVar,
+                    senhaServer: senhaVar,
+                    plantaServer: planta_favoritaVar
+                })
+            }).then(function (resposta) {
+
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+                    //cardErro.style.display = "block";
+                    swal("Parábens", "Cadastro realizado com sucesso redirecionando a tela de login 😄...!", "success");
+
+
+                    setTimeout(() => {
+                        window.location = "./loginbanco.html";
+                    }, 3000)
+
+                    //limparFormulario();
+                    //finalizarAguardar();
+                } else {
+                    swal("Ops", "Mais de um usuário com o mesmo login e senha 😭!")
+                }
+            }).catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                //finalizarAguardar();
+            });
+
+            return false;
+        }
+    }
+
+        //function sumirMensagem() {
+            //cardErro.style.display = "none"
+        //}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!--<script>
     function cadastrar() {
         
 
@@ -146,4 +246,12 @@
         cardErro.style.display = "none"
     }
 
-</script>
+
+
+
+
+
+
+</script>-->
+<script
+    src="https://desk.zoho.com/portal/api/feedbackwidget/861751000000226171?orgId=811411868&displayType=popout"></script>
