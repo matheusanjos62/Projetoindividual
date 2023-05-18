@@ -21,7 +21,7 @@ idplanta int primary key auto_increment,
 nomePlanta varchar(45)
 );
 
-SELECT * FROM usuario;
+
 
 insert into planta values
 (null,'cacto'),
@@ -42,4 +42,6 @@ insert into planta values
 (null,'peperomia');
 
 
-
+SELECT * FROM usuario;
+select count(usuario.fkplanta) as voto , planta.nomePlanta as planta   
+        from usuario join planta on idplanta= fkplanta group by planta;

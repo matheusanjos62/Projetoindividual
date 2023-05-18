@@ -8,13 +8,14 @@
     <title>Popularidade das plantas </title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script  src="js/funcoes.js">
+    
        
     </script>
 
 </head>
 
-<body style="display: flex;background-color: honeydew;" onload="obterDadosGrafico()">
-    <nav id="menu" class="menu">
+<body  style="display: flex;background-color: honeydew;" onload="obterDadosGrafico()">
+    <nav id="menugrafico" class="menugrafico">
         <ul class="item2">
             <li>
                 <h1><a href="Cadastrobd.html" style="color:  rgb(0, 0, 0);">Tutorial</a><hr></h1>
@@ -125,7 +126,7 @@
             let dados = {
                 labels: labels,
                 datasets: [{
-                    label: 'plantas mais escolhidas',
+                    label: 'plantas escolhidas',
                     data: [],
                     fill: false,
                     borderColor: 'rgb(75, 192, 192)',
@@ -133,6 +134,29 @@
                 },
                 {
                     label: '',
+                    data: [],
+                    fill: false,
+                    borderColor: 'rgb(199, 52, 52)',
+                    tension: 0.1
+                }]
+            };
+
+            
+            //-------------------------grafico2--------------------------------------------------------
+            let labels2 = [];
+
+            // Criando estrutura para plotar gráfico - dados
+            let dados2 = {
+                labels: labels,
+                datasets: [{
+                    label: 'TOP 3 plantas',
+                    data: [],
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                },
+                {
+                    label2: '',
                     data: [],
                     fill: false,
                     borderColor: 'rgb(199, 52, 52)',
@@ -172,6 +196,20 @@
                 document.getElementById('myChart'),
                 config
             );
+
+
+            //------------------------grafico 2 ----------------------------------------------------------
+            const config2 = {
+                type: 'doughnut',
+                data: dados,
+            };
+
+            // Adicionando gráfico criado em div na tela
+            let myChart2 = new Chart(
+                document.getElementById('myChart2'),
+                config
+            );
+
 
             setTimeout(() => atualizarGrafico(idAquario, dados, myChart), 2000);
         }
