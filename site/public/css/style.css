@@ -1564,3 +1564,7 @@ background-size: contain;
     width: 100%;
     height: 20px;
 }
+.tenor-gif-embed{
+    height: 500px;
+    width: 100px;
+}
