@@ -60,18 +60,19 @@
     <div class="caixaG">
 
 
-        <div class="blocosimula2">
-            <h2>Simule a vida util de sua planta com as regas </h2><br>
-            <div class="Simulador1">
+        <div class="blocosimula3">
+            
+            <div class="Simulador3">
                 <p style="color: lawngreen;"></p>
-                <input placeholder="Quantidade de Regas por dia" type="text" name="" id="input_dia">
+                <h2 style="color: aliceblue;"> Simule a vida util de sua planta com as regas </h2><br>
+                <input class="input1for" placeholder="Quantidade de Regas por dia" type="text" name="" id="input_dia"><br>
 
 
-                <input placeholder="Quantidade de Regas semana" type="text" name="" id="input_semana">
+                <input class="input2for"placeholder="Quantidade de Regas semana" type="text" name="" id="input_semana">
 
 
 
-                <button onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">Verificar vida
+                <button  onclick="veja()" class="botao_login" style="color: black;font-weight: bold;">Verificar vida
                     util</button>
 
                 <!-- <div id="div_mensagem"></div> -->
@@ -81,31 +82,40 @@
         <div id="div_mensagem"></div>
 
 
-
-
-
-
-
 </body>
 
 </html>
 <script>
 
    function veja(){
+    var lista = [`<img src="https://media.tenor.com/KNHS9V3_dFMAAAAC/planta-muerta-matar-la-planta.gif">
+ `]
+    var lista2 =  [`<img src="https://media.tenor.com/5GAXSFaiWrAAAAAC/llover-regar-la-planta.gif">
+ `]
+
     var dia = Number(input_dia.value)
     var semana = Number(input_semana.value)
     var resultado = dia*semana
-
-    if (resultado >5){
-        div_mensagem.innerHTML=`CRESCER SALDAVEL`
+    
+for (var i = 0; i < lista.length; i++) {
+    var imagem = lista[i];
+    if(resultado<5){
+        div_mensagem.innerHTML = `<p style="color: aliceblue;">SUA PLANTA PODERÁ CRESCER MAS SEM OS DEVIDOS <br>CUIDADOS NA REGA ELA PODE MURCHAR</p>
+<BR> <BR>${lista}`
     }else{
-        div_mensagem.innerHTML=`CRESCER doente`
+        div_mensagem.innerHTML = `<p style="color: aliceblue;">SUA PLANTA IRÁ TER UMA VIDA MUITO MAIS SAUDAVEL </p><BR>${lista2}`
 
     }
-
-
-
+}
    }
+
+
+
+
+
+
+
+
 
 
 
