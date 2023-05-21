@@ -1069,7 +1069,7 @@
 }
 
 .body_quem_sou {
-    background-image: url(../assets/images/pexels-pineapple-supply-co-192312.jpg);
+    background-image: url(../assets/images/pexels-ihsan-adityawarman-2045613.jpg);
     display: flexbox;
     background-size: contain;
 
@@ -1197,6 +1197,7 @@
 .imagenssertao {
     display: flex;
     justify-content: center;
+    height: 700px;
 }
 
 .img1 {
@@ -1208,6 +1209,7 @@
 
 .imagenssertao2 {
     display: flex;
+    height: 700px;
 
     justify-content: center;
 }
@@ -1221,6 +1223,7 @@
 
 .imagenssertao3 {
     display: flex;
+    height: 500px;
 
     justify-content: center;
 }
@@ -1230,6 +1233,12 @@
     justify-content: center;
     width: 100px;
     right: 100px;
+}
+.videopai{
+    height: 500px;
+   
+    justify-content: center;
+    display: flex;
 }
 
 
