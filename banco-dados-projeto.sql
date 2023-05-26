@@ -45,3 +45,7 @@ insert into planta values
 SELECT * FROM usuario;
 select count(usuario.fkplanta) as voto , planta.nomePlanta as planta   
         from usuario join planta on idplanta= fkplanta group by planta;
+
+
+select count(usuario.fkplanta) as voto, planta.nomePlanta as planta   
+        from usuario join planta on idplanta= fkplanta group by nomePlanta order by voto desc limit 3;
