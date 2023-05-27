@@ -44,6 +44,8 @@ function buscarMedidasEmTempoReal(idAquario) {
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
 }
+
+//-------------------------------------------------------------------------------------------------------------
 function buscartop3(idplanta) {
 
     instrucaoSql = ''
@@ -64,10 +66,34 @@ select count(usuario.fkplanta) as voto, planta.nomePlanta as planta
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
 }
+//------------------------------------------------------------------------------------------------------
+
+function buscar(idplanta2) {
+
+    instrucaoSql = ''
+
+    if (process.env.AMBIENTE_PROCESSO == "producao") {
+        instrucaoSql = `
+        select count(usuario.fkplanta) as voto , planta.nomePlanta as planta   
+                from usuario join planta on idplanta= fkplanta group by planta;`;
+
+    } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
+        instrucaoSql = `
+        select count(usuario.fkplanta) as voto , planta.nomePlanta as planta   
+                from usuario join planta on idplanta= fkplanta group by planta;`;
+    } else {
+        console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
+        return
+    }
+
+    console.log("Executando a instrução SQL: \n" + instrucaoSql);
+    return database.executar(instrucaoSql);
+}
 
 
 module.exports = {
     buscarUltimasMedidas,
     buscarMedidasEmTempoReal,
-    buscartop3
+    buscartop3,
+    buscar
 }

@@ -1519,21 +1519,35 @@ background-size: contain;
     justify-content: center;
 }
 
-.menugrafico{
-    background-color: aqua;
-}
+
 .bodymenu{
-    background-color: aqua;
     display: flex;
+    height: 10vh;
+}
+
+
+.graficogeral{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+    
 }
 .grafico{
+    width: 40vw;
+    
+}
+.grafico2{
     
     width: 40vw;
     
 }
-.bodygrafico{
-    display: flex;
-    background-color: #000;
+#bodygrafico{
+    width: 100vw;
+    height: 100vh;
+
+
 }
 .grafico1{
     background-image: url(../assets/images/il_794xN.3312611135_679u.jpg);

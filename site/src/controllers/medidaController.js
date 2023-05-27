@@ -40,7 +40,7 @@ function buscarMedidasEmTempoReal(req, res) {
         res.status(500).json(erro.sqlMessage);
     });
 }
-
+//-----------------------------------------------------------------------------------------------------------
 function buscartop3(req, res) {
 
     var idplanta = req.params.idplanta;
@@ -59,10 +59,30 @@ function buscartop3(req, res) {
         res.status(500).json(erro.sqlMessage);
     });
 }
+function buscar(req, res) {
+
+    var idplanta2 = req.params.idplanta2;
+
+    console.log(`Recuperando medidas em tempo real`);
+
+    medidaModel.buscar(idplanta2).then(function (resultado2) {
+        if (resultado2.length > 0) {
+            res.status(200).json(resultado2);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
 
 module.exports = {
     buscarUltimasMedidas,
     buscarMedidasEmTempoReal,
-    buscartop3
+    buscartop3,
+    buscar
 
 }

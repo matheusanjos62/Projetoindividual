@@ -14,5 +14,8 @@ router.get("/tempo-real/:idplanta", function (req, res) {
 router.get("/buscartop3/:idplanta", function (req, res) {
     medidaController.buscartop3(req, res);
 });
+router.get("/buscar/:idplanta2", function (req, res) {
+    medidaController.buscar(req, res);
+});
 
 module.exports = router;
