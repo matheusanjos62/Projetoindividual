@@ -51,8 +51,8 @@
         <input style="font-size: large;" id="input_email" type="text" placeholder="Email"><br><br>
         <input style="font-size: large;" id="input_senha" type="password" placeholder="Senha"><br><br>
 
-        <select style="font-size: large;" id="plantabd" class="plantabd">
-
+        <select style="font-size: large; " id="plantabd" class="plantabd">
+            <option>Qual sua planta favorita?</option>
             <option value="1">Cacto</option>
             <option value="2">Costela de adao</option>
             <option value="3">Suculenta</option>
@@ -157,10 +157,7 @@
         }
     }
 
-        //function sumirMensagem() {
-            //cardErro.style.display = "none"
-        //}
-
+       
 
 </script>
 
@@ -172,68 +169,6 @@
 
 
 
-<!--<script>
-    function cadastrar() {
-        
-
-        //Recupere o valor da nova input pelo nome do id
-        // Agora vá para o método fetch logo abaixo
-        var nomeVar = input_nome.value;
-        var emailVar = input_email.value;
-        var senhaVar = input_senha.value;
-        var planta_favoritaVar = plantabd.value;
-
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || planta_favoritaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-
-            finalizarAguardar();
-            return false;
-        }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
-
-        // Enviando o valor da nova input
-        fetch("/usuarios/cadastrar", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                // crie um atributo que recebe o valor recuperado aqui
-                // Agora vá para o arquivo routes/usuario.js
-                nomeServer: nomeVar,
-                emailServer: emailVar,
-                senhaServer: senhaVar,
-                plantaServer: planta_favoritaVar
-            })
-        }).then(function (resposta) {
-
-            console.log("resposta: ", resposta);
-
-            if (resposta.ok) {
-                
-                setTimeout(() => {
-                    window.location = "./loginbanco.html";
-                }, "2000")
-
-                limparFormulario();
-                finalizarAguardar();
-            } else {
-                throw ("Houve um erro ao tentar realizar o cadastro!");
-            }
-        }).catch(function (resposta) {
-            console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
-        });
-
-        return false;
-    }
-
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
 
 
 
@@ -241,5 +176,5 @@
 
 
 
-</script>-->
+</script>
 <script type="text/javascript">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"7083315397a395eac5a65a01ee365d9aeb080b19ec31c7ce15b438cfd02fbcb609a0a29f616629fff06e1202645e8880", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");</script>
