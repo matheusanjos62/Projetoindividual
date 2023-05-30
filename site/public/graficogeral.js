@@ -43,7 +43,7 @@ let proximaAtualizacao2;
             let dados2 = {
                 labels: labels2,
                 datasets: [{
-                    label: 'top 3',
+                    label: 'Votos gerais',
                     data: [],
                     fill: false,
                     borderColor: 'rgb(75, 192, 192),',

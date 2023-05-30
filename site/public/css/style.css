@@ -1546,15 +1546,15 @@ background-size: contain;
 #bodygrafico{
     width: 100vw;
     height: 100vh;
-
-
-}
+        background-image: url(../assets/images/pexels-kristine-javashvili-9873481.jpg);
+        background-size: cover;
+    }
 .grafico1{
-    background-image: url(../assets/images/il_794xN.3312611135_679u.jpg);
+    background-image: url(../assets/images/pexels-ihsan-adityawarman-2045613.jpg);
     background-size: cover;
 }
 .grafico2{
-    background-image: url(../assets/images/il_794xN.3396479459_b5el.webp );
+    background-image: url(../assets/images/pexels-ihsan-adityawarman-2045613.jpg);
     background-size: cover;
 }
 .blocosimula3{
