@@ -122,8 +122,9 @@
     justify-content: center;
     background-image: url(../assets/images/Twisted.jpeg);
     height: 700px;
+    width: 1450px;
     background-size: contain;
-    opacity: 0.80;
+    opacity: 0.90;
 }
 
 .textomedicinal{
@@ -298,14 +299,14 @@
 /* card gengibre*/
 .blocofacil1 {
     background-image: url(../assets/images/casa1.jpg);
-    width: 250px;
+    width: 240px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
 }
 
 .blocofacil1:hover {
-    width: 300px;
+    width: 250px;
     height: 250px;
     transition: 0.6s;
 }
@@ -326,7 +327,7 @@
 /* card boldo*/
 .blocofacil2 {
     background-image: url(../assets/images/casa2.jpg);
-    width: 250px;
+    width: 240px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -354,7 +355,7 @@
 /* card babosa*/
 .blocofacil3 {
     background-image: url(../assets/images/casa3.jpg);
-    width: 250px;
+    width: 240px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -382,7 +383,7 @@
 /* card ervadoce*/
 .blocofacil4 {
     background-image: url(../assets/images/mamao.jpg);
-    width: 250px;
+    width: 240px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -409,7 +410,7 @@
 /* card camomila*/
 .blocofacil5 {
     background-image: url(../assets/images/boldocasa.jpg);
-    width: 250px;
+    width: 20px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -1227,7 +1228,18 @@
 
     justify-content: center;
 }
-
+.imagenssertao33 {
+    display: flex;
+    height: 500px;
+    margin-top: 5%;
+    justify-content: center;
+}
+.imagenssertao333 {
+    display: flex;
+    height: 500px;
+    margin-top: 5%;
+    justify-content: center;
+}
 .img3 {
     display: flex;
     justify-content: center;
@@ -1236,7 +1248,7 @@
 }
 .videopai{
     height: 500px;
-   
+    margin-top: 5%;
     justify-content: center;
     display: flex;
 }
