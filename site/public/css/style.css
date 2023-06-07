@@ -122,8 +122,8 @@
     justify-content: center;
     background-image: url(../assets/images/Twisted.jpeg);
     height: 700px;
-    width: 1450px;
-    background-size: contain;
+    width: 100vw;
+    background-size: cover;
     opacity: 0.90;
 }
 
@@ -410,7 +410,7 @@
 /* card camomila*/
 .blocofacil5 {
     background-image: url(../assets/images/boldocasa.jpg);
-    width: 20px;
+    width: 250px;
     height: 250px;
     border-radius: 10%;
     background-size: cover;
@@ -1328,6 +1328,8 @@
     padding: 15px;
     border-radius: 15px;
     width: 100%;
+    cursor: pointer;
+    letter-spacing: 1px;
     
 
 }
@@ -1403,9 +1405,12 @@
     background-color: black;
     background-size: cover;
     padding: 60px;
+    text-shadow: 0px 0px 5px #000;
+    letter-spacing: 1px;
     border-radius: 15%;
-    color: lawngreen;
+    color: rgb(66, 241, 50);
     width: 300px;
+    
 
 }
 
@@ -1592,12 +1597,16 @@ background-size: contain;
 .input1for{
     
     width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
     height: 20px;
 }
 .input2for{
-    
+    margin-top: 10px;
     width: 100%;
+    padding: 5px;
     height: 20px;
+    margin-bottom: 10px;
 }
 .tenor-gif-embed{
     height: 500px;
