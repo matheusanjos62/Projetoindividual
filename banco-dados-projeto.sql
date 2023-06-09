@@ -12,6 +12,7 @@ foreign key (fkplanta)  references planta (idplanta)
 );
 
 SELECT * FROM usuario;
+SELECT * FROM planta;
 
 insert into usuario values
 (null,'matheus','matheus@','123456','jiboia');
